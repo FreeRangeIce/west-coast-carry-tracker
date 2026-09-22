@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="High-level CA / OR / NV firearm & conceal-carry law tracker. Not legal advice." />
+  <meta name="theme-color" content="#0c0e12" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Carry Tracker" />
+  <title>West Coast Carry Tracker — CA · OR · NV</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">◈</span>
+        <div>
+          <h1>West Coast Carry Tracker</h1>
+          <p class="tagline">California · Oregon · Nevada — high-level CCW / CHL / CFP reference</p>
+        </div>
+      </div>
+      <div class="reviewed-stamp" id="reviewed-stamp" title="Global last reviewed date">
+        <span class="stamp-label">Last reviewed</span>
+        <span class="stamp-date" id="global-reviewed">—</span>
+      </div>
+    </div>
+  </header>
+
+  <aside class="disclaimer" role="note" aria-label="Legal disclaimer">
+    <strong>NOT LEGAL ADVICE.</strong>
+    <span id="disclaimer-text">Loading…</span>
+  </aside>
+
+  <nav class="tabs" role="tablist" aria-label="Views">
+    <button role="tab" class="tab active" data-view="ca" aria-selected="true" id="tab-ca">California</button>
+    <button role="tab" class="tab" data-view="or" aria-selected="false" id="tab-or">Oregon</button>
+    <button role="tab" class="tab" data-view="nv" aria-selected="false" id="tab-nv">Nevada</button>
+    <button role="tab" class="tab" data-view="compare" aria-selected="false" id="tab-compare">Compare</button>
+    <button role="tab" class="tab" data-view="changelog" aria-selected="false" id="tab-changelog">Changelog</button>
+  </nav>
+
+  <main id="main" class="main">
+    <section id="view-state" class="view" hidden></section>
+    <section id="view-compare" class="view" hidden></section>
+    <section id="view-changelog" class="view" hidden></section>
+    <p id="load-error" class="load-error" hidden></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>Self-contained static reference · Data in <code>data/laws.json</code> · Re-verify official sources before travel or carry.</p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

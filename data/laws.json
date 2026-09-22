@@ -1,0 +1,205 @@
+{
+  "lastReviewed": "2026-09-09",
+  "disclaimer": "NOT LEGAL ADVICE. This tracker summarizes publicly available high-level information about firearm and conceal-carry rules in California, Oregon, and Nevada for personal reference only. Laws change, court orders enjoin or restore categories, and local rules apply. Always verify with official statutes, attorney general / DPS guidance, and a licensed attorney before carrying or traveling.",
+  "states": [
+    {
+      "id": "ca",
+      "name": "California",
+      "accent": "gold",
+      "permitFramework": "Shall-issue CCW after Bruen / SB 2; licensing authorities are county sheriffs / city police chiefs (not DOJ).",
+      "permitName": "Carry Concealed Weapons (CCW) license",
+      "constitutionalCarry": false,
+      "issuer": "County sheriff or city police chief",
+      "minAge": "21+ (typical for CCW; verify with issuing authority)",
+      "reciprocityIn": "California does not honor or recognize CCW licenses issued by other states.",
+      "reciprocityOutNote": "Whether other states honor a CA CCW is up to those states; verify before travel.",
+      "nonResidentNote": "As of Jan 1, 2026, AB 1078 created a statutory path for non-residents to apply for a California CCW (not reciprocity — they must complete CA's application process). See OAG bulletin 2026-DLE-03.",
+      "keyRestrictions": [
+        "Schools and childcare facilities",
+        "Many government buildings",
+        "Many SB 2 'sensitive places' under PC 26230 — litigation has enjoined some categories historically; private-commercial 'vampire rule' default was struck/enjoined (Wolford-related / Ninth Circuit)",
+        "Parks, alcohol-serving establishments, libraries, and stadiums are often cited among enforceable categories",
+        "VERIFY: Check current PC 26230 text and live court status before relying on any category list"
+      ],
+      "travelerTip": "Out-of-state permits are not valid for concealed carry in CA. Unloaded, secured interstate transport may have federal safe-passage protections — verify FOPA and CA rules.",
+      "possessionNotes": "High-level only: CA has extensive possession, magazine, and roster rules beyond CCW. This tracker covers carry framework only — not assault-weapon, magazine-capacity, or roster law.",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        {
+          "title": "CA DOJ CCW License FAQs",
+          "url": "https://oag.ca.gov/firearms/ccwlicfaqs"
+        },
+        {
+          "title": "CA DOJ Public Firearms FAQs (reciprocity)",
+          "url": "https://oag.ca.gov/firearms/pubfaqs"
+        },
+        {
+          "title": "CA DOJ CCW regulations / Bruen-SB2 overview",
+          "url": "https://oag.ca.gov/firearms/regs/ccwl"
+        },
+        {
+          "title": "OAG Information Bulletin 2026-DLE-03 (AB 1078)",
+          "url": "https://www.oag.ca.gov/system/files/media/2026-DLE-03.pdf"
+        },
+        {
+          "title": "Penal Code (sensitive places context) PC 26230",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=26230"
+        }
+      ]
+    },
+    {
+      "id": "or",
+      "name": "Oregon",
+      "accent": "green",
+      "permitFramework": "Shall-issue Concealed Handgun License (CHL) via county sheriff under ORS 166.291; not constitutional carry.",
+      "permitName": "Concealed Handgun License (CHL)",
+      "constitutionalCarry": false,
+      "issuer": "County sheriff",
+      "minAge": "Generally 21+",
+      "validity": "Typically valid 4 years statewide.",
+      "openCarryNote": "Open carry without a CHL is generally lawful under state law but local restrictions (esp. loaded carry in some cities) can apply — check locality.",
+      "reciprocityIn": "Oregon does not recognize concealed carry licenses from any other state. An Oregon CHL is required to carry concealed.",
+      "nonResidentNote": "Residents of contiguous states may be able to apply for an Oregon CHL (county practice varies); residents generally apply in county of residence.",
+      "keyRestrictions": [
+        "Statutory and posted prohibited locations — verify ORS and local ordinances",
+        "Local loaded-carry restrictions may apply even where open carry is otherwise lawful"
+      ],
+      "travelerTip": "Out-of-state permits are not recognized for concealed carry in Oregon. Obtain an Oregon CHL if you need to carry concealed.",
+      "measure114Note": "Measure 114 (permit-to-purchase / related rules) has been in litigation; effective date has been delayed (reports cite Jan 1, 2028 push). Track separately from CHL — do not conflate with CHL.",
+      "possessionNotes": "High-level only: CHL framework is separate from Measure 114 permit-to-purchase litigation. Verify both tracks independently.",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        {
+          "title": "ORS 166.291 Issuance of concealed handgun license",
+          "url": "https://oregon.public.law/statutes/ors_166.291"
+        },
+        {
+          "title": "Oregon CHL training (OSSA)",
+          "url": "https://oregonchl.org/"
+        },
+        {
+          "title": "Yamhill County CHL overview (example sheriff page)",
+          "url": "https://www.yamhillcounty.gov/706/Concealed-Handgun-Licenses"
+        }
+      ]
+    },
+    {
+      "id": "nv",
+      "name": "Nevada",
+      "accent": "silver",
+      "permitFramework": "Shall-issue Concealed Firearm Permit (CFP) via county sheriff. NOT permitless/constitutional carry for concealed carry.",
+      "permitName": "Concealed Firearm Permit (CFP / CCW)",
+      "constitutionalCarry": false,
+      "issuer": "County sheriff",
+      "minAge": "21+ (typical; verify with issuing sheriff)",
+      "reciprocityIn": "Nevada recognizes permits from states on the DPS RCCD recognition list (updated periodically, often July 1).",
+      "recognizedStatesAsOf": "2026-07-01",
+      "recognizedStates": [
+        "Alaska",
+        "Arizona",
+        "Arkansas",
+        "Florida",
+        "Idaho (Enhanced Permit)",
+        "Illinois",
+        "Kansas",
+        "Kentucky",
+        "Louisiana",
+        "Massachusetts",
+        "Minnesota",
+        "Mississippi (Enhanced Permit)",
+        "Montana",
+        "Nebraska",
+        "New Mexico",
+        "North Carolina",
+        "North Dakota (Class 1 only)",
+        "Ohio",
+        "Oklahoma",
+        "South Carolina",
+        "South Dakota (Enhanced Permit)",
+        "Tennessee",
+        "Texas",
+        "Utah",
+        "Virginia",
+        "West Virginia",
+        "Wisconsin",
+        "Wyoming"
+      ],
+      "important": "CA and OR are NOT on Nevada's recognition list (as of the July 1, 2026 list). New Nevada residents with an out-of-state permit must get a Nevada county permit within 60 days (NRS 202.3688).",
+      "openCarryNote": "Open carry without a permit is generally allowed for eligible persons, but concealed carry without a recognized permit is a serious crime under NRS 202.350.",
+      "keyRestrictions": [
+        "Schools (including parking areas often)",
+        "Public airport interiors",
+        "Other statutory and posted locations — verify NRS and local rules"
+      ],
+      "travelerTip": "If your home-state permit is on the NV DPS recognition list, concealed carry may be allowed under that recognition — verify the current PDF list. CA and OR permits are not recognized.",
+      "possessionNotes": "High-level only: Concealed carry without a Nevada or recognized permit is a serious crime. Open carry rules differ — do not conflate.",
+      "lastReviewed": "2026-09-09",
+      "sources": [
+        {
+          "title": "NV DPS 2026 CCW Recognition List (effective July 1, 2026)",
+          "url": "https://www.rccd.nv.gov/siteassets/content/resources/2026-ccw-recognition-list.pdf"
+        },
+        {
+          "title": "NV DPS RCCD",
+          "url": "https://www.rccd.nv.gov/"
+        },
+        {
+          "title": "NRS Chapter 202 (firearms)",
+          "url": "https://www.leg.state.nv.us/NRS/NRS-202.html"
+        }
+      ]
+    }
+  ],
+  "compare": [
+    {
+      "topic": "Permit required for concealed carry?",
+      "ca": "Yes — CA CCW required",
+      "or": "Yes — Oregon CHL required",
+      "nv": "Yes — NV CFP or recognized out-of-state permit"
+    },
+    {
+      "topic": "Constitutional / permitless carry?",
+      "ca": "No",
+      "or": "No (for concealed)",
+      "nv": "No (for concealed); open carry generally allowed without permit"
+    },
+    {
+      "topic": "Honors out-of-state permits?",
+      "ca": "No",
+      "or": "No",
+      "nv": "Yes — states on DPS RCCD list only"
+    },
+    {
+      "topic": "CA / OR / NV permits recognized by each other?",
+      "ca": "Recognizes none",
+      "or": "Recognizes none",
+      "nv": "Does NOT recognize CA or OR"
+    },
+    {
+      "topic": "Typical issuer",
+      "ca": "County sheriff / city police chief",
+      "or": "County sheriff",
+      "nv": "County sheriff"
+    },
+    {
+      "topic": "Min age (where known)",
+      "ca": "21+ typical for CCW",
+      "or": "Generally 21+",
+      "nv": "21+ typical"
+    }
+  ],
+  "changelog": [
+    {
+      "date": "2026-09-09",
+      "text": "Initial tracker built for CA/OR/NV."
+    },
+    {
+      "date": "2026-07-01",
+      "text": "Nevada DPS updated CCW recognition list (effective date)."
+    },
+    {
+      "date": "2026-01-01",
+      "text": "California AB 1078 non-resident CCW application path effective."
+    }
+  ]
+}
