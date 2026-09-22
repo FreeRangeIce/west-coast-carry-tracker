@@ -38,17 +38,19 @@
   </aside>
 
   <nav class="tabs" role="tablist" aria-label="Views">
+    <button role="tab" class="tab" data-view="ask" aria-selected="false" id="tab-ask">Ask</button>
     <button role="tab" class="tab active" data-view="ca" aria-selected="true" id="tab-ca">California</button>
     <button role="tab" class="tab" data-view="or" aria-selected="false" id="tab-or">Oregon</button>
     <button role="tab" class="tab" data-view="nv" aria-selected="false" id="tab-nv">Nevada</button>
     <button role="tab" class="tab" data-view="compare" aria-selected="false" id="tab-compare">Compare</button>
-    <button role="tab" class="tab" data-view="changelog" aria-selected="false" id="tab-changelog">Changelog</button>
+    <button role="tab" class="tab" data-view="updates" aria-selected="false" id="tab-updates">Updates</button>
   </nav>
 
   <main id="main" class="main">
+    <section id="view-ask" class="view" hidden></section>
     <section id="view-state" class="view" hidden></section>
     <section id="view-compare" class="view" hidden></section>
-    <section id="view-changelog" class="view" hidden></section>
+    <section id="view-updates" class="view" hidden></section>
     <p id="load-error" class="load-error" hidden></p>
   </main>
 

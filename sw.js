@@ -1,5 +1,5 @@
 /* West Coast Carry Tracker — simple shell cache for offline-ish reopen */
-const CACHE = "carry-tracker-v1";
+const CACHE = "carry-tracker-v2";
 const SHELL = [
   "./",
   "./index.html",

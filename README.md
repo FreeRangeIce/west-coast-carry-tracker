@@ -10,8 +10,8 @@ Self-contained static reference for **high-level** firearm and conceal-carry fra
 |------|------|
 | `index.html` | App shell (+ iOS / PWA meta) |
 | `styles.css` | Dark, mobile-friendly UI |
-| `app.js` | Tabbed views, compare matrix, changelog, SW register |
-| `data/laws.json` | All encoded claims, sources, changelog |
+| `app.js` | Tabbed views, Ask search, compare, Updates, SW register |
+| `data/laws.json` | States, compare, curated `qa`, `topics`, `updates` / changelog |
 | `manifest.webmanifest` | Web app manifest (Add to Home Screen) |
 | `sw.js` | Tiny service worker (shell cache) |
 | `icons/` | 192 / 512 / apple-touch icons |
@@ -30,6 +30,7 @@ Then open: [http://127.0.0.1:8765/](http://127.0.0.1:8765/)
 
 Any other static server (`npx serve`, nginx, etc.) works the same.
 
+**GitHub Pages:** https://freerangeice.github.io/west-coast-carry-tracker/
 
 ## Install on iPhone
 
@@ -44,16 +45,17 @@ The app opens fullscreen (standalone). After the first visit, a small service wo
 ## Features
 
 - Persistent **NOT LEGAL ADVICE** banner
-- Tabs: California / Oregon / Nevada / Compare / Changelog
+- Tabs: **Ask** / California / Oregon / Nevada / Compare / **Updates**
+- **Ask / Search** — keyword ranking over curated Q&A, state fields, restrictions, recognition lists, compare rows, topics, sources, and updates (offline after first load; not live web search or an LLM)
 - Per state: permit framework, reciprocity, non-resident notes, traveler tips, sensitive-place summaries, sources
 - Nevada recognized-states list (as of DPS July 1, 2026 list)
 - Compare matrix (permit, constitutional carry, reciprocity among CA/OR/NV, issuer, min age)
-- Changelog seeded from `data/laws.json`
-- Global + per-state `lastReviewed` stamps (global: **2026-09-09**)
+- **Updates** feed (`updates` array, aliased from changelog) with “Watching for changes” weekday-monitoring note
+- Global + per-state `lastReviewed` stamps
 
 ## Refresh checklist (re-verify these official URLs)
 
-Update `data/laws.json` and bump `lastReviewed` / changelog when anything material changes.
+Update `data/laws.json` and bump `lastReviewed` / `updates` when anything material changes. Weekday monitoring: refresh only after verifying official sources.
 
 ### California
 - [ ] [CCW License FAQs](https://oag.ca.gov/firearms/ccwlicfaqs)
@@ -77,12 +79,14 @@ Update `data/laws.json` and bump `lastReviewed` / changelog when anything materi
 - [ ] Confirm CA and OR still do **not** honor each other’s (or NV’s) permits for concealed carry
 - [ ] Confirm NV still does **not** list CA or OR on the recognition PDF
 - [ ] Local city/county carry restrictions (esp. OR loaded open carry)
+- [ ] Curated `qa` answers still match state cards (no invented claims)
 
 ## Caveats
 
 - **CA sensitive places (PC 26230 / SB 2):** Encoded as high-level categories plus an explicit “verify statute + court status” note. Some categories have been enjoined historically; the private-commercial “vampire rule” default was struck/enjoined (Wolford-related / Ninth Circuit). This app does **not** claim a perfect live list.
 - **Measure 114 (OR):** Separate from CHL; litigation has delayed effectiveness.
 - Content is intentionally high-level; magazine, roster, and assault-weapon possession regimes are out of scope.
+- **Ask** only searches this repo’s curated JSON — not the live web.
 
 ## License / use
 
