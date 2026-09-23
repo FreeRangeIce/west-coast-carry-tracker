@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-09-22",
+  "lastReviewed": "2026-09-23",
   "disclaimer": "NOT LEGAL ADVICE. This tracker summarizes publicly available high-level information about firearm and conceal-carry rules in California, Oregon, and Nevada for personal reference only. Laws change, court orders enjoin or restore categories, and local rules apply. Always verify with official statutes, attorney general / DPS guidance, and a licensed attorney before carrying or traveling.",
   "monitoringNote": "Watching for changes: curated data is refreshed when material updates are verified against official sources (weekday monitoring). This is not live web search.",
   "states": [
@@ -14,7 +14,7 @@
       "minAge": "21+ (typical for CCW; verify with issuing authority)",
       "reciprocityIn": "California does not honor or recognize CCW licenses issued by other states.",
       "reciprocityOutNote": "Whether other states honor a CA CCW is up to those states; verify before travel.",
-      "nonResidentNote": "As of Jan 1, 2026, AB 1078 created a statutory path for non-residents to apply for a California CCW (not reciprocity — they must complete CA's application process). See OAG bulletin 2026-DLE-03.",
+      "nonResidentNote": "As of Jan 1, 2026, AB 1078 created a statutory path for non-residents to apply for a California CCW (not reciprocity — they must complete CA's application process). OAG Information Bulletin 2026-DLE-13 (Aug 7, 2026) supersedes 2026-DLE-03 and clarifies that non-resident applicants may fingerprint via California Live Scan or an FBI Form FD-258 taken by law enforcement in their home state. See also OAG bulletin 2026-DLE-14 for renewal fingerprinting rules effective Sept 1, 2026.",
       "keyRestrictions": [
         "Schools and childcare facilities",
         "Many government buildings",
@@ -24,7 +24,7 @@
       ],
       "travelerTip": "Out-of-state permits are not valid for concealed carry in CA. Unloaded, secured interstate transport may have federal safe-passage protections — verify FOPA and CA rules.",
       "possessionNotes": "High-level only: CA has extensive possession, magazine, and roster rules beyond CCW. This tracker covers carry framework only — not assault-weapon, magazine-capacity, or roster law.",
-      "lastReviewed": "2026-09-09",
+      "lastReviewed": "2026-09-23",
       "sources": [
         {
           "title": "CA DOJ CCW License FAQs",
@@ -39,14 +39,19 @@
           "url": "https://oag.ca.gov/firearms/regs/ccwl"
         },
         {
-          "title": "OAG Information Bulletin 2026-DLE-03 (AB 1078)",
-          "url": "https://www.oag.ca.gov/system/files/media/2026-DLE-03.pdf"
+          "title": "OAG Information Bulletin 2026-DLE-13 (AB 1078; supersedes 2026-DLE-03)",
+          "url": "https://www.oag.ca.gov/system/files/media/2026-dle-13.pdf"
         },
         {
           "title": "Penal Code (sensitive places context) PC 26230",
           "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=26230"
+        },
+        {
+          "title": "OAG Information Bulletin 2026-DLE-14 (CCW renewal fingerprints / Rap Back; Sept 1, 2026)",
+          "url": "https://www.oag.ca.gov/system/files/media/2026-dle-14.pdf"
         }
-      ]
+      ],
+      "renewalNote": "Effective Sept 1, 2026 (SB 2 / Pen. Code § 26185; OAG 2026-DLE-14): licensing authorities must submit fingerprint images and fees for each CCW renewal applicant and may not issue a renewal until DOJ confirms firearms eligibility. Renewal fees increased (e.g., Standard CCW $93). Licensing authorities must enroll in FBI Federal Rap Back by Dec 31, 2026. Verify with the issuing sheriff or police chief and current OAG bulletins."
     },
     {
       "id": "or",
@@ -66,9 +71,9 @@
         "Local loaded-carry restrictions may apply even where open carry is otherwise lawful"
       ],
       "travelerTip": "Out-of-state permits are not recognized for concealed carry in Oregon. Obtain an Oregon CHL if you need to carry concealed.",
-      "measure114Note": "Measure 114 (permit-to-purchase / related rules) has been in litigation; effective date has been delayed (reports cite Jan 1, 2028 push). Track separately from CHL — do not conflate with CHL.",
+      "measure114Note": "Measure 114 (permit-to-purchase / related rules) remains in litigation and is not currently in effect. Oregon HB 4145 (2026 Laws, ch. 120; signed Apr 7, 2026) delayed the Measure 114 operative date to January 1, 2028, and stated legislative intent not to moot pending Oregon Supreme Court challenges. Track separately from CHL — do not conflate with CHL.",
       "possessionNotes": "High-level only: CHL framework is separate from Measure 114 permit-to-purchase litigation. Verify both tracks independently.",
-      "lastReviewed": "2026-09-09",
+      "lastReviewed": "2026-09-23",
       "sources": [
         {
           "title": "ORS 166.291 Issuance of concealed handgun license",
@@ -81,6 +86,10 @@
         {
           "title": "Yamhill County CHL overview (example sheriff page)",
           "url": "https://www.yamhillcounty.gov/706/Concealed-Handgun-Licenses"
+        },
+        {
+          "title": "Oregon HB 4145 (2026) — Measure 114 operative-date delay",
+          "url": "https://olis.oregonlegislature.gov/liz/2026R1/Downloads/MeasureDocument/HB4145/Enrolled"
         }
       ]
     },
@@ -134,7 +143,7 @@
       ],
       "travelerTip": "If your home-state permit is on the NV DPS recognition list, concealed carry may be allowed under that recognition — verify the current PDF list. CA and OR permits are not recognized.",
       "possessionNotes": "High-level only: Concealed carry without a Nevada or recognized permit is a serious crime. Open carry rules differ — do not conflate.",
-      "lastReviewed": "2026-09-09",
+      "lastReviewed": "2026-09-23",
       "sources": [
         {
           "title": "NV DPS 2026 CCW Recognition List (effective July 1, 2026)",
@@ -193,38 +202,93 @@
     {
       "id": "reciprocity",
       "label": "Reciprocity & recognition",
-      "keywords": ["reciprocity", "recognize", "honor", "out-of-state", "permit", "traveler"],
-      "stateIds": ["ca", "or", "nv"]
+      "keywords": [
+        "reciprocity",
+        "recognize",
+        "honor",
+        "out-of-state",
+        "permit",
+        "traveler"
+      ],
+      "stateIds": [
+        "ca",
+        "or",
+        "nv"
+      ]
     },
     {
       "id": "open-vs-concealed",
       "label": "Open vs concealed carry",
-      "keywords": ["open carry", "concealed", "permitless", "constitutional"],
-      "stateIds": ["ca", "or", "nv"]
+      "keywords": [
+        "open carry",
+        "concealed",
+        "permitless",
+        "constitutional"
+      ],
+      "stateIds": [
+        "ca",
+        "or",
+        "nv"
+      ]
     },
     {
       "id": "sensitive-places",
       "label": "Sensitive / off-limits places",
-      "keywords": ["school", "airport", "sensitive", "PC 26230", "SB 2", "prohibited"],
-      "stateIds": ["ca", "or", "nv"]
+      "keywords": [
+        "school",
+        "airport",
+        "sensitive",
+        "PC 26230",
+        "SB 2",
+        "prohibited"
+      ],
+      "stateIds": [
+        "ca",
+        "or",
+        "nv"
+      ]
     },
     {
       "id": "measure-114",
       "label": "Oregon Measure 114",
-      "keywords": ["measure 114", "permit-to-purchase", "litigation", "2028"],
-      "stateIds": ["or"]
+      "keywords": [
+        "measure 114",
+        "permit-to-purchase",
+        "litigation",
+        "2028"
+      ],
+      "stateIds": [
+        "or"
+      ]
     },
     {
       "id": "nv-recognition",
       "label": "Nevada recognition list",
-      "keywords": ["DPS", "RCCD", "recognition list", "July 1", "CFP"],
-      "stateIds": ["nv"]
+      "keywords": [
+        "DPS",
+        "RCCD",
+        "recognition list",
+        "July 1",
+        "CFP"
+      ],
+      "stateIds": [
+        "nv"
+      ]
     },
     {
       "id": "non-resident",
       "label": "Non-resident applications",
-      "keywords": ["non-resident", "AB 1078", "contiguous", "apply"],
-      "stateIds": ["ca", "or", "nv"]
+      "keywords": [
+        "non-resident",
+        "AB 1078",
+        "contiguous",
+        "apply"
+      ],
+      "stateIds": [
+        "ca",
+        "or",
+        "nv"
+      ]
     }
   ],
   "qa": [
@@ -232,8 +296,15 @@
       "id": "qa-ca-reciprocity",
       "question": "Does California honor out-of-state CCW / concealed carry permits?",
       "answer": "No. California does not honor or recognize CCW licenses issued by other states. Out-of-state permits are not valid for concealed carry in CA. Verify with CA DOJ Public Firearms FAQs before travel.",
-      "stateIds": ["ca"],
-      "tags": ["reciprocity", "traveler", "CCW", "out-of-state"],
+      "stateIds": [
+        "ca"
+      ],
+      "tags": [
+        "reciprocity",
+        "traveler",
+        "CCW",
+        "out-of-state"
+      ],
       "sourceUrls": [
         "https://oag.ca.gov/firearms/pubfaqs",
         "https://oag.ca.gov/firearms/ccwlicfaqs"
@@ -243,8 +314,15 @@
       "id": "qa-or-reciprocity",
       "question": "Does Oregon recognize concealed carry licenses from other states?",
       "answer": "No. Oregon does not recognize concealed carry licenses from any other state. An Oregon CHL is required to carry concealed. Verify ORS 166.291 and your county sheriff.",
-      "stateIds": ["or"],
-      "tags": ["reciprocity", "traveler", "CHL", "out-of-state"],
+      "stateIds": [
+        "or"
+      ],
+      "tags": [
+        "reciprocity",
+        "traveler",
+        "CHL",
+        "out-of-state"
+      ],
       "sourceUrls": [
         "https://oregon.public.law/statutes/ors_166.291"
       ]
@@ -253,8 +331,17 @@
       "id": "qa-nv-recognizes-ca-or",
       "question": "Does Nevada recognize California or Oregon permits?",
       "answer": "No. As of the July 1, 2026 NV DPS RCCD recognition list, California and Oregon are NOT on Nevada's recognition list. CA and OR permits are not recognized for concealed carry in Nevada. Verify the current official PDF.",
-      "stateIds": ["nv", "ca", "or"],
-      "tags": ["reciprocity", "recognition", "traveler", "DPS"],
+      "stateIds": [
+        "nv",
+        "ca",
+        "or"
+      ],
+      "tags": [
+        "reciprocity",
+        "recognition",
+        "traveler",
+        "DPS"
+      ],
       "sourceUrls": [
         "https://www.rccd.nv.gov/siteassets/content/resources/2026-ccw-recognition-list.pdf",
         "https://www.rccd.nv.gov/"
@@ -264,8 +351,16 @@
       "id": "qa-nv-recognition-list",
       "question": "Which states' permits does Nevada recognize?",
       "answer": "Nevada recognizes permits from states on the DPS RCCD recognition list (updated periodically, often July 1). The July 1, 2026 list in this tracker includes Alaska, Arizona, Arkansas, Florida, Idaho (Enhanced), Illinois, Kansas, Kentucky, Louisiana, Massachusetts, Minnesota, Mississippi (Enhanced), Montana, Nebraska, New Mexico, North Carolina, North Dakota (Class 1 only), Ohio, Oklahoma, South Carolina, South Dakota (Enhanced), Tennessee, Texas, Utah, Virginia, West Virginia, Wisconsin, and Wyoming. Always verify the live PDF — the list can change.",
-      "stateIds": ["nv"],
-      "tags": ["reciprocity", "recognition", "DPS", "RCCD", "CFP"],
+      "stateIds": [
+        "nv"
+      ],
+      "tags": [
+        "reciprocity",
+        "recognition",
+        "DPS",
+        "RCCD",
+        "CFP"
+      ],
       "sourceUrls": [
         "https://www.rccd.nv.gov/siteassets/content/resources/2026-ccw-recognition-list.pdf",
         "https://www.rccd.nv.gov/"
@@ -275,8 +370,16 @@
       "id": "qa-ca-or-nv-mutual",
       "question": "Do California, Oregon, and Nevada recognize each other's carry permits?",
       "answer": "No mutual recognition among the three for concealed carry. CA recognizes none; OR recognizes none; NV does not recognize CA or OR (July 1, 2026 list). Travelers should not assume any of these three honors another's permit.",
-      "stateIds": ["ca", "or", "nv"],
-      "tags": ["reciprocity", "traveler", "compare"],
+      "stateIds": [
+        "ca",
+        "or",
+        "nv"
+      ],
+      "tags": [
+        "reciprocity",
+        "traveler",
+        "compare"
+      ],
       "sourceUrls": [
         "https://oag.ca.gov/firearms/pubfaqs",
         "https://oregon.public.law/statutes/ors_166.291",
@@ -286,11 +389,18 @@
     {
       "id": "qa-ca-nonresident",
       "question": "Can a non-resident get a California CCW?",
-      "answer": "As of Jan 1, 2026, AB 1078 created a statutory path for non-residents to apply for a California CCW. This is not reciprocity — applicants must complete CA's application process. See OAG Information Bulletin 2026-DLE-03 and verify with the issuing sheriff or police chief.",
-      "stateIds": ["ca"],
-      "tags": ["non-resident", "AB 1078", "CCW", "apply"],
+      "answer": "As of Jan 1, 2026, AB 1078 created a statutory path for non-residents to apply for a California CCW. This is not reciprocity — applicants must complete CA's application process. OAG Information Bulletin 2026-DLE-13 (Aug 7, 2026) supersedes 2026-DLE-03 and clarifies fingerprint options (California Live Scan or FBI Form FD-258 via home-state law enforcement). Verify with the issuing sheriff or police chief.",
+      "stateIds": [
+        "ca"
+      ],
+      "tags": [
+        "non-resident",
+        "AB 1078",
+        "CCW",
+        "apply"
+      ],
       "sourceUrls": [
-        "https://www.oag.ca.gov/system/files/media/2026-DLE-03.pdf",
+        "https://www.oag.ca.gov/system/files/media/2026-dle-13.pdf",
         "https://oag.ca.gov/firearms/ccwlicfaqs"
       ]
     },
@@ -298,8 +408,15 @@
       "id": "qa-or-nonresident",
       "question": "Can non-residents apply for an Oregon CHL?",
       "answer": "Residents of contiguous states may be able to apply for an Oregon CHL (county practice varies). Oregon residents generally apply in their county of residence. This is not the same as recognizing an out-of-state permit. Verify with the county sheriff.",
-      "stateIds": ["or"],
-      "tags": ["non-resident", "CHL", "contiguous", "apply"],
+      "stateIds": [
+        "or"
+      ],
+      "tags": [
+        "non-resident",
+        "CHL",
+        "contiguous",
+        "apply"
+      ],
       "sourceUrls": [
         "https://oregon.public.law/statutes/ors_166.291",
         "https://www.yamhillcounty.gov/706/Concealed-Handgun-Licenses"
@@ -309,8 +426,15 @@
       "id": "qa-nv-new-resident",
       "question": "I just moved to Nevada with an out-of-state permit — what happens?",
       "answer": "New Nevada residents with an out-of-state permit must get a Nevada county permit within 60 days (NRS 202.3688). Verify current NRS text and your county sheriff's process.",
-      "stateIds": ["nv"],
-      "tags": ["new resident", "60 days", "CFP", "NRS"],
+      "stateIds": [
+        "nv"
+      ],
+      "tags": [
+        "new resident",
+        "60 days",
+        "CFP",
+        "NRS"
+      ],
       "sourceUrls": [
         "https://www.leg.state.nv.us/NRS/NRS-202.html",
         "https://www.rccd.nv.gov/"
@@ -320,8 +444,15 @@
       "id": "qa-ca-issuer",
       "question": "Who issues a California CCW?",
       "answer": "Licensing authorities are county sheriffs or city police chiefs — not the California DOJ. Framework is shall-issue after Bruen / SB 2. Typical minimum age is 21+; verify with the issuing authority.",
-      "stateIds": ["ca"],
-      "tags": ["permit", "CCW", "issuer", "sheriff"],
+      "stateIds": [
+        "ca"
+      ],
+      "tags": [
+        "permit",
+        "CCW",
+        "issuer",
+        "sheriff"
+      ],
       "sourceUrls": [
         "https://oag.ca.gov/firearms/ccwlicfaqs",
         "https://oag.ca.gov/firearms/regs/ccwl"
@@ -331,8 +462,15 @@
       "id": "qa-or-issuer",
       "question": "Who issues an Oregon Concealed Handgun License (CHL)?",
       "answer": "County sheriffs issue CHLs under ORS 166.291 (shall-issue; not constitutional carry). Generally 21+. Typically valid 4 years statewide. Verify with your county sheriff.",
-      "stateIds": ["or"],
-      "tags": ["permit", "CHL", "issuer", "sheriff"],
+      "stateIds": [
+        "or"
+      ],
+      "tags": [
+        "permit",
+        "CHL",
+        "issuer",
+        "sheriff"
+      ],
       "sourceUrls": [
         "https://oregon.public.law/statutes/ors_166.291",
         "https://oregonchl.org/"
@@ -342,8 +480,15 @@
       "id": "qa-nv-issuer",
       "question": "Who issues a Nevada Concealed Firearm Permit?",
       "answer": "County sheriffs issue Nevada CFPs (shall-issue). Nevada is NOT permitless/constitutional carry for concealed carry. Typical minimum age is 21+; verify with the issuing sheriff.",
-      "stateIds": ["nv"],
-      "tags": ["permit", "CFP", "issuer", "sheriff"],
+      "stateIds": [
+        "nv"
+      ],
+      "tags": [
+        "permit",
+        "CFP",
+        "issuer",
+        "sheriff"
+      ],
       "sourceUrls": [
         "https://www.rccd.nv.gov/",
         "https://www.leg.state.nv.us/NRS/NRS-202.html"
@@ -353,8 +498,15 @@
       "id": "qa-nv-open-vs-concealed",
       "question": "Is open carry allowed in Nevada without a permit? What about concealed?",
       "answer": "Open carry without a permit is generally allowed for eligible persons. Concealed carry without a Nevada or recognized permit is a serious crime under NRS 202.350. Do not conflate open and concealed rules. Verify NRS Chapter 202.",
-      "stateIds": ["nv"],
-      "tags": ["open carry", "concealed", "permit", "NRS"],
+      "stateIds": [
+        "nv"
+      ],
+      "tags": [
+        "open carry",
+        "concealed",
+        "permit",
+        "NRS"
+      ],
       "sourceUrls": [
         "https://www.leg.state.nv.us/NRS/NRS-202.html",
         "https://www.rccd.nv.gov/"
@@ -364,8 +516,15 @@
       "id": "qa-or-open-carry",
       "question": "Is open carry lawful in Oregon without a CHL?",
       "answer": "Open carry without a CHL is generally lawful under state law, but local restrictions (especially loaded carry in some cities) can apply. Concealed carry still requires an Oregon CHL. Check locality and ORS.",
-      "stateIds": ["or"],
-      "tags": ["open carry", "concealed", "CHL", "local"],
+      "stateIds": [
+        "or"
+      ],
+      "tags": [
+        "open carry",
+        "concealed",
+        "CHL",
+        "local"
+      ],
       "sourceUrls": [
         "https://oregon.public.law/statutes/ors_166.291"
       ]
@@ -374,8 +533,15 @@
       "id": "qa-ca-sensitive-places",
       "question": "Where can't I carry in California (sensitive places)?",
       "answer": "High-level only: schools and childcare facilities; many government buildings; many SB 2 sensitive places under PC 26230. Litigation has enjoined some categories historically; the private-commercial 'vampire rule' default was struck/enjoined (Wolford-related / Ninth Circuit). Parks, alcohol-serving establishments, libraries, and stadiums are often cited among enforceable categories. VERIFY current PC 26230 text and live court status — this is not a complete live list.",
-      "stateIds": ["ca"],
-      "tags": ["sensitive places", "SB 2", "PC 26230", "restrictions"],
+      "stateIds": [
+        "ca"
+      ],
+      "tags": [
+        "sensitive places",
+        "SB 2",
+        "PC 26230",
+        "restrictions"
+      ],
       "sourceUrls": [
         "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=26230",
         "https://oag.ca.gov/firearms/regs/ccwl"
@@ -385,8 +551,15 @@
       "id": "qa-nv-sensitive-places",
       "question": "What are key off-limits places for carry in Nevada?",
       "answer": "High-level only: schools (including parking areas often), public airport interiors, and other statutory and posted locations. Verify NRS and local rules — not a complete list.",
-      "stateIds": ["nv"],
-      "tags": ["sensitive places", "schools", "airport", "restrictions"],
+      "stateIds": [
+        "nv"
+      ],
+      "tags": [
+        "sensitive places",
+        "schools",
+        "airport",
+        "restrictions"
+      ],
       "sourceUrls": [
         "https://www.leg.state.nv.us/NRS/NRS-202.html"
       ]
@@ -394,10 +567,18 @@
     {
       "id": "qa-or-measure-114",
       "question": "What is Oregon Measure 114, and does it replace the CHL?",
-      "answer": "Measure 114 covers permit-to-purchase and related rules. It has been in litigation; the effective date has been delayed (reports cite a Jan 1, 2028 push). Track it separately from the CHL — do not conflate with Concealed Handgun License rules. Verify both tracks independently with official sources.",
-      "stateIds": ["or"],
-      "tags": ["Measure 114", "permit-to-purchase", "litigation", "CHL"],
+      "answer": "Measure 114 covers permit-to-purchase and related rules. It has been in litigation and is not currently in effect. Oregon HB 4145 (2026) delayed the Measure 114 operative date to January 1, 2028. Track it separately from the CHL — do not conflate with Concealed Handgun License rules. Verify both tracks independently with official sources.",
+      "stateIds": [
+        "or"
+      ],
+      "tags": [
+        "Measure 114",
+        "permit-to-purchase",
+        "litigation",
+        "CHL"
+      ],
       "sourceUrls": [
+        "https://olis.oregonlegislature.gov/liz/2026R1/Downloads/MeasureDocument/HB4145/Enrolled",
         "https://oregon.public.law/statutes/ors_166.291"
       ]
     },
@@ -405,8 +586,15 @@
       "id": "qa-traveler-ca",
       "question": "I'm traveling through California with an out-of-state permit — can I carry concealed?",
       "answer": "Out-of-state permits are not valid for concealed carry in California. Unloaded, secured interstate transport may have federal safe-passage protections — verify FOPA and CA rules with official sources and counsel. This tracker is not legal advice.",
-      "stateIds": ["ca"],
-      "tags": ["traveler", "FOPA", "transport", "reciprocity"],
+      "stateIds": [
+        "ca"
+      ],
+      "tags": [
+        "traveler",
+        "FOPA",
+        "transport",
+        "reciprocity"
+      ],
       "sourceUrls": [
         "https://oag.ca.gov/firearms/pubfaqs",
         "https://oag.ca.gov/firearms/ccwlicfaqs"
@@ -416,8 +604,14 @@
       "id": "qa-traveler-or",
       "question": "I'm traveling through Oregon — is my home-state permit enough for concealed carry?",
       "answer": "No. Out-of-state permits are not recognized for concealed carry in Oregon. Obtain an Oregon CHL if you need to carry concealed. Verify with ORS and the county sheriff.",
-      "stateIds": ["or"],
-      "tags": ["traveler", "reciprocity", "CHL"],
+      "stateIds": [
+        "or"
+      ],
+      "tags": [
+        "traveler",
+        "reciprocity",
+        "CHL"
+      ],
       "sourceUrls": [
         "https://oregon.public.law/statutes/ors_166.291"
       ]
@@ -426,8 +620,15 @@
       "id": "qa-traveler-nv",
       "question": "I'm traveling to Nevada — when can I carry concealed on my home permit?",
       "answer": "If your home-state permit is on the current NV DPS RCCD recognition list, concealed carry may be allowed under that recognition — verify the current PDF. California and Oregon permits are not recognized. Concealed carry without a Nevada or recognized permit is a serious crime.",
-      "stateIds": ["nv"],
-      "tags": ["traveler", "reciprocity", "recognition", "CFP"],
+      "stateIds": [
+        "nv"
+      ],
+      "tags": [
+        "traveler",
+        "reciprocity",
+        "recognition",
+        "CFP"
+      ],
       "sourceUrls": [
         "https://www.rccd.nv.gov/siteassets/content/resources/2026-ccw-recognition-list.pdf",
         "https://www.rccd.nv.gov/"
@@ -437,8 +638,18 @@
       "id": "qa-constitutional-carry",
       "question": "Is there constitutional / permitless concealed carry in CA, OR, or NV?",
       "answer": "No for concealed carry in all three. California: no. Oregon: no for concealed (open carry without CHL is generally lawful under state law with local caveats). Nevada: no for concealed; open carry generally allowed without a permit for eligible persons. Verify official sources.",
-      "stateIds": ["ca", "or", "nv"],
-      "tags": ["constitutional carry", "permitless", "open carry", "concealed", "compare"],
+      "stateIds": [
+        "ca",
+        "or",
+        "nv"
+      ],
+      "tags": [
+        "constitutional carry",
+        "permitless",
+        "open carry",
+        "concealed",
+        "compare"
+      ],
       "sourceUrls": [
         "https://oag.ca.gov/firearms/ccwlicfaqs",
         "https://oregon.public.law/statutes/ors_166.291",
@@ -449,8 +660,17 @@
       "id": "qa-min-age",
       "question": "What is the typical minimum age for a carry permit in CA / OR / NV?",
       "answer": "California: 21+ typical for CCW (verify with issuing authority). Oregon: generally 21+. Nevada: 21+ typical (verify with issuing sheriff). Ages and eligibility details can vary — confirm with the issuer.",
-      "stateIds": ["ca", "or", "nv"],
-      "tags": ["age", "21", "permit", "eligibility"],
+      "stateIds": [
+        "ca",
+        "or",
+        "nv"
+      ],
+      "tags": [
+        "age",
+        "21",
+        "permit",
+        "eligibility"
+      ],
       "sourceUrls": [
         "https://oag.ca.gov/firearms/ccwlicfaqs",
         "https://oregon.public.law/statutes/ors_166.291",
@@ -461,15 +681,46 @@
       "id": "qa-ca-possession-scope",
       "question": "Does this tracker cover California magazine, roster, or assault-weapon laws?",
       "answer": "No. California has extensive possession, magazine, and roster rules beyond CCW. This tracker covers the carry framework only — not assault-weapon, magazine-capacity, or roster law. Verify official CA DOJ sources for those topics.",
-      "stateIds": ["ca"],
-      "tags": ["possession", "magazine", "roster", "scope"],
+      "stateIds": [
+        "ca"
+      ],
+      "tags": [
+        "possession",
+        "magazine",
+        "roster",
+        "scope"
+      ],
       "sourceUrls": [
         "https://oag.ca.gov/firearms/pubfaqs",
         "https://oag.ca.gov/firearms/ccwlicfaqs"
       ]
+    },
+    {
+      "id": "qa-ca-renewal-sept2026",
+      "question": "Did California CCW renewal rules change in September 2026?",
+      "answer": "Yes. Effective Sept 1, 2026, licensing authorities must submit fingerprint images and fees for each CCW renewal applicant and may not issue a renewal until the California DOJ confirms firearms eligibility (Pen. Code § 26185; OAG Information Bulletin 2026-DLE-14). Renewal fees increased (e.g., Standard CCW $93). Authorities must enroll in FBI Federal Rap Back by Dec 31, 2026. Verify with your issuing authority and the current OAG bulletin — this tracker is not legal advice.",
+      "stateIds": [
+        "ca"
+      ],
+      "tags": [
+        "renewal",
+        "fingerprints",
+        "SB 2",
+        "Rap Back",
+        "fees",
+        "CCW"
+      ],
+      "sourceUrls": [
+        "https://www.oag.ca.gov/system/files/media/2026-dle-14.pdf",
+        "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=26185"
+      ]
     }
   ],
   "updates": [
+    {
+      "date": "2026-09-23",
+      "text": "Verified official sources. California: OAG 2026-DLE-13 supersedes 2026-DLE-03 for AB 1078 non-resident CCW guidance (fingerprint options clarified); OAG 2026-DLE-14 renewal fingerprinting / fee / DOJ eligibility rules effective Sept 1, 2026 now in effect. Oregon: HB 4145 (2026) formally delayed Measure 114 operative date to Jan 1, 2028 (still track separately from CHL). Nevada: July 1, 2026 DPS recognition list re-checked — still no CA or OR; recognized-state set unchanged."
+    },
     {
       "date": "2026-09-22",
       "text": "Ask / Search tab added: keyword search over curated Q&A, state fields, compare rows, sources, and changelog. Updates feed strengthened with weekday monitoring note — data refreshes when material changes are verified against official sources (not live web search)."
@@ -488,6 +739,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-23",
+      "text": "Verified official sources. California: OAG 2026-DLE-13 supersedes 2026-DLE-03 for AB 1078 non-resident CCW guidance (fingerprint options clarified); OAG 2026-DLE-14 renewal fingerprinting / fee / DOJ eligibility rules effective Sept 1, 2026 now in effect. Oregon: HB 4145 (2026) formally delayed Measure 114 operative date to Jan 1, 2028 (still track separately from CHL). Nevada: July 1, 2026 DPS recognition list re-checked — still no CA or OR; recognized-state set unchanged."
+    },
     {
       "date": "2026-09-22",
       "text": "Ask / Search tab added: keyword search over curated Q&A, state fields, compare rows, sources, and changelog. Updates feed strengthened with weekday monitoring note — data refreshes when material changes are verified against official sources (not live web search)."

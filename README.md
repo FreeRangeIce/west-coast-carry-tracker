@@ -61,14 +61,15 @@ Update `data/laws.json` and bump `lastReviewed` / `updates` when anything materi
 - [ ] [CCW License FAQs](https://oag.ca.gov/firearms/ccwlicfaqs)
 - [ ] [Public Firearms FAQs (reciprocity)](https://oag.ca.gov/firearms/pubfaqs)
 - [ ] [CCW regs / Bruen–SB 2 overview](https://oag.ca.gov/firearms/regs/ccwl)
-- [ ] [OAG Bulletin 2026-DLE-03 (AB 1078 non-resident path)](https://www.oag.ca.gov/system/files/media/2026-DLE-03.pdf)
+- [ ] [OAG Bulletin 2026-DLE-13 (AB 1078; supersedes 2026-DLE-03)](https://www.oag.ca.gov/system/files/media/2026-dle-13.pdf)
+- [ ] [OAG Bulletin 2026-DLE-14 (CCW renewal fingerprints / Rap Back; Sept 1, 2026)](https://www.oag.ca.gov/system/files/media/2026-dle-14.pdf)
 - [ ] [PC 26230 (sensitive places)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=26230) — also check current injunction / Wolford-related Ninth Circuit status; do **not** treat any category list as permanently authoritative
 
 ### Oregon
 - [ ] [ORS 166.291](https://oregon.public.law/statutes/ors_166.291)
 - [ ] [Oregon CHL training (OSSA)](https://oregonchl.org/)
 - [ ] Example sheriff page: [Yamhill County CHL](https://www.yamhillcounty.gov/706/Concealed-Handgun-Licenses)
-- [ ] Measure 114 litigation / effective-date status (track separately from CHL; reports have cited a Jan 1, 2028 push)
+- [ ] Measure 114 litigation / operative-date status (HB 4145 (2026) delayed to Jan 1, 2028; track separately from CHL)
 
 ### Nevada
 - [ ] [DPS RCCD 2026 CCW Recognition List PDF](https://www.rccd.nv.gov/siteassets/content/resources/2026-ccw-recognition-list.pdf) (often updated ~July 1)

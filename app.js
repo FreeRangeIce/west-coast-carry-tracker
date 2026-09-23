@@ -140,6 +140,7 @@
         ["Minimum age", st.minAge],
         ["Important", st.important],
         ["Measure 114", st.measure114Note],
+        ["CCW renewal", st.renewalNote],
         ["Possession notes", st.possessionNotes],
         ["Permit name", st.permitName],
         ["Issuer", st.issuer],
@@ -557,6 +558,14 @@
         <div class="card ${accent}-accent full">
           <h3>Measure 114 (separate from CHL)</h3>
           <p class="callout caution">${escapeHtml(state.measure114Note)}</p>
+        </div>`;
+    }
+
+    if (state.renewalNote) {
+      extraBlocks += `
+        <div class="card ${accent}-accent full">
+          <h3>CCW renewal (recent change)</h3>
+          <p class="callout caution">${escapeHtml(state.renewalNote)}</p>
         </div>`;
     }
 
