@@ -1033,10 +1033,12 @@
     els.viewUpdates.hidden = view !== "updates";
     els.viewLitigation.hidden = view !== "litigation";
 
+    let activeTab = null;
     els.tabs.forEach((tab) => {
       const active = tab.dataset.view === view;
       tab.classList.toggle("active", active);
       tab.setAttribute("aria-selected", active ? "true" : "false");
+      if (active) activeTab = tab;
     });
 
     if (view === "ask") {
@@ -1052,11 +1054,26 @@
       renderLitigation();
     }
 
+    // After rendering: revealing the tab forces a layout, and doing that while the
+    // newly shown view is still empty would clamp (jump) the page scroll.
+    revealTab(activeTab);
+
     if (history.replaceState) {
       history.replaceState(null, "", "#" + view);
     } else {
       location.hash = view;
     }
+  }
+
+  // Keep the active tab on-screen in the horizontally scrolling phone strip.
+  // block/inline "nearest" only nudges the strip sideways; the tab bar is sticky
+  // (always in the viewport), so the page itself does not move vertically.
+  function revealTab(tab) {
+    if (!tab || typeof tab.scrollIntoView !== "function") return;
+    const smooth =
+      typeof window.matchMedia === "function" &&
+      window.matchMedia("(prefers-reduced-motion: no-preference)").matches;
+    tab.scrollIntoView({ block: "nearest", inline: "nearest", behavior: smooth ? "smooth" : "auto" });
   }
 
   function bindTabs() {
