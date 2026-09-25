@@ -13,7 +13,7 @@ Self-contained static reference for **high-level** firearm and concealed-carry f
 | `app.js` | Tabbed views (state tabs derived from `data.states`), Ask search, compare + reciprocity matrix, Litigation, Updates, SW register |
 | `data/laws.json` | All content (see **Data structure** below) — the file the daily check updates |
 | `manifest.webmanifest` | Web app manifest (Add to Home Screen) |
-| `sw.js` | Tiny service worker (shell cache; bump `CACHE` version on each release — currently `carry-tracker-v6`) |
+| `sw.js` | Tiny service worker (shell cache; bump `CACHE` version on each release — currently `carry-tracker-v7`) |
 | `icons/` | 192 / 512 / apple-touch icons |
 | `README.md` | This file + refresh checklist |
 
@@ -22,7 +22,7 @@ Self-contained static reference for **high-level** firearm and concealed-carry f
 Browsers block `fetch()` of `data/laws.json` from `file://`. Prefer a static server:
 
 ```bash
-cd /workspace/gun-law-tracker
+cd west-coast-carry-tracker
 python3 -m http.server 8765
 ```
 
@@ -40,13 +40,13 @@ The service worker caches the shell; bumping `CACHE` in `sw.js` makes installed 
 
 ## Features
 
-- Persistent **NOT LEGAL ADVICE** banner (plus notes on Ask and Litigation)
+- **NOT LEGAL ADVICE** banner at the top of every view, repeated in the footer (plus notes on Ask and Litigation)
 - Tabs: **Ask** / California / Oregon / Nevada / Washington / Arizona / Compare / **Litigation** / **Updates** (deep links: `#wa`, `#az`, `#litigation`, …)
 - **Ask / Search**: keyword ranking over curated Q&A, state fields, restrictions, recognition lists, legislation, the reciprocity matrix, court cases, county notes, compare rows, topics, sources and updates. Works offline after the first load. This is not live web search or an LLM.
 - Per state: permit framework, issuer, eligibility, fees, training, processing time, validity, open carry, reciprocity (in/out), non-resident notes, prohibited places, magazine/assault-weapon rules, purchase rules (permit to purchase / waiting period), recent legislation, county/local notes, sources, and a `lastChecked` stamp
 - Recognition lists: Nevada (DPS, July 1, 2026) and Washington (AG, July 10, 2026)
-- **Compare**: five-state reciprocity matrix (hover a cell for notes) plus side-by-side rows
-- **Litigation**: 10 tracked cases with court, docket, what's challenged, status and date, impact, uncertainty flags and source links
+- **Compare**: five-state reciprocity matrix (cell notes: hover on desktop, or open 'Notes & list dates' below the matrix) plus side-by-side rows
+- **Litigation**: tracked court cases with court, docket, what's challenged, status and date, impact, uncertainty flags and source links
 
 ## Data structure (`data/laws.json`, schemaVersion 2)
 

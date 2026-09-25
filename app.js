@@ -206,7 +206,7 @@
           title: st.name + " — recognized out-of-state permits",
           snippet:
             "As of " +
-            (st.recognizedStatesAsOf || "unknown") +
+            (st.recognizedStatesAsOf ? formatDate(st.recognizedStatesAsOf) : "unknown") +
             ": " +
             st.recognizedStates.join(", "),
           body: st.recognizedStates.join(" "),
@@ -288,7 +288,7 @@
         body: [c.name, c.docket, c.challenges, c.status, c.impact].join(" "),
         tags: ["litigation", "court", "case", c.outcome || ""],
         stateIds: c.stateIds || [],
-        sources: [{ title: c.name + " — docket / opinion", url: c.sourceUrl }],
+        sources: [{ title: c.name + " — primary source", url: c.sourceUrl }],
       });
     });
 
@@ -310,7 +310,8 @@
         pushDoc(docs, {
           id: "county-" + cs.stateId + "-" + i,
           kind: "county",
-          title: c.name + " County (" + nm + ") — " + (c.agency || "CCW"),
+          // Skip " County" when the name already says "(city)" or "County".
+          title: c.name + (/\(city\)|County\b/i.test(c.name) ? "" : " County") + " (" + nm + ") — " + (c.agency || "CCW"),
           snippet: text,
           body: c.name + " county " + text,
           tags: ["county", "sheriff", "fees", "processing", c.name],
@@ -974,11 +975,11 @@
         <p class="case-court">${escapeHtml(c.court)}${c.docket ? " · " + escapeHtml(c.docket) : ""}</p>
         <dl class="case-facts">
           <dt>Challenges</dt><dd>${escapeHtml(c.challenges)}</dd>
-          <dt>Status <span class="case-date">(as of ${escapeHtml(formatDate(c.statusDate))})</span></dt><dd>${escapeHtml(c.status)}</dd>
+          <dt>Status <span class="case-date">(latest court event: ${escapeHtml(formatDate(c.statusDate))})</span></dt><dd>${escapeHtml(c.status)}</dd>
           <dt>What a ruling would change</dt><dd>${escapeHtml(c.impact)}</dd>
         </dl>
         ${c.uncertainNote ? `<p class="callout caution"><strong>Uncertain:</strong> ${escapeHtml(c.uncertainNote)}</p>` : ""}
-        <p class="case-src"><a href="${escapeHtml(c.sourceUrl)}" target="_blank" rel="noopener noreferrer">Docket / opinion</a>${(c.extraUrls || [])
+        <p class="case-src"><a href="${escapeHtml(c.sourceUrl)}" target="_blank" rel="noopener noreferrer">Primary source</a>${(c.extraUrls || [])
           .map((u, i) => ` · <a href="${escapeHtml(u)}" target="_blank" rel="noopener noreferrer">Related ${i + 1}</a>`)
           .join("")}
           <span class="section-checked">checked ${escapeHtml(formatDate(c.lastChecked))}</span></p>
@@ -1011,7 +1012,7 @@
 
     const watch =
       data.monitoringNote ||
-      "Watching for changes: curated data is refreshed when material updates are verified against official sources (weekday monitoring). This is not live web search.";
+      "Watching for changes: curated data is refreshed when material updates are verified against official sources (daily check). This is not live web search.";
 
     els.viewUpdates.innerHTML = `
       <h2 class="updates-heading">Updates</h2>
@@ -1144,9 +1145,9 @@
     } catch (err) {
       els.loadError.hidden = false;
       els.loadError.textContent =
-        "Could not load data/laws.json (" +
+        "Couldn't load the tracker data (" +
         (err && err.message ? err.message : "error") +
-        "). Serve this folder over HTTP (e.g. python3 -m http.server) — browsers block fetch() from file://.";
+        "). Check your connection and reload. If you opened this file directly, serve it over HTTP.";
       return;
     }
 
