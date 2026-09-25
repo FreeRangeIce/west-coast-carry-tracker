@@ -46,7 +46,7 @@
         "VERIFY: check current PC 26230 text and the Litigation tab before relying on any category list"
       ],
       "travelerTip": "Out-of-state permits are not valid for concealed carry in CA. Unloaded, secured interstate transport may have federal safe-passage protections — verify FOPA and CA rules.",
-      "possessionNotes": "California has extensive magazine, assault-weapon, roster and ammunition rules beyond CCW. This tracker summarizes them at a high level only; check the linked statutes and the Litigation tab for current court status.",
+      "possessionNotes": "California has extensive magazine, assault-weapon, roster and ammunition rules beyond CCW. OAG Information Bulletin 2026-DLE-16 (Sept 18, 2026) reminds dealers and LE that silencers, short-barreled rifles/shotguns, and firearms not immediately recognizable as firearms remain illegal under California Penal Code even after a limited ND Texas ruling on the federal NFA (Silencer Shop Foundation v. ATF). This tracker summarizes possession rules at a high level only; check the linked statutes and the Litigation tab for current court status.",
       "lastReviewed": "2026-09-25",
       "sources": [
         {
@@ -80,11 +80,15 @@
         {
           "title": "LASD CCW page (AB 1948 notice, fees)",
           "url": "https://lasd.org/ccw/"
+        },
+        {
+          "title": "OAG Information Bulletin 2026-DLE-16 (NFA items still banned under CA law; Sept 18, 2026)",
+          "url": "https://www.oag.ca.gov/system/files/media/2026-dle-16.pdf"
         }
       ],
       "renewalNote": "Effective Sept 1, 2026 (SB 2 / Pen. Code § 26185; OAG 2026-DLE-14): licensing authorities must submit fingerprint images and fees for each CCW renewal applicant and may not issue a renewal until DOJ confirms firearms eligibility. Renewal fees increased (e.g., Standard CCW $93). Licensing authorities must enroll in FBI Federal Rap Back by Dec 31, 2026. Verify with the issuing sheriff or police chief and current OAG bulletins.",
       "eligibility": "21+, resident of the county or city (or the non-resident path under AB 1078), not a 'disqualified person' (PC 26202) and not prohibited from possessing firearms, and completes the required training (PC 26150, 26165, 26185).",
-      "fees": "Varies by licensing authority: DOJ processing fee (Standard CCW $93) plus local application and issuance fees, and often a psych evaluation and training costs. Examples: LASD $43 + $173; Orange $93 Live Scan + $300; Santa Clara $488 + $488. See County notes.",
+      "fees": "Varies by licensing authority: DOJ processing fee (Standard CCW $93) plus local application and issuance fees, and often a psych evaluation and training costs. Examples: LASD $43 + $173; Orange $93 Live Scan + $300; Santa Clara $488 + $488. See County notes. San Jose PD posts a $1,591 initial CCW application fee (Res. 2026-183; challenged in United States v. San Jose, filed Sept 16, 2026 — see Litigation / County notes).",
       "training": "16 hours for an initial license and 8 hours for renewal, including live-fire qualification, from a course approved by the licensing authority (PC 26165).",
       "processingTime": "Varies widely by county (weeks to many months). San Diego reported about 8 months from application to issuance in April 2025. See County notes.",
       "validity": "Standard license up to 2 years today. AB 1948 (Stats. 2026, ch. 44, signed June 30, 2026) raises the maximum standard term to 3 years for licenses issued on or after Jan 1, 2027 (PC 26220); not retroactive.",
@@ -128,7 +132,7 @@
       "validity": "4 years (ORS 166.292(4)). An expired license stays valid up to 45 days after expiration if you applied to renew before it expired.",
       "openCarryNote": "Open carry without a CHL is generally lawful under state law but local restrictions (esp. loaded carry in some cities) can apply — check locality.",
       "reciprocityIn": "Oregon does not recognize concealed carry licenses from any other state. An Oregon CHL is required to carry concealed.",
-      "nonResidentNote": "Generally you must be a resident of the issuing county. A sheriff may waive residency for a resident of a contiguous state (CA, NV, WA, ID) with a compelling business interest or other legitimate need (ORS 166.291(8)); practice varies by county.",
+      "nonResidentNote": "Generally you must be a resident of the issuing county. A sheriff may waive residency for a resident of a contiguous state (CA, NV, WA, ID) with a compelling business interest or other legitimate need (ORS 166.291(8)); practice varies by county. Challenged in Ladd v. Hunter (D. Or. No. 6:26-cv-01883, filed Sept 11, 2026) — pending; current residency/non-recognition rules remain in effect unless enjoined.",
       "keyRestrictions": [
         "Public buildings and court facilities (ORS 166.370). CHL holders have an affirmative defense for most public buildings but not court facilities",
         "School grounds of boards/universities/community colleges, and city/county/district official-meeting buildings, where the governing body adopts an ORS 166.377 policy and posts signs (CHL defense removed; ORS 166.377, amended 2025 c 594)",
@@ -617,6 +621,48 @@
         "lastChecked": "2026-09-25"
       },
       {
+        "id": "us-v-san-jose",
+        "name": "United States v. City of San Jose / San Jose Police Department",
+        "court": "U.S. District Court, N.D. Cal.",
+        "docket": "No. 5:26-cv-10508",
+        "challenges": "San Jose's CCW application fee of $1,591 (Res. No. 2026-183; 20% / $318 up front, balance at issuance) and applicant-paid psychological testing as allegedly 'exorbitant fees' that deny ordinary citizens the right to public carry (Bruen n.9), brought under 34 U.S.C. § 12601.",
+        "status": "Complaint filed Sept 16, 2026 by the U.S. Department of Justice Civil Rights Division (Second Amendment Section). Seeks declaratory and permanent injunctive relief. No merits ruling yet. Fee remains in effect unless enjoined.",
+        "statusDate": "2026-09-16",
+        "outcome": "pending",
+        "impact": "If successful, could force San Jose (and potentially other high-fee CA licensing authorities) to lower CCW fees. For now it is a newly filed challenge only — San Jose residents still face the posted fee unless a court orders otherwise.",
+        "stateIds": [
+          "ca"
+        ],
+        "sourceUrl": "https://www.justice.gov/opa/pr/justice-department-sues-san-jose-unconstitutional-1600-firearm-permit-fee",
+        "extraUrls": [
+          "https://www.justice.gov/crt/media/1461516/dl",
+          "https://clearinghouse.net/case/48461/"
+        ],
+        "uncertain": false,
+        "lastChecked": "2026-09-25"
+      },
+      {
+        "id": "ladd-v-hunter",
+        "name": "Ladd v. Hunter (Gun Owners of America / Gun Owners Foundation)",
+        "court": "U.S. District Court, D. Or. (Eugene)",
+        "docket": "No. 6:26-cv-01883",
+        "challenges": "Oregon's county-residency rule for CHLs (ORS 166.291(1)(c)) and contiguous-state waiver limit (ORS 166.291(8)); Oregon's non-recognition of out-of-state permits; ORS 166.173 local authority to ban loaded open carry; and Salem Code § 95.095 loaded-firearm ban for people without a CHL — alleged to create a total public-carry ban for most nonresidents (e.g., Arizona residents).",
+        "status": "Complaint filed Sept 11, 2026. Newly filed; no merits ruling found as of this check.",
+        "statusDate": "2026-09-11",
+        "outcome": "pending",
+        "impact": "Directly affects travelers from AZ (and other non-contiguous states) who cannot get an Oregon CHL and whose home permits Oregon does not honor. Also challenges Salem (and by implication similar city) loaded-carry bans that close the open-carry alternative. Pending only — current Oregon rules remain in effect.",
+        "stateIds": [
+          "or",
+          "az"
+        ],
+        "sourceUrl": "https://foundation.gunowners.org/wp-content/uploads/Oregon-Complaint.pdf",
+        "extraUrls": [
+          "https://www.pacermonitor.com/public/case/66747861/Ladd_et_al_v_Hunter_et_al"
+        ],
+        "uncertain": false,
+        "lastChecked": "2026-09-25"
+      },
+      {
         "id": "duncan-v-bonta",
         "name": "Duncan v. Bonta",
         "court": "U.S. Supreme Court (cert. petition)",
@@ -781,7 +827,7 @@
     "states": [
       {
         "stateId": "ca",
-        "summary": "California CCWs are issued by the county sheriff or, for city residents, often the city police chief. Local fees, psych evaluations, gun limits and wait times vary widely. Statewide: since Sept 1, 2026, every renewal requires new fingerprints and DOJ eligibility confirmation (PC 26185; OAG 2026-DLE-14). AB 1948 extends new standard licenses to 3 years starting Jan 1, 2027.",
+        "summary": "California CCWs are issued by the county sheriff or, for city residents, often the city police chief. Local fees, psych evaluations, gun limits and wait times vary widely. Statewide: since Sept 1, 2026, every renewal requires new fingerprints and DOJ eligibility confirmation (PC 26185; OAG 2026-DLE-14). AB 1948 extends new standard licenses to 3 years starting Jan 1, 2027 San Jose PD's ~$1,591 CCW fee is challenged in United States v. San Jose (filed Sept 16, 2026).",
         "lastChecked": "2026-09-25",
         "counties": [
           {
@@ -850,7 +896,7 @@
             "agency": "Santa Clara County Sheriff",
             "fees": "Standard: $488 at application + $488 at issuance; renewal $395; modification/duplicate $15. Live Scan, psych evaluation and training are extra.",
             "processing": "Interviews held on Thursdays.",
-            "policies": "Training only at sheriff-approved facilities. Issues non-resident licenses. The portal notes the office may use AI tools to help review applications.",
+            "policies": "Training only at sheriff-approved facilities. Issues non-resident licenses. The portal notes the office may use AI tools to help review applications. San Jose city residents generally apply to SJPD (see San Jose city note), not the County Sheriff; SJPD's $1,591 fee is under federal challenge.",
             "sourceUrl": "https://scso.permitium.com/ccw/start",
             "verified": true
           },
@@ -862,6 +908,19 @@
             "policies": "Psych evaluation required for new applicants.",
             "sourceUrl": "https://alamedaca.permitium.com/ccw/start",
             "verified": true
+          },
+          {
+            "name": "San Jose (city)",
+            "agency": "San Jose Police Department (SJPD) — city residents apply to SJPD, not Santa Clara County Sheriff",
+            "fees": "Initial CCW application fee $1,591 per City Res. No. 2026-183 (about $318 / 20% up front; balance ~$1,273 at issuance), per DOJ complaint. Psych evaluation and training are additional applicant costs. Fee is the subject of United States v. San Jose (N.D. Cal. 5:26-cv-10508, filed Sept 16, 2026).",
+            "processing": "Not independently verified from SJPD site this check (fee page returned Access Denied to automated fetch).",
+            "policies": "SJPD is the licensing authority for City of San Jose residents under PC 26155. DOJ alleges the fee and applicant-paid psych testing are unconstitutional 'exorbitant fees.' No injunction found as of this check — treat the posted fee as still in effect.",
+            "sourceUrl": "https://www.justice.gov/opa/pr/justice-department-sues-san-jose-unconstitutional-1600-firearm-permit-fee",
+            "extraUrls": [
+              "https://www.justice.gov/crt/media/1461516/dl"
+            ],
+            "verified": true,
+            "uncertainNote": "Dollar split ($318 / $1,273) is from the DOJ complaint citing Res. 2026-183; confirm on SJPD Permit Fees before relying."
           }
         ]
       },
@@ -1998,6 +2057,10 @@
   "updates": [
     {
       "date": "2026-09-25",
+      "text": "Daily check: added two new tracked cases and a CA OAG bulletin. (1) United States v. City of San Jose / SJPD (N.D. Cal. 5:26-cv-10508, filed Sept 16, 2026) — DOJ challenges San Jose's $1,591 CCW application fee and applicant-paid psych testing as exorbitant under Bruen; fee remains in effect pending any injunction — see Litigation and County notes (San Jose city). Sources: https://www.justice.gov/opa/pr/justice-department-sues-san-jose-unconstitutional-1600-firearm-permit-fee and complaint https://www.justice.gov/crt/media/1461516/dl. (2) Ladd v. Hunter (D. Or. 6:26-cv-01883, filed Sept 11, 2026) — GOA/GOF challenge Oregon CHL residency limits, non-recognition of out-of-state permits, and Salem's loaded-carry ban as a total nonresident public-carry ban (AZ plaintiff); pending. Complaint: https://foundation.gunowners.org/wp-content/uploads/Oregon-Complaint.pdf. (3) OAG 2026-DLE-16 (Sept 18, 2026): silencers, SBRs/SBSs, and disguised firearms remain illegal under CA Penal Code despite a limited ND Texas NFA ruling — https://www.oag.ca.gov/system/files/media/2026-dle-16.pdf. Also re-verified: NV DPS 2026 recognition list still effective July 1, 2026; WA AG reciprocity list still July 10, 2026; Oregon Supreme Court still no Arnold v. Kotek opinion through the Sept 3, 2026 release; 9th Cir. Rhode and Baird en banc still pending (en banc status page last updated Aug 14, 2026); Duncan and Gator's cert petitions still pending with no post-Aug-2026 disposition; Viramontes/Grant still set for argument Dec 2, 2026."
+    },
+    {
+      "date": "2026-09-25",
       "text": "Expanded to five states. Added Washington (CPL, reciprocity per the WA AG list of July 10, 2026, HB 1163 permit to purchase effective May 1, 2027, assault-weapon and magazine sales bans) and Arizona (permitless carry at 21+, optional DPS permit, honors all states' permits, bar rules, June 2026 vetoes). New: a five-state reciprocity matrix (only AZ→CA/OR/NV/WA and NV→AZ are honored), a Litigation tab tracking 10 cases with verified status (Wolford decided June 25, 2026; Viramontes/Grant set for argument Dec 2, 2026; Duncan, Gator's, Rhode, Baird, May/Carralero, Arnold v. Kotek, Hartford pending), county CCW notes for 8 large California counties, and fees, training, magazine/assault-weapon and purchase rules for every state. California: AB 1948 (signed June 30, 2026) extends new standard CCWs to 3 years from Jan 1, 2027."
     },
     {
@@ -2026,6 +2089,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-25",
+      "text": "Daily check: added two new tracked cases and a CA OAG bulletin. (1) United States v. City of San Jose / SJPD (N.D. Cal. 5:26-cv-10508, filed Sept 16, 2026) — DOJ challenges San Jose's $1,591 CCW application fee and applicant-paid psych testing as exorbitant under Bruen; fee remains in effect pending any injunction — see Litigation and County notes (San Jose city). Sources: https://www.justice.gov/opa/pr/justice-department-sues-san-jose-unconstitutional-1600-firearm-permit-fee and complaint https://www.justice.gov/crt/media/1461516/dl. (2) Ladd v. Hunter (D. Or. 6:26-cv-01883, filed Sept 11, 2026) — GOA/GOF challenge Oregon CHL residency limits, non-recognition of out-of-state permits, and Salem's loaded-carry ban as a total nonresident public-carry ban (AZ plaintiff); pending. Complaint: https://foundation.gunowners.org/wp-content/uploads/Oregon-Complaint.pdf. (3) OAG 2026-DLE-16 (Sept 18, 2026): silencers, SBRs/SBSs, and disguised firearms remain illegal under CA Penal Code despite a limited ND Texas NFA ruling — https://www.oag.ca.gov/system/files/media/2026-dle-16.pdf. Also re-verified: NV DPS 2026 recognition list still effective July 1, 2026; WA AG reciprocity list still July 10, 2026; Oregon Supreme Court still no Arnold v. Kotek opinion through the Sept 3, 2026 release; 9th Cir. Rhode and Baird en banc still pending (en banc status page last updated Aug 14, 2026); Duncan and Gator's cert petitions still pending with no post-Aug-2026 disposition; Viramontes/Grant still set for argument Dec 2, 2026."
+    },
     {
       "date": "2026-09-25",
       "text": "Expanded to five states. Added Washington (CPL, reciprocity per the WA AG list of July 10, 2026, HB 1163 permit to purchase effective May 1, 2027, assault-weapon and magazine sales bans) and Arizona (permitless carry at 21+, optional DPS permit, honors all states' permits, bar rules, June 2026 vetoes). New: a five-state reciprocity matrix (only AZ→CA/OR/NV/WA and NV→AZ are honored), a Litigation tab tracking 10 cases with verified status (Wolford decided June 25, 2026; Viramontes/Grant set for argument Dec 2, 2026; Duncan, Gator's, Rhode, Baird, May/Carralero, Arnold v. Kotek, Hartford pending), county CCW notes for 8 large California counties, and fees, training, magazine/assault-weapon and purchase rules for every state. California: AB 1948 (signed June 30, 2026) extends new standard CCWs to 3 years from Jan 1, 2027."
