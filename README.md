@@ -13,7 +13,7 @@ Self-contained static reference for **high-level** firearm and concealed-carry f
 | `app.js` | Tabbed views (state tabs derived from `data.states`), Ask search, compare + reciprocity matrix, Litigation, Updates, SW register |
 | `data/laws.json` | All content (see **Data structure** below) — the file the daily check updates |
 | `manifest.webmanifest` | Web app manifest (Add to Home Screen) |
-| `sw.js` | Tiny service worker (shell cache; bump `CACHE` version on each release — currently `carry-tracker-v3`) |
+| `sw.js` | Tiny service worker (shell cache; bump `CACHE` version on each release — currently `carry-tracker-v5`) |
 | `icons/` | 192 / 512 / apple-touch icons |
 | `README.md` | This file + refresh checklist |
 
