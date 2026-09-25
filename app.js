@@ -1250,7 +1250,7 @@
       if (!res.ok) throw new Error("HTTP " + res.status);
       data = await res.json();
     } catch (err) {
-      // Error-path banner text. WORDING PENDING MICAH'S APPROVAL.
+      // Error-path banner text (wording approved by Micah, Sep 25, 2026).
       // The bold "NOT LEGAL ADVICE." label is already in index.html, so the whole banner reads:
       // "NOT LEGAL ADVICE. The tracker data didn't load, so no legal information is shown here. Verify rules with official statutes, agency guidance, and a licensed attorney before carrying or traveling."
       // The success path below still takes its banner text from data.disclaimer.
