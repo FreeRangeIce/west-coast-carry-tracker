@@ -4,7 +4,7 @@
   "disclaimer": "NOT LEGAL ADVICE. This tracker summarizes publicly available high-level information about firearm and concealed-carry rules in California, Oregon, Nevada, Washington, and Arizona for personal reference only. Laws change, court orders enjoin or restore rules, and local rules apply. Always verify with official statutes, attorney general / DPS / licensing-agency guidance, and a licensed attorney before carrying or traveling.",
   "monitoringNote": "Watching for changes: curated data for CA, OR, NV, WA and AZ, the reciprocity matrix, tracked court cases and county notes is refreshed when material updates are verified against official sources (daily check). This is not live web search.",
   "dailyCheck": {
-    "description": "Structure the daily automated check updates. Re-verify each section against its listed sources and bump that section's lastChecked (YYYY-MM-DD) even when nothing changed. Add an entry to updates[] only for material changes.",
+    "description": "Structure the daily automated check updates. Bump lastChecked (YYYY-MM-DD) only for items whose sources were opened and compared; otherwise leave it. Add an entry to updates[] only for material changes.",
     "sections": {
       "states[]": "One object per state (ca, or, nv, wa, az). Each has lastChecked, lastReviewed, sources[], recentLegislation[]. Nevada/Washington recognition lists: recognizedStates[] + recognizedStatesAsOf.",
       "reciprocityMatrix": "honors[rowState][permitState] = 'yes' | 'no'; cellNotes['row:col']; asOf per state; lastChecked.",
@@ -39,10 +39,10 @@
       "reciprocityOutNote": "Among the five states here, only Arizona honors a California CCW (21+). Nevada, Oregon and Washington do not. Verify before travel.",
       "nonResidentNote": "As of Jan 1, 2026, AB 1078 created a statutory path for non-residents to apply for a California CCW (not reciprocity — they must complete CA's application process). OAG Information Bulletin 2026-DLE-13 (Aug 7, 2026) supersedes 2026-DLE-03 and clarifies that non-resident applicants may fingerprint via California Live Scan or an FBI Form FD-258 taken by law enforcement in their home state. See also OAG bulletin 2026-DLE-14 for renewal fingerprinting rules effective Sept 1, 2026.",
       "keyRestrictions": [
-        "Schools and child-care facilities, and many government buildings",
         "Enforceable now (PC 26230; 9th Cir. Sept 6, 2024 ruling in Wolford/May/Carralero): schools and child care; government buildings, courthouses, police stations, jails; colleges and universities; airports; polling places; playgrounds and youth centers; parks, athletic facilities and most state parks/wildlife areas; bars/restaurants that serve alcohol; casinos; stadiums/arenas; libraries; amusement parks; zoos; museums; and parking areas of these places. Not a complete list.",
         "Still blocked by court order: hospitals, public transit, permitted public gatherings, places of worship, financial institutions",
         "Private-property 'default rule' (no carry on private property open to the public without signage/consent) is blocked, and the Supreme Court struck Hawaii's version in Wolford v. Lopez (June 25, 2026)",
+        "License conditions statewide (PC 26200): carry no more than 2 firearms at once, only guns listed on your license and recorded to you, and no drinking or being under the influence while carrying.",
         "VERIFY: check current PC 26230 text and the Litigation tab before relying on any category list"
       ],
       "travelerTip": "Out-of-state permits are not valid for concealed carry in CA. Unloaded, secured interstate transport may have federal safe-passage protections — verify FOPA and CA rules.",
@@ -87,7 +87,7 @@
         }
       ],
       "renewalNote": "Effective Sept 1, 2026 (SB 2 / Pen. Code § 26185; OAG 2026-DLE-14): licensing authorities must submit fingerprint images and fees for each CCW renewal applicant and may not issue a renewal until DOJ confirms firearms eligibility. Renewal fees increased (e.g., Standard CCW $93). Licensing authorities must enroll in FBI Federal Rap Back by Dec 31, 2026. Verify with the issuing sheriff or police chief and current OAG bulletins.",
-      "eligibility": "21+, resident of the county or city (or the non-resident path under AB 1078), not a 'disqualified person' (PC 26202) and not prohibited from possessing firearms, and completes the required training (PC 26150, 26165, 26185).",
+      "eligibility": "21+; resident of the county or city, or principal place of business in the county (sheriff only), or the non-resident path under AB 1078; not a disqualified person (PC 26202); DOJ confirms you may possess firearms (PC 26185); completed approved training (PC 26165); and the DOJ-recorded owner of each gun to be listed (PC 26150(a)(5)).",
       "fees": "Varies by licensing authority: DOJ processing fee (Standard CCW $93) plus local application and issuance fees, and often a psych evaluation and training costs. Examples: LASD $43 + $173; Orange $93 Live Scan + $300; Santa Clara $488 + $488. See County notes. San Jose PD posts a $1,591 initial CCW application fee (Res. 2026-183; challenged in United States v. San Jose, filed Sept 16, 2026 — see Litigation / County notes).",
       "training": "16 hours for an initial license and 8 hours for renewal, including live-fire qualification, from a course approved by the licensing authority (PC 26165).",
       "processingTime": "Varies widely by county (weeks to many months). San Diego reported about 8 months from application to issuance in April 2025. See County notes.",
@@ -232,7 +232,7 @@
         "Public buildings with a metal detector or a no-firearms sign at each public entrance, with limited exceptions (NRS 202.3673)",
         "Other statutory, federal and posted locations — verify NRS and local rules"
       ],
-      "travelerTip": "If your home-state permit is on the NV DPS recognition list, concealed carry may be allowed under that recognition — verify the current PDF list. CA and OR permits are not recognized.",
+      "travelerTip": "If your home-state permit is on the NV DPS recognition list, concealed carry may be allowed under that recognition — verify the current PDF list. California, Oregon and Washington permits are not recognized; Arizona permits are.",
       "possessionNotes": "High-level only: Concealed carry without a Nevada or recognized permit is a serious crime. Open carry rules differ — do not conflate.",
       "lastReviewed": "2026-09-25",
       "sources": [
@@ -305,11 +305,11 @@
         "Restricted-access areas of mental-health facilities (RCW 9.41.300)",
         "Areas of bars, taverns and restaurants that are off-limits to people under 21 (RCW 9.41.300)",
         "Secure (post-screening) areas of airports (RCW 9.41.300)",
-        "Schools and school facilities/buses — limited CPL exceptions such as picking up or dropping off a student (RCW 9.41.280)",
+        "Schools and school facilities/buses — limited exceptions for Washington CPL holders, such as picking up or dropping off a student (RCW 9.41.280)",
         "Licensed child-care centers (RCW 9.41.282)",
-        "Ballot-counting centers; CPL holders may carry concealed at voting centers and county elections offices but not counting centers (RCW 9.41.284)",
+        "Ballot-counting centers; Washington CPL holders may carry concealed at voting centers and county elections offices but not counting centers (RCW 9.41.284)",
         "Open carry banned at the capitol grounds, at local governing-body meetings (RCW 9.41.305) and at permitted public demonstrations (RCW 9.41.300)",
-        "Libraries, zoos/aquariums and transit stations: restricted under RCW 9.41.300, but CPL holders are exempt for those three categories"
+        "Libraries, zoos/aquariums and transit stations: restricted under RCW 9.41.300; Washington CPL holders (licensed under RCW 9.41.070) are exempt. The statute's exemptions do not mention out-of-state licenses honored under RCW 9.41.073."
       ],
       "travelerTip": "A CA, OR, NV, or AZ permit is NOT valid for concealed carry in Washington, and you need a license to have a loaded pistol in a vehicle. Nonresidents can apply for a WA CPL. Check the AG reciprocity page before a trip.",
       "magazineAwRules": "Assault weapons: manufacture, import, distribution, sale and offer for sale banned since Apr 25, 2023 (RCW 9.41.390). This is a sales ban, not a possession ban, and there is an inheritance exception. Large-capacity magazines (more than 10 rounds): manufacture, import, distribution and sale banned since July 1, 2022 (RCW 9.41.370); possession is not banned. The WA Supreme Court upheld the magazine law in May 2025 (Gator's Custom Guns), and a US Supreme Court petition is pending. See the Litigation tab.",
@@ -405,7 +405,7 @@
         },
         {
           "title": "WA State Patrol — Firearms Background Division",
-          "url": "https://www.wsp.wa.gov/firearms-background-division/"
+          "url": "https://wsp.wa.gov/firearms-background-division/"
         }
       ]
     },
@@ -428,7 +428,7 @@
       "reciprocityOutNote": "Per the AZ DPS reciprocity table (as of May 28, 2024), CA, OR, and WA (plus CT, HI, IL, MD, MA, MN, NJ, NY, RI, VT) do not recognize Arizona permits. Nevada recognizes AZ permits (also on NV's July 1, 2026 list). Most other states recognize AZ either by agreement (AK, AR, ID, OH, PA, SD, TX, WV) or unilaterally. Verify with the destination state.",
       "nonResidentNote": "Nonresidents who are US citizens may apply for an AZ permit through DPS (online portal). Visitors 21+ may carry concealed in Arizona without any permit, or under their home-state permit.",
       "keyRestrictions": [
-        "Public establishments or events after a request to store the weapon, where the operator posts a sign / offers storage (ARS 13-3102, 13-3102.01)",
+        "Government buildings and vehicles ('public establishments') and government-run or government-permitted public events, once the operator or sponsor reasonably asks you to check your weapon into the secure storage it must provide (ARS 13-3102(A)(10), 13-3102.01)",
         "Polling places on election day (ARS 13-3102)",
         "School grounds (K-12) — limited exception for an unloaded firearm left in a vehicle (ARS 13-3102)",
         "Nuclear and hydroelectric generating stations (ARS 13-3102)",
@@ -444,16 +444,16 @@
           "date": "2026-06-19",
           "title": "SB1012, SB1053, SB1068, SB1069 — vetoed",
           "status": "Vetoed by Gov. Hobbs (June 19, 2026)",
-          "summary": "SB1012 would have repealed the bar-sign (ARS 4-229) notice regime; SB1053 addressed CCW permit fees; SB1068 addressed concealed weapons and disruption of educational institutions; SB1069 would have repealed the suppressor (muffling device) prohibition. None became law.",
+          "summary": "SB1012 would have let AZ permit holders who don't drink carry concealed in liquor-licensed restaurants even if the restaurant posted the ARS 4-229 no-firearms sign (bars could still post), with liability protections for restaurants; SB1053 would have cut resident CCW permit fees to 10% of the nonresident fee; SB1068 addressed concealed weapons and disruption of educational institutions; SB1069 would have removed suppressors (muffling devices) from Arizona's prohibited-weapons list (federal NFA rules would still apply). None became law.",
           "url": "https://azgovernor.gov/office-arizona-governor/news/2026/06/governor-katie-hobbs-legislative-action-update-0"
         },
         {
-          "date": "2026-05-26",
-          "title": "Merchant-category-code bill for gun/ammo purchases — vetoed",
-          "status": "Vetoed (per KJZZ, May 26, 2026)",
-          "summary": "Would have restricted use of firearm-specific merchant category codes by card processors. Bill number not independently confirmed.",
-          "url": "https://www.kjzz.org/politics/2026-05-26/governor-vetoes-bill-to-restrict-merchant-codes-for-arizona-gun-ammo-purchases",
-          "uncertain": true
+          "date": "2026-05-22",
+          "title": "SB1058 (firearms transactions; merchant codes) — vetoed",
+          "status": "Vetoed by Gov. Hobbs (May 22, 2026)",
+          "summary": "Would have barred payment networks and processors from assigning or requiring a firearm-retailer-specific merchant category code, and barred government registries of privately owned firearms (with criminal-investigation exceptions). Not law.",
+          "url": "https://azgovernor.gov/office-arizona-governor/news/2026/05/governor-katie-hobbs-legislative-action-update",
+          "uncertain": false
         }
       ],
       "lastReviewed": "2026-09-25",
@@ -486,6 +486,10 @@
         {
           "title": "Governor Hobbs legislative action update (June 19, 2026 vetoes)",
           "url": "https://azgovernor.gov/office-arizona-governor/news/2026/06/governor-katie-hobbs-legislative-action-update-0"
+        },
+        {
+          "title": "Governor Hobbs legislative action update (May 22, 2026 vetoes, incl. SB1058)",
+          "url": "https://azgovernor.gov/office-arizona-governor/news/2026/05/governor-katie-hobbs-legislative-action-update"
         },
         {
           "title": "KJZZ: Governor vetoes merchant-code bill (May 26, 2026)",
@@ -606,8 +610,8 @@
         "court": "9th Circuit (Nos. 23-4356, 23-4354); now C.D. Cal. No. 8:23-cv-01696",
         "docket": "9th Cir. 23-4356 / 23-4354 (with Wolford 23-16164)",
         "challenges": "California SB 2's list of 'sensitive places' where CCW holders can't carry (PC 26230).",
-        "status": "The 9th Cir.'s Sept 6, 2024 opinion let these SB 2 bans take effect: bars/restaurants that serve alcohol, playgrounds, youth centers, parks, athletic areas and facilities, most state park and Fish & Wildlife property, casinos, stadiums/arenas, public libraries, amusement parks, zoos, museums, their parking areas, and parking at all other listed sensitive places. Still blocked: hospitals/medical facilities, public transit, permit-required gatherings, places of worship, banks/financial institutions, their parking, and the private-property default rule. Rehearing en banc denied Jan 15, 2025. Back in district court (consolidated); stay lifted July 15, 2026, new pretrial schedule pending.",
-        "statusDate": "2026-07-24",
+        "status": "The 9th Cir.'s Sept 6, 2024 opinion let these SB 2 bans take effect: bars/restaurants that serve alcohol, playgrounds, youth centers, parks, athletic areas and facilities, most state park and Fish & Wildlife property, casinos, stadiums/arenas, public libraries, amusement parks, zoos, museums, their parking areas, and parking at all other listed sensitive places. Still blocked: hospitals/medical facilities, public transit, permit-required gatherings, places of worship, banks/financial institutions, their parking, and the private-property default rule. Rehearing en banc denied Jan 15, 2025. Back in district court, consolidated as In re: Senate Bill 2 Litigation (C.D. Cal. 8:23-cv-01696). Stay lifted July 15, 2026. Pretrial schedule entered Sept 21, 2026 (final pretrial conference Aug 17, 2027).",
+        "statusDate": "2026-09-21",
         "outcome": "pending",
         "impact": "Final judgment would decide which SB 2 places are permanently enforceable. Wolford's reasoning is likely to be applied to the remaining categories.",
         "stateIds": [
@@ -629,7 +633,7 @@
         "status": "Complaint filed Sept 16, 2026 by the U.S. Department of Justice Civil Rights Division (Second Amendment Section). Seeks declaratory and permanent injunctive relief. No merits ruling yet. Fee remains in effect unless enjoined.",
         "statusDate": "2026-09-16",
         "outcome": "pending",
-        "impact": "If successful, could force San Jose (and potentially other high-fee CA licensing authorities) to lower CCW fees. For now it is a newly filed challenge only — San Jose residents still face the posted fee unless a court orders otherwise.",
+        "impact": "If successful, could force San Jose (and potentially other high-fee CA licensing authorities) to lower CCW fees. For now it is a newly filed challenge only — SJPD's fee stays in effect unless a court orders otherwise. (San Jose residents may also be able to apply to the Santa Clara County Sheriff. See County notes.)",
         "stateIds": [
           "ca"
         ],
@@ -833,7 +837,7 @@
           {
             "name": "Los Angeles",
             "agency": "LA County Sheriff (LASD)",
-            "fees": "Standard: $43 at submission + $173 at issuance (effective Sept 1, 2026). Non-resident: $136 ($93 DOJ + $43) + $173. Renewal: $17 + $17. Modification: $10.",
+            "fees": "Standard: $43 at submission + $173 at issuance (effective Sept 1, 2026). Non-resident: $136 ($93 DOJ + $43) + $173. Renewal: $17 at submission + $17 at issuance (LASD fees), plus the DOJ Live Scan fingerprint fee now required for renewals ($93 standard since Sept 1, 2026). Modification: $10.",
             "processing": "LASD publishes monthly stats (e.g., July 2026: 855 applications received, 627 licenses issued).",
             "policies": "LASD serves unincorporated areas and contract cities; residents of cities with their own police (e.g., LAPD) apply there. 16-hour initial / 8-hour renewal training from an LASD-approved provider, taken only after LASD tells you to. Up to 3 guns; AR-style pistols not allowed. From Oct 1, 2026, Live Scan or training done before applying won't be accepted. Non-resident applications accepted.",
             "sourceUrl": "https://lasd.org/ccw/",
@@ -855,18 +859,19 @@
           {
             "name": "Orange",
             "agency": "Orange County Sheriff (OCSD)",
-            "fees": "Initial (standard, 2-year): $93 DOJ Live Scan + $300 local fee at issuance (effective July 1, 2025). Renewal: $52 DOJ + $111 local = $163. Amendment: $32.",
+            "fees": "Initial (standard, 2-year): $93 DOJ Live Scan + $300 local fee at issuance (effective July 1, 2025). Renewal: OCSD posts $52 DOJ + $111 local = $163, but the DOJ standard renewal fee rose to $93 on Sept 1, 2026 (DLE-14). Expect about $204. Confirm with OCSD. Amendment: $32.",
             "processing": "Not published on the fee page.",
             "policies": "See OCSD CCW Licensing pages for training and appointment rules.",
             "sourceUrl": "https://www.ocsheriff.gov/commands-divisions/professional-services-command/professional-standards/ccw-licensing/fee-schedule",
-            "verified": true
+            "verified": true,
+            "uncertainNote": "OCSD's fee page still posts the $52 DOJ renewal fee; DOJ's standard renewal fee rose to $93 on Sept 1, 2026 (DLE-14). Whether OCSD now collects $93 is not confirmed."
           },
           {
             "name": "Sacramento",
             "agency": "Sacramento County Sheriff",
             "fees": "Effective July 1, 2026: $291 at application + $290 at issuance; renewal $267; modification $134; duplicate $45. DOJ fingerprinting ($93–$137) is extra.",
             "processing": "The CCW Committee's decision can take up to about 2 months after your interview.",
-            "policies": "Max 3 guns on a license, and only 2 may be carried at once. Calibers such as 5.56/.223, 7.62/.308, 7.62x39, 5.7x28 and .30 Carbine, plus AR/AK pistols, are not allowed. Renewals accepted only within 45 days of expiration.",
+            "policies": "Max 3 guns on a Sacramento license (state law allows carrying only 2 at once, PC 26200(d)). Calibers such as 5.56/.223, 7.62/.308, 7.62x39, 5.7x28 and .30 Carbine, plus AR/AK pistols, are not allowed. Renewals accepted only within 45 days of expiration.",
             "sourceUrl": "https://www.sacsheriff.com/pages/ccw_gun_permit.php",
             "extraUrls": [
               "https://sacramentoca.permitium.com/ccw/start"
@@ -887,7 +892,7 @@
             "agency": "San Bernardino County Sheriff",
             "fees": "Standard 2-year: $188 initial + $95 at issuance = $283 (training extra); renewal $205. Non-resident 2-year: $172 + $79 = $251; renewal $173. Duplicate/modification $16.",
             "processing": "Not published on the portal.",
-            "policies": "90-day grace period noted for renewals.",
+            "policies": "Renewals may be submitted no earlier than 90 days before expiration. After expiration you have at most 90 days to complete the renewal, or you must reapply as a new applicant. An expired permit is not valid for carry.",
             "sourceUrl": "https://sbcsd.permitium.com/ccw/start",
             "verified": true
           },
@@ -896,7 +901,7 @@
             "agency": "Santa Clara County Sheriff",
             "fees": "Standard: $488 at application + $488 at issuance; renewal $395; modification/duplicate $15. Live Scan, psych evaluation and training are extra.",
             "processing": "Interviews held on Thursdays.",
-            "policies": "Training only at sheriff-approved facilities. Issues non-resident licenses. The portal notes the office may use AI tools to help review applications. San Jose city residents generally apply to SJPD (see San Jose city note), not the County Sheriff; SJPD's $1,591 fee is under federal challenge.",
+            "policies": "Training only at sheriff-approved facilities. Issues non-resident licenses. The portal notes the office may use AI tools to help review applications. San Jose city residents generally apply to SJPD (see San Jose city note); SJPD's $1,591 fee is under federal challenge. San Jose residents may also apply to the Santa Clara County Sheriff, which accepts residents of the county or any city in it (PC 26150; SCSO Policy 207). Confirm with SCSO.",
             "sourceUrl": "https://scso.permitium.com/ccw/start",
             "verified": true
           },
@@ -911,10 +916,10 @@
           },
           {
             "name": "San Jose (city)",
-            "agency": "San Jose Police Department (SJPD) — city residents apply to SJPD, not Santa Clara County Sheriff",
+            "agency": "San Jose Police Department (SJPD), licensing authority for San Jose residents (PC 26155)",
             "fees": "Initial CCW application fee $1,591 per City Res. No. 2026-183 (about $318 / 20% up front; balance ~$1,273 at issuance), per DOJ complaint. Psych evaluation and training are additional applicant costs. Fee is the subject of United States v. San Jose (N.D. Cal. 5:26-cv-10508, filed Sept 16, 2026).",
             "processing": "Not independently verified from SJPD site this check (fee page returned Access Denied to automated fetch).",
-            "policies": "SJPD is the licensing authority for City of San Jose residents under PC 26155. DOJ alleges the fee and applicant-paid psych testing are unconstitutional 'exorbitant fees.' No injunction found as of this check — treat the posted fee as still in effect.",
+            "policies": "SJPD is the licensing authority for City of San Jose residents under PC 26155. DOJ alleges the fee and applicant-paid psych testing are unconstitutional 'exorbitant fees.' No injunction found as of this check — treat the posted fee as still in effect. San Jose residents may also apply to the Santa Clara County Sheriff, which accepts residents of the county or any city in it (PC 26150; SCSO Policy 207). Confirm with SCSO.",
             "sourceUrl": "https://www.justice.gov/opa/pr/justice-department-sues-san-jose-unconstitutional-1600-firearm-permit-fee",
             "extraUrls": [
               "https://www.justice.gov/crt/media/1461516/dl"
@@ -1363,7 +1368,7 @@
     {
       "id": "qa-or-nonresident",
       "question": "Can non-residents apply for an Oregon CHL?",
-      "answer": "Residents of contiguous states may be able to apply for an Oregon CHL (county practice varies). Oregon residents generally apply in their county of residence. This is not the same as recognizing an out-of-state permit. Verify with the county sheriff.",
+      "answer": "Generally no. You must live in the issuing county (ORS 166.291(1)(c)). A sheriff may waive that for a resident of a contiguous state (CA, ID, NV, WA) with a compelling business interest or other legitimate demonstrated need (ORS 166.291(8)); it's discretionary and county practice varies. Residents of other states can't get an Oregon CHL, and Oregon honors no out-of-state permits. (These rules are challenged in Ladd v. Hunter but remain in effect.) Ask the county sheriff.",
       "stateIds": [
         "or"
       ],
@@ -1374,8 +1379,7 @@
         "apply"
       ],
       "sourceUrls": [
-        "https://www.oregonlegislature.gov/bills_laws/ors/ors166.html",
-        "https://www.yamhillcounty.gov/706/Concealed-Handgun-Licenses"
+        "https://www.oregonlegislature.gov/bills_laws/ors/ors166.html"
       ]
     },
     {
@@ -1576,7 +1580,7 @@
     {
       "id": "qa-traveler-nv",
       "question": "I'm traveling to Nevada — when can I carry concealed on my home permit?",
-      "answer": "If your home-state permit is on the current NV DPS RCCD recognition list, concealed carry may be allowed under that recognition — verify the current PDF. California and Oregon permits are not recognized. Concealed carry without a Nevada or recognized permit is a serious crime.",
+      "answer": "If your home-state permit is on the current NV DPS RCCD recognition list, concealed carry may be allowed under that recognition — verify the current PDF. California, Oregon and Washington permits are not recognized; Arizona permits are (on the July 1, 2026 list). Concealed carry without a Nevada or recognized permit is a serious crime.",
       "stateIds": [
         "nv"
       ],
@@ -1661,7 +1665,7 @@
         "scope"
       ],
       "sourceUrls": [
-        "https://oag.ca.gov/firearms/pubfaqs",
+        "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=32310",
         "https://app.leg.wa.gov/RCW/default.aspx?cite=9.41.370",
         "https://app.leg.wa.gov/RCW/default.aspx?cite=9.41.390"
       ]
@@ -1769,7 +1773,7 @@
     {
       "id": "qa-wa-places",
       "question": "Where can't I carry in Washington even with a CPL?",
-      "answer": "High-level: restricted areas of jails and courts, restricted areas of mental-health facilities, areas of bars and restaurants closed to under-21s, and airport secure areas (RCW 9.41.300). Also schools (RCW 9.41.280, with a CPL exception for picking up or dropping off a student), licensed child-care centers (RCW 9.41.282) and ballot-counting centers (RCW 9.41.284). Open carry is banned at the capitol grounds and local government meetings (RCW 9.41.305) and at permitted demonstrations. CPL holders are exempt from the library, zoo/aquarium and transit-station restrictions.",
+      "answer": "High-level: restricted areas of jails and courts, restricted areas of mental-health facilities, areas of bars and restaurants closed to under-21s, and airport secure areas (RCW 9.41.300). Also schools (RCW 9.41.280, with an exception for Washington CPL holders picking up or dropping off a student), licensed child-care centers (RCW 9.41.282) and ballot-counting centers (RCW 9.41.284). Open carry is banned at the capitol grounds and local government meetings (RCW 9.41.305) and at permitted demonstrations. Washington CPL holders are exempt from the library, zoo/aquarium and transit-station restrictions.",
       "stateIds": [
         "wa"
       ],
@@ -1852,7 +1856,7 @@
     {
       "id": "qa-az-bars",
       "question": "Can I carry in an Arizona bar or restaurant that serves alcohol?",
-      "answer": "Only with an Arizona permit (ARS 13-3112), and only if the venue isn't posted with the no-weapons sign under ARS 4-229. You also can't drink while carrying. Permitless carriers and people relying on out-of-state permits may not carry there (ARS 4-244). A 2026 bill to repeal the sign regime (SB1012) was vetoed June 19, 2026.",
+      "answer": "Only with an Arizona permit (ARS 13-3112), and only if the venue isn't posted with the no-weapons sign under ARS 4-229. You also can't drink while carrying. Permitless carriers and people relying on out-of-state permits may not carry there (ARS 4-244). A 2026 bill (SB1012) that would have let AZ permit holders carry in liquor-licensed restaurants even where posted was vetoed June 19, 2026, so the sign rule still applies everywhere.",
       "stateIds": [
         "az"
       ],
@@ -1865,7 +1869,8 @@
       ],
       "sourceUrls": [
         "https://www.azleg.gov/ars/4/00229.htm",
-        "https://www.azleg.gov/ars/4/00244.htm"
+        "https://www.azleg.gov/ars/4/00244.htm",
+        "https://azgovernor.gov/office-arizona-governor/news/2026/06/governor-katie-hobbs-legislative-action-update-0"
       ]
     },
     {
@@ -1916,11 +1921,12 @@
     {
       "id": "qa-litigation-overview",
       "question": "What major court cases could change carry or gun laws in these states?",
-      "answer": "Key tracked cases (Sept 25, 2026). Decided: Wolford v. Lopez (June 25, 2026), which struck Hawaii's private-property default rule and confirms CA's version is unenforceable. Pending at the Supreme Court: Duncan v. Bonta (CA magazine ban) and Gator's Custom Guns v. Washington (WA magazine sales ban). Granted and set for argument Dec 2, 2026: Viramontes/Grant (assault-weapon bans). Pending before the 9th Circuit en banc: Rhode v. Bonta (CA ammo checks) and Baird v. Bonta (CA open carry). Also pending: May/Carralero (CA SB 2 places; district court), Arnold v. Kotek (OR Measure 114; Oregon Supreme Court) and Hartford v. Brown (WA assault weapons; stayed). See the Litigation tab.",
+      "answer": "Key tracked cases (Sept 25, 2026). Decided: Wolford v. Lopez (June 25, 2026), which struck Hawaii's private-property default rule and confirms CA's version is unenforceable. Pending at the Supreme Court: Duncan v. Bonta (CA magazine ban) and Gator's Custom Guns v. Washington (WA magazine sales ban). Granted and set for argument Dec 2, 2026: Viramontes/Grant (assault-weapon bans). Pending before the 9th Circuit en banc: Rhode v. Bonta (CA ammo checks) and Baird v. Bonta (CA open carry). Also pending: May/Carralero (CA SB 2 places; district court), Arnold v. Kotek (OR Measure 114; Oregon Supreme Court) and Hartford v. Brown (WA assault weapons; stayed). See the Litigation tab. Newly filed (no rulings yet): United States v. City of San Jose (N.D. Cal., filed Sept 16, 2026; DOJ challenge to SJPD's $1,591 CCW fee) and Ladd v. Hunter (D. Or., filed Sept 11, 2026; challenges Oregon's refusal to license or recognize most non-residents, and Salem's loaded-carry ban).",
       "stateIds": [
         "ca",
         "or",
-        "wa"
+        "wa",
+        "az"
       ],
       "tags": [
         "litigation",
