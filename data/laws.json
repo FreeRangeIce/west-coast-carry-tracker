@@ -40,7 +40,7 @@
       "nonResidentNote": "As of Jan 1, 2026, AB 1078 created a statutory path for non-residents to apply for a California CCW (not reciprocity — they must complete CA's application process). OAG Information Bulletin 2026-DLE-13 (Aug 7, 2026) supersedes 2026-DLE-03 and clarifies that non-resident applicants may fingerprint via California Live Scan or an FBI Form FD-258 taken by law enforcement in their home state. See also OAG bulletin 2026-DLE-14 for renewal fingerprinting rules effective Sept 1, 2026.",
       "keyRestrictions": [
         "Schools and child-care facilities, and many government buildings",
-        "SB 2 sensitive places currently enforceable after May/Carralero v. Bonta (9th Cir. Sept 6, 2024): parks, bars/restaurants that serve alcohol, libraries, casinos, stadiums/arenas, amusement parks, zoos, museums and related parking (PC 26230)",
+        "Enforceable now (PC 26230; 9th Cir. Sept 6, 2024 ruling in Wolford/May/Carralero): schools and child care; government buildings, courthouses, police stations, jails; colleges and universities; airports; polling places; playgrounds and youth centers; parks, athletic facilities and most state parks/wildlife areas; bars/restaurants that serve alcohol; casinos; stadiums/arenas; libraries; amusement parks; zoos; museums; and parking areas of these places. Not a complete list.",
         "Still blocked by court order: hospitals, public transit, permitted public gatherings, places of worship, financial institutions",
         "Private-property 'default rule' (no carry on private property open to the public without signage/consent) is blocked, and the Supreme Court struck Hawaii's version in Wolford v. Lopez (June 25, 2026)",
         "VERIFY: check current PC 26230 text and the Litigation tab before relying on any category list"
@@ -92,7 +92,7 @@
       "training": "16 hours for an initial license and 8 hours for renewal, including live-fire qualification, from a course approved by the licensing authority (PC 26165).",
       "processingTime": "Varies widely by county (weeks to many months). San Diego reported about 8 months from application to issuance in April 2025. See County notes.",
       "validity": "Standard license up to 2 years today. AB 1948 (Stats. 2026, ch. 44, signed June 30, 2026) raises the maximum standard term to 3 years for licenses issued on or after Jan 1, 2027 (PC 26220); not retroactive.",
-      "openCarryNote": "Loaded open carry in public is generally illegal (PC 25850, 26350). Sheriffs and police chiefs in counties under 200,000 people may issue open-carry licenses valid only in that county. The ban on open carry in larger counties is under challenge in Baird v. Bonta (9th Cir. en banc, pending) and remains in effect.",
+      "openCarryNote": "Open carry in public is generally illegal: carrying a loaded firearm in a public place or street in an incorporated city or a prohibited unincorporated area is a crime (PC 25850), and so is openly carrying an unloaded handgun (PC 26350) or carrying an unloaded long gun (PC 26400) in those areas. Sheriffs and police chiefs in counties under 200,000 people may issue open-carry licenses valid only in that county. The ban on open carry in larger counties is under challenge in Baird v. Bonta (9th Cir. en banc, pending) and remains in effect.",
       "magazineAwRules": "Magazines over 10 rounds: manufacture, import, sale and possession banned (PC 32310). The 9th Circuit en banc upheld the ban in Duncan v. Bonta (Mar 20, 2025); a US Supreme Court petition is pending. Assault weapons: listed and feature-defined assault weapons are banned unless previously registered (PC 30600 et seq.), challenged in Miller v. Bonta (9th Cir.). Dealer handgun sales are limited to the DOJ Handgun Roster.",
       "purchaseRules": "No permit to purchase, but buyers need a Firearm Safety Certificate (PC 31615) and there is a 10-day waiting period (PC 26815). Ammunition purchases require a point-of-sale DOJ background check. That requirement is under en banc review in Rhode v. Bonta and remains in effect.",
       "recentLegislation": [
@@ -129,17 +129,17 @@
       "constitutionalCarry": false,
       "issuer": "County sheriff",
       "minAge": "21+ (ORS 166.291)",
-      "validity": "4 years (ORS 166.292(4)). An expired license stays valid up to 45 days after expiration if you applied to renew before it expired.",
-      "openCarryNote": "Open carry without a CHL is generally lawful under state law but local restrictions (esp. loaded carry in some cities) can apply — check locality.",
+      "validity": "4 years (ORS 166.292(4)). If you apply to renew before your license expires, an expired license stays valid for up to 45 days after the date you applied to renew, as long as you carry proof of the renewal application and it hasn't been denied (ORS 166.295(1)(b)).",
+      "openCarryNote": "Open carry without a CHL is generally lawful under state law but local restrictions (esp. loaded carry in some cities) can apply — check locality. Without an Oregon CHL, you may not carry a handgun concealed on your person or keep one concealed and readily accessible in a vehicle (anywhere in the passenger compartment; ORS 166.250(1)(b), (4)).",
       "reciprocityIn": "Oregon does not recognize concealed carry licenses from any other state. An Oregon CHL is required to carry concealed.",
       "nonResidentNote": "Generally you must be a resident of the issuing county. A sheriff may waive residency for a resident of a contiguous state (CA, NV, WA, ID) with a compelling business interest or other legitimate need (ORS 166.291(8)); practice varies by county. Challenged in Ladd v. Hunter (D. Or. No. 6:26-cv-01883, filed Sept 11, 2026) — pending; current residency/non-recognition rules remain in effect unless enjoined.",
       "keyRestrictions": [
-        "Public buildings and court facilities (ORS 166.370). CHL holders have an affirmative defense for most public buildings but not court facilities",
+        "Public buildings (ORS 166.360, 166.370): CHL holders have an affirmative defense in most public buildings, but not in court facilities, the State Capitol, or the passenger terminal of an airport with over 1 million boardings a year (e.g., PDX), including non-secure areas (ORS 166.370(1)(b), 166.262). A firearm may be carried unloaded in a locked hard-sided case for checking as baggage (ORS 166.370(3)(k)).",
         "School grounds of boards/universities/community colleges, and city/county/district official-meeting buildings, where the governing body adopts an ORS 166.377 policy and posts signs (CHL defense removed; ORS 166.377, amended 2025 c 594)",
-        "Federal facilities and airport secure areas (federal law)",
+        "Federal facilities and airport secure areas (federal law); see above for Oregon's ban in large-airport terminals",
         "Local loaded-carry restrictions for people without a CHL (e.g., some cities) — check locally"
       ],
-      "travelerTip": "Out-of-state permits are not recognized for concealed carry in Oregon. Obtain an Oregon CHL if you need to carry concealed.",
+      "travelerTip": "Out-of-state permits are not recognized in Oregon. Without an Oregon CHL, you may not carry a handgun concealed on your person or keep one concealed and readily accessible in a vehicle (anywhere in the passenger compartment; ORS 166.250(1)(b), (4)). Some cities also ban loaded carry in public for people without a CHL (ORS 166.173). Check the rules for storing a handgun in a vehicle before you drive in.",
       "measure114Note": "Measure 114 (permit-to-purchase / related rules) remains in litigation and is not currently in effect. Oregon HB 4145 (2026 Laws, ch. 120; signed Apr 7, 2026) delayed the Measure 114 operative date to January 1, 2028, and stated legislative intent not to moot pending Oregon Supreme Court challenges. Track separately from CHL — do not conflate with CHL.",
       "possessionNotes": "High-level only: CHL framework is separate from Measure 114 permit-to-purchase litigation. Verify both tracks independently.",
       "lastReviewed": "2026-09-25",
@@ -606,7 +606,7 @@
         "court": "9th Circuit (Nos. 23-4356, 23-4354); now C.D. Cal. No. 8:23-cv-01696",
         "docket": "9th Cir. 23-4356 / 23-4354 (with Wolford 23-16164)",
         "challenges": "California SB 2's list of 'sensitive places' where CCW holders can't carry (PC 26230).",
-        "status": "9th Cir. opinion Sept 6, 2024 let the bans on parks, bars/restaurants that serve alcohol, libraries, casinos, stadiums/arenas, amusement parks, zoos, museums and related parking take effect. Bans on hospitals, public transit, permitted public gatherings, places of worship and banks, plus the private-property default rule, stayed blocked. Rehearing en banc denied Jan 15, 2025. Back in district court (consolidated); stay lifted July 15, 2026, new pretrial schedule pending.",
+        "status": "The 9th Cir.'s Sept 6, 2024 opinion let these SB 2 bans take effect: bars/restaurants that serve alcohol, playgrounds, youth centers, parks, athletic areas and facilities, most state park and Fish & Wildlife property, casinos, stadiums/arenas, public libraries, amusement parks, zoos, museums, their parking areas, and parking at all other listed sensitive places. Still blocked: hospitals/medical facilities, public transit, permit-required gatherings, places of worship, banks/financial institutions, their parking, and the private-property default rule. Rehearing en banc denied Jan 15, 2025. Back in district court (consolidated); stay lifted July 15, 2026, new pretrial schedule pending.",
         "statusDate": "2026-07-24",
         "outcome": "pending",
         "impact": "Final judgment would decide which SB 2 places are permanently enforceable. Wolford's reasoning is likely to be applied to the remaining categories.",
@@ -1471,7 +1471,7 @@
     {
       "id": "qa-or-open-carry",
       "question": "Is open carry lawful in Oregon without a CHL?",
-      "answer": "Open carry without a CHL is generally lawful under state law, but local restrictions (especially loaded carry in some cities) can apply. Concealed carry still requires an Oregon CHL. Check locality and ORS.",
+      "answer": "Open carry without a CHL is generally lawful under state law, but local restrictions (especially loaded carry in some cities) can apply. Concealed carry still requires an Oregon CHL. Without an Oregon CHL, you may not carry a handgun concealed on your person or keep one concealed and readily accessible in a vehicle (anywhere in the passenger compartment; ORS 166.250(1)(b), (4)). Check locality and ORS.",
       "stateIds": [
         "or"
       ],
@@ -1488,7 +1488,7 @@
     {
       "id": "qa-ca-sensitive-places",
       "question": "Where can't I carry in California (sensitive places)?",
-      "answer": "High-level only: schools, child-care facilities and many government buildings. Under SB 2 (PC 26230), after May/Carralero v. Bonta (9th Cir. Sept 6, 2024), bans in parks, bars/restaurants that serve alcohol, libraries, casinos, stadiums/arenas, amusement parks, zoos, museums and related parking are enforceable. Bans in hospitals, public transit, permitted public gatherings, places of worship and banks remain blocked. The private-property default rule is blocked, and the Supreme Court struck Hawaii's version in Wolford v. Lopez (June 25, 2026). The case is back in district court. Verify current PC 26230 text and the Litigation tab.",
+      "answer": "High-level only. Enforceable now (PC 26230; 9th Cir. Sept 6, 2024 ruling in Wolford/May/Carralero): schools and child care; government buildings, courthouses, police stations, jails; colleges and universities; airports; polling places; playgrounds and youth centers; parks, athletic facilities and most state parks/wildlife areas; bars/restaurants that serve alcohol; casinos; stadiums/arenas; libraries; amusement parks; zoos; museums; and parking areas of these places. Not a complete list. Bans in hospitals, public transit, permitted public gatherings, places of worship and banks remain blocked. The private-property default rule is blocked, and the Supreme Court struck Hawaii's version in Wolford v. Lopez (June 25, 2026). May/Carralero is back in district court (C.D. Cal.). Verify current PC 26230 text and the Litigation tab.",
       "stateIds": [
         "ca"
       ],
@@ -1560,7 +1560,7 @@
     {
       "id": "qa-traveler-or",
       "question": "I'm traveling through Oregon — is my home-state permit enough for concealed carry?",
-      "answer": "No. Out-of-state permits are not recognized for concealed carry in Oregon. Obtain an Oregon CHL if you need to carry concealed. Verify with ORS and the county sheriff.",
+      "answer": "No. Out-of-state permits are not recognized for concealed carry in Oregon. Obtain an Oregon CHL if you need to carry concealed. Without an Oregon CHL, you may not carry a handgun concealed on your person or keep one concealed and readily accessible in a vehicle (anywhere in the passenger compartment; ORS 166.250(1)(b), (4)). Verify with ORS and the county sheriff.",
       "stateIds": [
         "or"
       ],
