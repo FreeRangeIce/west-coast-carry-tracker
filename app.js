@@ -29,6 +29,8 @@
     viewUpdates: document.getElementById("view-updates"),
     viewLitigation: document.getElementById("view-litigation"),
     loadError: document.getElementById("load-error"),
+    main: document.getElementById("main"),
+    tabBar: document.querySelector(".tabs"),
     tabs: Array.from(document.querySelectorAll(".tab")),
   };
 
@@ -1021,7 +1023,9 @@
     `;
   }
 
-  function showView(view) {
+  // opts.fromUser: tab click, arrow key or in-page hash change (not the initial load).
+  function showView(view, opts) {
+    const fromUser = !!(opts && opts.fromUser);
     // Alias old changelog hash → updates
     if (view === "changelog") view = "updates";
     currentView = view;
@@ -1054,8 +1058,10 @@
       renderLitigation();
     }
 
-    // After rendering: revealing the tab forces a layout, and doing that while the
-    // newly shown view is still empty would clamp (jump) the page scroll.
+    // After rendering (a layout while the new view is still empty would clamp the
+    // page scroll): if the tab bar is pinned, bring the new view's heading up under
+    // it; then keep the active tab visible in the phone strip.
+    if (fromUser) jumpToViewTop();
     revealTab(activeTab);
 
     if (history.replaceState) {
@@ -1063,6 +1069,23 @@
     } else {
       location.hash = view;
     }
+  }
+
+  // When the page is scrolled past the tab bar's natural position (bar pinned),
+  // jump instantly so the new view starts just under the bar. The target is the
+  // bar's natural top, measured live (bar height varies: 52 / 60 / ~115px when the
+  // tabs wrap), so the bar stays pinned and the header/disclaimer are not
+  // re-shown. If the bar is not pinned yet, the page does not move.
+  function jumpToViewTop() {
+    if (!els.main || !els.tabBar) return;
+    const barHeight = els.tabBar.getBoundingClientRect().height;
+    const barNaturalTop = els.main.getBoundingClientRect().top + window.scrollY - barHeight;
+    if (window.scrollY <= barNaturalTop + 0.5) return;
+    const root = document.documentElement;
+    const previous = root.style.scrollBehavior;
+    root.style.scrollBehavior = "auto"; // instant, even where smooth scrolling is on
+    window.scrollTo(0, Math.max(0, Math.round(barNaturalTop)));
+    root.style.scrollBehavior = previous;
   }
 
   // Keep the active tab on-screen in the horizontally scrolling phone strip.
@@ -1078,7 +1101,7 @@
 
   function bindTabs() {
     els.tabs.forEach((tab) => {
-      tab.addEventListener("click", () => showView(tab.dataset.view));
+      tab.addEventListener("click", () => showView(tab.dataset.view, { fromUser: true }));
     });
 
     document.querySelector(".tabs").addEventListener("keydown", (e) => {
@@ -1088,12 +1111,12 @@
         e.preventDefault();
         const next = order[(idx + 1) % order.length];
         next.focus();
-        showView(next.dataset.view);
+        showView(next.dataset.view, { fromUser: true });
       } else if (e.key === "ArrowLeft") {
         e.preventDefault();
         const prev = order[(idx - 1 + order.length) % order.length];
         prev.focus();
-        showView(prev.dataset.view);
+        showView(prev.dataset.view, { fromUser: true });
       }
     });
   }
@@ -1143,7 +1166,7 @@
     window.addEventListener("hashchange", () => {
       const h = (location.hash || "").replace(/^#/, "");
       const v = h === "changelog" ? "updates" : h;
-      if (valid.indexOf(v) !== -1 && v !== currentView) showView(v);
+      if (valid.indexOf(v) !== -1 && v !== currentView) showView(v, { fromUser: true });
     });
   }
 
