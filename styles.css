@@ -189,6 +189,19 @@ body {
   color: var(--text);
 }
 
+/* Age line: shown only once the review is older than the stale threshold.
+   Amber (--warn) only; the words carry the warning, not the color. */
+.stamp-age {
+  max-width: 16rem;
+  font-size: var(--fs-xs);
+  line-height: 1.35;
+  text-align: right;
+  text-wrap: balance;
+  color: var(--warn);
+}
+.reviewed-stamp.is-stale { border-color: var(--warn); }
+.reviewed-stamp.is-stale .stamp-date { color: var(--warn); }
+
 /* Disclaimer banner — opens every view (static; the footer repeats it) */
 .disclaimer {
   max-width: 1100px;
@@ -657,6 +670,12 @@ body {
   }
   .stamp-date {
     font-size: var(--fs-sm);
+  }
+  .reviewed-stamp { flex-wrap: wrap; }
+  .stamp-age {
+    flex-basis: 100%;
+    max-width: none;
+    text-align: left;
   }
   .disclaimer {
     font-size: var(--fs-sm);

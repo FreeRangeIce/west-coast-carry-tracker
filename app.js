@@ -23,6 +23,8 @@
   const els = {
     disclaimer: document.getElementById("disclaimer-text"),
     reviewed: document.getElementById("global-reviewed"),
+    reviewedAge: document.getElementById("global-reviewed-age"),
+    reviewedStamp: document.getElementById("reviewed-stamp"),
     viewAsk: document.getElementById("view-ask"),
     viewState: document.getElementById("view-state"),
     viewCompare: document.getElementById("view-compare"),
@@ -60,6 +62,35 @@
     ];
     const month = months[Number(m[2]) - 1] || m[2];
     return `${month} ${Number(m[3])}, ${m[1]}`;
+  }
+
+  // Age line on the header "Last reviewed" stamp. The calendar date always shows.
+  // After STALE_AFTER_DAYS the stamp turns amber and adds a written warning, so the
+  // warning never depends on color alone. lastReviewed changes only when Micah approves
+  // a source-checked ship to main; this code only reads it.
+  // Threshold: 14 days (Micah, Sep 25 2026). Change to 30 if the real review cadence is monthly.
+  const STALE_AFTER_DAYS = 14;
+  function reviewAgeDays(iso) {
+    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || "");
+    if (!m) return null;
+    const reviewed = new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    return Math.round((today - reviewed) / 86400000);
+  }
+  function renderReviewAge(iso) {
+    if (!els.reviewedAge || !els.reviewedStamp) return;
+    const days = reviewAgeDays(iso);
+    const stale = days === null || days > STALE_AFTER_DAYS;
+    els.reviewedStamp.classList.toggle("is-stale", stale);
+    if (!stale) {
+      els.reviewedAge.hidden = true;
+      els.reviewedAge.textContent = "";
+      return;
+    }
+    els.reviewedAge.textContent =
+      (days === null ? "" : days + " days ago. ") + "Check sources before relying on this.";
+    els.reviewedAge.hidden = false;
   }
 
   function findState(id) {
@@ -1160,6 +1191,7 @@
     // The banner already shows a bold "NOT LEGAL ADVICE." label; avoid repeating it.
     els.disclaimer.textContent = String(data.disclaimer || "").replace(/^\s*NOT LEGAL ADVICE\.\s*/i, "");
     els.reviewed.textContent = formatDate(data.lastReviewed);
+    renderReviewAge(data.lastReviewed);
     buildSearchIndex();
 
     const hash = (location.hash || "").replace(/^#/, "");
