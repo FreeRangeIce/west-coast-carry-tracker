@@ -410,7 +410,57 @@
       .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
   }
 
-  function scoreDoc(doc, queryTokens, queryLower) {
+  // Words that carry no meaning on their own. A query made only of these
+  // returns "no match". "or" is left out on purpose: it is Oregon's code.
+  const STOPWORDS = new Set(
+    ("a an and any are as at be by can could do does did for from get has have how i if in into " +
+      "is it its me my of on our should so that the their them there these this those to was " +
+      "we what when where which who why will with would you your").split(" ")
+  );
+  // Everyday words mapped to the words the data actually uses.
+  const SYNONYMS = {
+    honor: ["recognize", "reciprocity"],
+    honors: ["recognize", "reciprocity"],
+    honored: ["recognize", "reciprocity"],
+    accept: ["recognize", "reciprocity"],
+    accepts: ["recognize", "reciprocity"],
+    valid: ["recognize"],
+    recognize: ["reciprocity"],
+    recognizes: ["recognize", "reciprocity"],
+    driving: ["traveler", "traveling", "vehicle"],
+    drive: ["traveler", "traveling", "vehicle"],
+    trip: ["traveler", "traveling"],
+    visiting: ["traveler", "traveling"],
+  };
+  const STATE_WORDS = {
+    california: "ca", ca: "ca",
+    oregon: "or",
+    nevada: "nv", nv: "nv",
+    washington: "wa", wa: "wa",
+    arizona: "az", az: "az",
+  };
+
+  // States named in the query, in the order they appear. The first one is
+  // the state the question is about ("Does Nevada honor Washington permits?"
+  // is a Nevada question). Uppercase "OR" counts as Oregon; lowercase "or" does not.
+  function queryStates(query) {
+    const out = [];
+    const words = String(query || "").replace(/[^A-Za-z]+/g, " ").split(/\s+/).filter(Boolean);
+    let host = null;
+    words.forEach((w, i) => {
+      const id = w === "OR" ? "or" : STATE_WORDS[w.toLowerCase()];
+      if (!id || out.indexOf(id) !== -1) return;
+      out.push(id);
+      // "good in Nevada", "driving to Oregon", "through California": that is
+      // the state whose rules apply, so it becomes the subject.
+      const prev = (words[i - 1] || "").toLowerCase();
+      if (!host && ["in", "into", "to", "through", "visiting"].indexOf(prev) !== -1) host = id;
+    });
+    if (host) out.splice(out.indexOf(host), 1), out.unshift(host);
+    return out;
+  }
+
+  function scoreDoc(doc, queryTokens, queryLower, states) {
     if (!queryTokens.length) return 0;
     let score = 0;
     const titleLower = (doc.title || "").toLowerCase();
@@ -422,16 +472,40 @@
       if (titleLower.indexOf(tok) !== -1) score += 5;
       if (tagLower.indexOf(tok) !== -1) score += 4;
       if (snippetLower.indexOf(tok) !== -1) score += 2;
-      // light prefix boost for partials (e.g. "recip" → reciprocity)
+      // light prefix boost for partials (e.g. "recip" → reciprocity); both sides 4+ letters
       if (tok.length >= 4) {
         doc.tokens.forEach((dt) => {
-          if (dt.indexOf(tok) === 0 || tok.indexOf(dt) === 0) score += 1;
+          if (dt.length >= 4 && (dt.indexOf(tok) === 0 || tok.indexOf(dt) === 0)) score += 1;
         });
       }
     });
 
+    // Nothing in the query matched this entry: never rescue it with bonuses.
+    if (score === 0) return 0;
+
     if (queryLower.length >= 6 && doc.hayLower.indexOf(queryLower) !== -1) {
       score += 8;
+    }
+
+    // State intent: favor entries about the state the question is about.
+    if (states && states.length && doc.stateIds.length) {
+      const subject = states[0];
+      const docMain = doc.stateIds[0];
+      const titleStates = queryStates(doc.title);
+      if (docMain === subject) score += 14;
+      if (titleStates[0] === subject) score += 10;
+      states.slice(1).forEach((id) => {
+        if (doc.stateIds.indexOf(id) !== -1) score += 3;
+      });
+      // An entry about some other state (by its title, or its only state tag)
+      // is off-topic, even if it mentions the named states in passing.
+      const focus = titleStates[0] || (doc.stateIds.length === 1 ? docMain : null);
+      const offTopic =
+        (focus && states.indexOf(focus) === -1) ||
+        !states.some((id) => doc.stateIds.indexOf(id) !== -1);
+      if (offTopic) score *= 0.5;
+      // About another state the user named, but not the one they asked about.
+      else if (focus && focus !== subject) score *= 0.75;
     }
 
     // Prefer curated Q&A slightly
@@ -509,14 +583,18 @@
   function runSearch(query) {
     const q = String(query || "").trim();
     lastQuery = q;
-    const tokens = unique(tokenize(q));
+    const words = unique(tokenize(q)).filter((t) => !STOPWORDS.has(t));
+    const tokens = unique(
+      words.concat(...words.map((t) => SYNONYMS[t] || []))
+    );
     const qLower = q.toLowerCase();
+    const states = queryStates(q);
     if (!tokens.length) return [];
 
     return searchIndex
       .map((doc) => ({
         doc: doc,
-        score: scoreDoc(doc, tokens, qLower),
+        score: scoreDoc(doc, tokens, qLower, states),
       }))
       .filter((r) => r.score > 0)
       .sort((a, b) => b.score - a.score || a.doc.title.localeCompare(b.doc.title))
@@ -1020,8 +1098,7 @@
 
     els.viewLitigation.innerHTML = `
       <h2 class="updates-heading">Litigation</h2>
-      <p class="watching-note" role="status">
-        <span class="watching-dot" aria-hidden="true"></span>
+      <p class="data-note">
         ${escapeHtml(lit.note || "")} Last checked ${escapeHtml(formatDate(lit.lastChecked))}.
       </p>
       <p class="callout caution"><strong>NOT LEGAL ADVICE.</strong> Court status summaries only. A pending case does not change the law until a court rules, and rulings can be stayed or appealed.</p>
@@ -1043,12 +1120,11 @@
 
     const watch =
       data.monitoringNote ||
-      "Watching for changes: curated data is refreshed when material updates are verified against official sources (daily check). This is not live web search.";
+      "Curated data is updated by hand when changes are verified against official sources. Updates are not automatic or daily. This is not live web search.";
 
     els.viewUpdates.innerHTML = `
       <h2 class="updates-heading">Updates</h2>
-      <p class="watching-note" role="status">
-        <span class="watching-dot" aria-hidden="true"></span>
+      <p class="data-note">
         ${escapeHtml(watch)}
       </p>
       <ul class="changelog-list">${items || "<li>No entries.</li>"}</ul>

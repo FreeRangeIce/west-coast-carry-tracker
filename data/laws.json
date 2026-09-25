@@ -2,7 +2,7 @@
   "lastReviewed": "2026-09-25",
   "schemaVersion": 2,
   "disclaimer": "NOT LEGAL ADVICE. This tracker summarizes publicly available high-level information about firearm and concealed-carry rules in California, Oregon, Nevada, Washington, and Arizona for personal reference only. Laws change, court orders enjoin or restore rules, and local rules apply. Always verify with official statutes, attorney general / DPS / licensing-agency guidance, and a licensed attorney before carrying or traveling.",
-  "monitoringNote": "Watching for changes: curated data for CA, OR, NV, WA and AZ, the reciprocity matrix, tracked court cases and county notes is refreshed when material updates are verified against official sources (daily check). This is not live web search.",
+  "monitoringNote": "Curated data for CA, OR, NV, WA and AZ, the reciprocity matrix, tracked court cases and county notes is updated by hand when changes are verified against official sources. Updates are not automatic or daily. Check the Last reviewed date and verify before relying on anything here. This is not live web search.",
   "dailyCheck": {
     "description": "Structure the daily automated check updates. Bump lastChecked (YYYY-MM-DD) only for items whose sources were opened and compared; otherwise leave it. Add an entry to updates[] only for material changes.",
     "sections": {
@@ -45,7 +45,7 @@
         "License conditions statewide (PC 26200): carry no more than 2 firearms at once, only guns listed on your license and recorded to you, and no drinking or being under the influence while carrying.",
         "VERIFY: check current PC 26230 text and the Litigation tab before relying on any category list"
       ],
-      "travelerTip": "Out-of-state permits are not valid for concealed carry in CA. Unloaded, secured interstate transport may have federal safe-passage protections — verify FOPA and CA rules.",
+      "travelerTip": "Out-of-state permits are not valid for concealed carry in CA. Unloaded, secured interstate transport may have federal safe-passage protections — verify FOPA and CA rules. Bringing in or possessing magazines over 10 rounds is illegal in California (PC 32310), including for visitors.",
       "possessionNotes": "California has extensive magazine, assault-weapon, roster and ammunition rules beyond CCW. OAG Information Bulletin 2026-DLE-16 (Sept 18, 2026) reminds dealers and LE that silencers, short-barreled rifles/shotguns, and firearms not immediately recognizable as firearms remain illegal under California Penal Code even after a limited ND Texas ruling on the federal NFA (Silencer Shop Foundation v. ATF). This tracker summarizes possession rules at a high level only; check the linked statutes and the Litigation tab for current court status.",
       "lastReviewed": "2026-09-25",
       "sources": [
