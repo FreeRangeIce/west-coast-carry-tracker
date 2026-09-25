@@ -157,10 +157,6 @@
           "url": "https://oregonchl.org/"
         },
         {
-          "title": "Yamhill County CHL overview (example sheriff page)",
-          "url": "https://www.yamhillcounty.gov/706/Concealed-Handgun-Licenses"
-        },
-        {
           "title": "Oregon HB 4145 (2026) — Measure 114 operative-date delay",
           "url": "https://olis.oregonlegislature.gov/liz/2026R1/Downloads/MeasureDocument/HB4145/Enrolled"
         }
@@ -933,18 +929,7 @@
         "stateId": "or",
         "summary": "Oregon CHLs are issued by the sheriff of your county of residence (ORS 166.291). The fees are set in statute and are the same everywhere ($100 initial / $75 renewal to the sheriff + $15 OSP fingerprint fee). What varies by county is appointment availability, wait times and whether the sheriff will waive residency for a contiguous-state applicant (ORS 166.291(8)). By law the license must be issued within 45 days of application if approved.",
         "lastChecked": "2026-09-25",
-        "counties": [
-          {
-            "name": "Yamhill (example)",
-            "agency": "Yamhill County Sheriff",
-            "fees": "Per ORS 166.291 (statewide statutory fees).",
-            "processing": "See sheriff page for scheduling.",
-            "policies": "Example of a county sheriff CHL page; check your own county sheriff for appointments and contiguous-state (non-resident) policy.",
-            "sourceUrl": "https://www.yamhillcounty.gov/706/Concealed-Handgun-Licenses",
-            "verified": false,
-            "uncertainNote": "County page not re-checked on Sept 25, 2026."
-          }
-        ]
+        "counties": []
       },
       {
         "stateId": "nv",
