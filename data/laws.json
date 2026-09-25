@@ -652,7 +652,7 @@
         "docket": "No. 6:26-cv-01883",
         "challenges": "Oregon's county-residency rule for CHLs (ORS 166.291(1)(c)) and contiguous-state waiver limit (ORS 166.291(8)); Oregon's non-recognition of out-of-state permits; ORS 166.173 local authority to ban loaded open carry; and Salem Code § 95.095 loaded-firearm ban for people without a CHL — alleged to create a total public-carry ban for most nonresidents (e.g., Arizona residents).",
         "status": "Complaint filed Sept 11, 2026. On Sept 21 the court certified the constitutional challenge to Oregon's AG (state may intervene by Nov 10, 2026). No merits ruling.",
-        "statusDate": "2026-09-11",
+        "statusDate": "2026-09-21",
         "outcome": "pending",
         "impact": "If successful, would directly affect travelers from AZ (and other non-contiguous states) who cannot get an Oregon CHL and whose home permits Oregon does not honor. Also challenges Salem (and by implication similar city) loaded-carry bans that close the open-carry alternative. Pending only — current Oregon rules remain in effect.",
         "stateIds": [
@@ -823,7 +823,7 @@
         "lastChecked": "2026-09-25"
       }
     ],
-    "noCasesNote": "No major pending Nevada- or Arizona-specific carry cases were identified in this check. Both states are affected by Supreme Court rulings such as Bruen and Wolford."
+    "noCasesNote": "No major pending cases challenging Nevada or Arizona carry laws were identified in this check (Ladd v. Hunter involves an Arizona traveler but challenges Oregon law). Both states are affected by Supreme Court rulings such as Bruen and Wolford."
   },
   "countyNotes": {
     "lastChecked": "2026-09-25",
