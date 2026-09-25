@@ -376,8 +376,10 @@ body {
   color: var(--text-muted);
 }
 
-.badge.yes { color: var(--yes); border-color: var(--yes-border); background: var(--yes-dim); }
-/* "Permit required" is a neutral fact, not a warning */
+/* "Permit required" and "Constitutional / permitless carry" state a framework
+   fact, not a verdict or a warning: both neutral. (--yes stays for matrix "Yes",
+   "Decided" and the live dot.) */
+.badge.yes,
 .badge.no { color: var(--text-muted); border-color: var(--border-strong); background: var(--bg-elevated); }
 .badge.warn { color: var(--warn); border-color: rgba(251, 191, 36, 0.35); background: var(--warn-bg); }
 
