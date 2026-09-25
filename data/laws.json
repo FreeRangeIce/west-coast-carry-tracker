@@ -626,11 +626,11 @@
       },
       {
         "id": "us-v-san-jose",
-        "name": "United States v. City of San Jose / San Jose Police Department",
+        "name": "United States v. City of San Jose, California et al.",
         "court": "U.S. District Court, N.D. Cal.",
         "docket": "No. 5:26-cv-10508",
         "challenges": "San Jose's CCW application fee of $1,591 (Res. No. 2026-183; 20% / $318 up front, balance at issuance) and applicant-paid psychological testing as allegedly 'exorbitant fees' that deny ordinary citizens the right to public carry (Bruen n.9), brought under 34 U.S.C. § 12601.",
-        "status": "Complaint filed Sept 16, 2026 by the U.S. Department of Justice Civil Rights Division (Second Amendment Section). Seeks declaratory and permanent injunctive relief. No merits ruling yet. Fee remains in effect unless enjoined.",
+        "status": "Complaint filed Sept 16, 2026 by the U.S. Department of Justice Civil Rights Division (Second Amendment Section). Seeks declaratory and permanent injunctive relief. No merits ruling yet. Initial case management conference set Dec 15, 2026 (Magistrate Judge van Keulen). Fee remains in effect unless enjoined.",
         "statusDate": "2026-09-16",
         "outcome": "pending",
         "impact": "If successful, could force San Jose (and potentially other high-fee CA licensing authorities) to lower CCW fees. For now it is a newly filed challenge only — SJPD's fee stays in effect unless a court orders otherwise. (San Jose residents may also be able to apply to the Santa Clara County Sheriff. See County notes.)",
@@ -651,10 +651,10 @@
         "court": "U.S. District Court, D. Or. (Eugene)",
         "docket": "No. 6:26-cv-01883",
         "challenges": "Oregon's county-residency rule for CHLs (ORS 166.291(1)(c)) and contiguous-state waiver limit (ORS 166.291(8)); Oregon's non-recognition of out-of-state permits; ORS 166.173 local authority to ban loaded open carry; and Salem Code § 95.095 loaded-firearm ban for people without a CHL — alleged to create a total public-carry ban for most nonresidents (e.g., Arizona residents).",
-        "status": "Complaint filed Sept 11, 2026. Newly filed; no merits ruling found as of this check.",
+        "status": "Complaint filed Sept 11, 2026. On Sept 21 the court certified the constitutional challenge to Oregon's AG (state may intervene by Nov 10, 2026). No merits ruling.",
         "statusDate": "2026-09-11",
         "outcome": "pending",
-        "impact": "Directly affects travelers from AZ (and other non-contiguous states) who cannot get an Oregon CHL and whose home permits Oregon does not honor. Also challenges Salem (and by implication similar city) loaded-carry bans that close the open-carry alternative. Pending only — current Oregon rules remain in effect.",
+        "impact": "If successful, would directly affect travelers from AZ (and other non-contiguous states) who cannot get an Oregon CHL and whose home permits Oregon does not honor. Also challenges Salem (and by implication similar city) loaded-carry bans that close the open-carry alternative. Pending only — current Oregon rules remain in effect.",
         "stateIds": [
           "or",
           "az"
@@ -693,7 +693,7 @@
         "docket": "Nos. 25-238 and 25-566",
         "challenges": "Bans on AR-15-style 'assault weapons' (Cook County, IL, and Connecticut).",
         "status": "Cert granted June 30, 2026. Argument set for Dec 2, 2026. The Solicitor General has moved to take part in the argument.",
-        "statusDate": "2026-06-30",
+        "statusDate": "2026-09-09",
         "outcome": "granted",
         "impact": "The first Supreme Court merits ruling on assault-weapon bans. It would directly affect California's ban (PC 30600 et seq.), Washington's sales ban (RCW 9.41.390) and related challenges such as Miller v. Bonta and Hartford v. Brown. A decision is likely by mid-2027.",
         "stateIds": [
