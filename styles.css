@@ -232,12 +232,9 @@ body {
     overflow-x: auto;
     flex-wrap: nowrap;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+    scrollbar-width: thin;
     /* keep a scrolled-to tab clear of the right-edge fade */
     scroll-padding-inline: var(--space-4) 3.5rem;
-  }
-  .tabs::-webkit-scrollbar {
-    display: none;
   }
   /* Scroll hint: a fade pinned to the right edge of the strip. Also acts as
      trailing space so the last tab can scroll fully clear of the fade.
@@ -673,9 +670,6 @@ body {
   }
   .card-grid {
     grid-template-columns: 1fr;
-  }
-  .card {
-    padding: var(--space-4);
   }
 }
 
