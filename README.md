@@ -11,7 +11,7 @@ Self-contained static reference for **high-level** firearm and concealed-carry f
 | `index.html` | App shell (+ iOS / PWA meta) |
 | `styles.css` | Dark, mobile-friendly UI |
 | `app.js` | Tabbed views (state tabs derived from `data.states`), Ask search, compare + reciprocity matrix, Litigation, Updates, SW register |
-| `data/laws.json` | All content (see **Data structure** below) — the file the daily check updates |
+| `data/laws.json` | All content (see **Data structure** below). Updated by hand after the sources are checked. |
 | `manifest.webmanifest` | Web app manifest (Add to Home Screen) |
 | `sw.js` | Tiny service worker (shell cache; bump `CACHE` version on each release — currently `carry-tracker-v8`) |
 | `icons/` | 192 / 512 / apple-touch icons |
@@ -50,7 +50,7 @@ The service worker caches the shell; bumping `CACHE` in `sw.js` makes installed 
 
 ## Data structure (`data/laws.json`, schemaVersion 2)
 
-The daily check re-verifies each section against its sources, bumps that section's `lastChecked` (YYYY-MM-DD) even when nothing changed, and adds an `updates[]` entry only for material changes. The same summary is embedded in the JSON as `dailyCheck`.
+Data is updated by hand, not automatically. Bump an item's `lastChecked` (YYYY-MM-DD) only when its sources were opened and compared, and add an `updates[]` entry only for material changes. The same rule is stored in the JSON as `dailyCheck`.
 
 | Key | Contents |
 |-----|----------|

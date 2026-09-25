@@ -4,7 +4,7 @@
   "disclaimer": "NOT LEGAL ADVICE. This tracker summarizes publicly available high-level information about firearm and concealed-carry rules in California, Oregon, Nevada, Washington, and Arizona for personal reference only. Laws change, court orders enjoin or restore rules, and local rules apply. Always verify with official statutes, attorney general / DPS / licensing-agency guidance, and a licensed attorney before carrying or traveling.",
   "monitoringNote": "Curated data for CA, OR, NV, WA and AZ, the reciprocity matrix, tracked court cases and county notes is updated by hand when changes are verified against official sources. Updates are not automatic or daily. Check the Last reviewed date and verify before relying on anything here. This is not live web search.",
   "dailyCheck": {
-    "description": "Structure the daily automated check updates. Bump lastChecked (YYYY-MM-DD) only for items whose sources were opened and compared; otherwise leave it. Add an entry to updates[] only for material changes.",
+    "description": "Structure for manual data updates. Bump lastChecked (YYYY-MM-DD) only for items whose sources were opened and compared; otherwise leave it. Add an entry to updates[] only for material changes.",
     "sections": {
       "states[]": "One object per state (ca, or, nv, wa, az). Each has lastChecked, lastReviewed, sources[], recentLegislation[]. Nevada/Washington recognition lists: recognizedStates[] + recognizedStatesAsOf.",
       "reciprocityMatrix": "honors[rowState][permitState] = 'yes' | 'no'; cellNotes['row:col']; asOf per state; lastChecked.",
@@ -102,6 +102,13 @@
           "status": "Signed June 30, 2026; effective Jan 1, 2027",
           "summary": "Raises the maximum term of a standard CCW from 2 to 3 years (PC 26220) for licenses issued on or after Jan 1, 2027. Not retroactive. Also removes the separate 3-year judicial provision and clarifies the 4-year custodial/reserve officer license applies to new and renewal licenses.",
           "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1948"
+        },
+        {
+          "date": "2026-08-27",
+          "title": "SB 1427 (Stats. 2026, ch. 160) — interview for all new CCW applicants",
+          "status": "Signed Aug 27, 2026; effective Jan 1, 2027",
+          "summary": "Requires the licensing authority to interview every new CCW applicant, in person or by video at the applicant's choice (PC 26202(b)(1)). Previously the interview was required only for non-California residents. The licensing authority may skip it for renewals.",
+          "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1427"
         },
         {
           "date": "2026-09-01",
