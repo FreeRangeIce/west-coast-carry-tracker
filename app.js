@@ -1,6 +1,7 @@
 /**
  * West Coast Carry Tracker — vanilla JS
- * Loads data/laws.json and renders Ask / state / compare / Updates views.
+ * Loads data/laws.json and renders Ask / state (CA, OR, NV, WA, AZ) / compare /
+ * litigation / Updates views. State tabs are derived from data.states.
  * Search is offline keyword ranking over curated data (no LLM, no live web).
  */
 (function () {
@@ -9,12 +10,15 @@
   const DATA_URL = "data/laws.json";
   const SEARCH_DEBOUNCE_MS = 220;
   const EXAMPLE_QUERIES = [
-    "Does Nevada recognize California permits?",
-    "Oregon Measure 114 vs CHL",
-    "Can I open carry in Nevada without a permit?",
+    "Does Arizona honor California permits?",
+    "Washington permit to purchase HB 1163",
+    "Which states honor each other's permits?",
+    "Duncan v. Bonta magazine case status",
     "California sensitive places SB 2",
-    "Non-resident California CCW AB 1078",
+    "Arizona bar carry permit",
+    "Los Angeles CCW fees",
   ];
+  const NON_STATE_VIEWS = ["ask", "compare", "litigation", "updates"];
 
   const els = {
     disclaimer: document.getElementById("disclaimer-text"),
@@ -23,6 +27,7 @@
     viewState: document.getElementById("view-state"),
     viewCompare: document.getElementById("view-compare"),
     viewUpdates: document.getElementById("view-updates"),
+    viewLitigation: document.getElementById("view-litigation"),
     loadError: document.getElementById("load-error"),
     tabs: Array.from(document.querySelectorAll(".tab")),
   };
@@ -59,6 +64,15 @@
     return data.states.find((s) => s.id === id);
   }
 
+  function stateIds() {
+    return ((data && data.states) || []).map((s) => s.id);
+  }
+
+  function stateName(id) {
+    const st = data ? findState(id) : null;
+    return st ? st.name : String(id).toUpperCase();
+  }
+
   function tokenize(text) {
     return String(text || "")
       .toLowerCase()
@@ -78,6 +92,12 @@
       (st.sources || []).forEach((s) => {
         if (s && s.url) byUrl[s.url] = s.title || s.url;
       });
+    });
+    ((data.reciprocityMatrix && data.reciprocityMatrix.sources) || []).forEach((s) => {
+      if (s && s.url && !byUrl[s.url]) byUrl[s.url] = s.title || s.url;
+    });
+    litigationCases().forEach((c) => {
+      if (c.sourceUrl && !byUrl[c.sourceUrl]) byUrl[c.sourceUrl] = c.name + " — " + (c.court || "docket");
     });
     return urls.map((url) => ({
       url: url,
@@ -141,6 +161,13 @@
         ["Important", st.important],
         ["Measure 114", st.measure114Note],
         ["CCW renewal", st.renewalNote],
+        ["Eligibility", st.eligibility],
+        ["Fees", st.fees],
+        ["Training", st.training],
+        ["Processing time", st.processingTime],
+        ["Magazines & assault weapons", st.magazineAwRules],
+        ["Buying a gun (permit to purchase / waiting period)", st.purchaseRules],
+        ["Recent legislation", st.recentLegislationNote],
         ["Possession notes", st.possessionNotes],
         ["Permit name", st.permitName],
         ["Issuer", st.issuer],
@@ -181,11 +208,23 @@
             ": " +
             st.recognizedStates.join(", "),
           body: st.recognizedStates.join(" "),
-          tags: ["recognition", "reciprocity", "DPS"],
+          tags: ["recognition", "reciprocity", st.recognizedStatesSource || ""],
           stateIds: [st.id],
           sources: st.sources || [],
         });
       }
+      (st.recentLegislation || []).forEach((b, i) => {
+        pushDoc(docs, {
+          id: "leg-" + st.id + "-" + i,
+          kind: "legislation",
+          title: st.name + " — " + b.title,
+          snippet: (b.status ? b.status + ". " : "") + (b.summary || ""),
+          body: [b.title, b.status, b.summary].join(" "),
+          tags: ["legislation", "bill", "law change"],
+          stateIds: [st.id],
+          sources: b.url ? [{ title: b.title, url: b.url }] : [],
+        });
+      });
       (st.sources || []).forEach((s, i) => {
         pushDoc(docs, {
           id: "src-" + st.id + "-" + i,
@@ -200,17 +239,82 @@
       });
     });
 
+    const ids = stateIds();
     (data.compare || []).forEach((row, i) => {
+      const cols = ids.filter((id) => row[id] != null);
       pushDoc(docs, {
         id: "compare-" + i,
         kind: "compare",
         title: "Compare — " + row.topic,
-        snippet:
-          "CA: " + row.ca + " · OR: " + row.or + " · NV: " + row.nv,
-        body: [row.topic, row.ca, row.or, row.nv].join(" "),
+        snippet: cols.map((id) => id.toUpperCase() + ": " + row[id]).join(" · "),
+        body: [row.topic].concat(cols.map((id) => row[id])).join(" "),
         tags: ["compare", row.topic],
-        stateIds: ["ca", "or", "nv"],
+        stateIds: cols,
         sources: [],
+      });
+    });
+
+    const matrix = data.reciprocityMatrix;
+    if (matrix && matrix.honors) {
+      const lines = [];
+      (matrix.states || ids).forEach((row) => {
+        const honored = (matrix.states || ids).filter(
+          (col) => col !== row && matrix.honors[row] && matrix.honors[row][col] === "yes"
+        );
+        lines.push(
+          stateName(row) + " honors: " + (honored.length ? honored.map(stateName).join(", ") : "none of the others")
+        );
+      });
+      pushDoc(docs, {
+        id: "recip-matrix",
+        kind: "matrix",
+        title: "Reciprocity matrix — which of the five states honor each other's permits",
+        snippet: lines.join(" · "),
+        body: lines.join(" ") + " reciprocity matrix honor recognize permit",
+        tags: ["reciprocity", "matrix", "recognize", "honor", "traveler"],
+        stateIds: matrix.states || ids,
+        sources: matrix.sources || [],
+      });
+    }
+
+    litigationCases().forEach((c) => {
+      pushDoc(docs, {
+        id: "case-" + c.id,
+        kind: "case",
+        title: c.name + " — " + (c.court || ""),
+        snippet: "Status: " + c.status + " Challenges: " + c.challenges,
+        body: [c.name, c.docket, c.challenges, c.status, c.impact].join(" "),
+        tags: ["litigation", "court", "case", c.outcome || ""],
+        stateIds: c.stateIds || [],
+        sources: [{ title: c.name + " — docket / opinion", url: c.sourceUrl }],
+      });
+    });
+
+    countyStates().forEach((cs) => {
+      const st = findState(cs.stateId);
+      const nm = st ? st.name : cs.stateId;
+      pushDoc(docs, {
+        id: "county-" + cs.stateId,
+        kind: "county",
+        title: nm + " — county / local issuing notes",
+        snippet: cs.summary,
+        body: cs.summary,
+        tags: ["county", "sheriff", "local"],
+        stateIds: [cs.stateId],
+        sources: [],
+      });
+      (cs.counties || []).forEach((c, i) => {
+        const text = [c.fees, c.processing, c.policies].filter(Boolean).join(" ");
+        pushDoc(docs, {
+          id: "county-" + cs.stateId + "-" + i,
+          kind: "county",
+          title: c.name + " County (" + nm + ") — " + (c.agency || "CCW"),
+          snippet: text,
+          body: c.name + " county " + text,
+          tags: ["county", "sheriff", "fees", "processing", c.name],
+          stateIds: [cs.stateId],
+          sources: c.sourceUrl ? [{ title: (c.agency || c.name) + " CCW page", url: c.sourceUrl }] : [],
+        });
       });
     });
 
@@ -242,6 +346,14 @@
     });
 
     searchIndex = docs;
+  }
+
+  function litigationCases() {
+    return (data && data.litigation && data.litigation.cases) || [];
+  }
+
+  function countyStates() {
+    return (data && data.countyNotes && data.countyNotes.states) || [];
   }
 
   function getUpdateFeed() {
@@ -352,6 +464,10 @@
       compare: "Compare",
       topic: "Topic",
       update: "Update",
+      legislation: "Legislation",
+      matrix: "Reciprocity matrix",
+      "case": "Court case",
+      county: "County note",
     };
     return map[kind] || kind;
   }
@@ -479,7 +595,7 @@
             type="search"
             id="ask-input"
             class="ask-input"
-            placeholder="e.g. Does Nevada recognize California permits?"
+            placeholder="e.g. Does Arizona honor Washington permits?"
             autocomplete="off"
             enterkeyhint="search"
           />
@@ -523,7 +639,8 @@
   }
 
   function renderState(state) {
-    const accent = escapeHtml(state.accent || state.id);
+    // CSS accents are keyed by state id (.card.ca-accent, .card.wa-accent, …)
+    const accent = escapeHtml(state.id);
     const constitutionalBadge = state.constitutionalCarry
       ? '<span class="badge yes">Constitutional / permitless carry</span>'
       : '<span class="badge no">Permit required for concealed</span>';
@@ -576,7 +693,7 @@
       extraBlocks += `
         <div class="card ${accent}-accent full">
           <h3>Recognized out-of-state permits (as of ${escapeHtml(formatDate(state.recognizedStatesAsOf))})</h3>
-          <p>Nevada DPS RCCD recognition list — verify the current official PDF.</p>
+          <p>${escapeHtml(state.recognizedStatesSource || "Official recognition list")} — verify the current official list before travel.</p>
           <div class="tag-list">${tags}</div>
           ${
             state.important
@@ -592,6 +709,60 @@
         </div>`;
     }
 
+    const infoCards = [
+      ["Eligibility", state.eligibility],
+      ["Fees", state.fees],
+      ["Training", state.training],
+      ["Processing time", state.processingTime],
+    ]
+      .filter(([, v]) => v)
+      .map(
+        ([h, v]) => `
+        <div class="card ${accent}-accent">
+          <h3>${escapeHtml(h)}</h3>
+          <p>${escapeHtml(v)}</p>
+        </div>`
+      )
+      .join("");
+
+    const lawCards = [
+      ["Magazines & assault weapons", state.magazineAwRules],
+      ["Buying a gun: permit to purchase / waiting period", state.purchaseRules],
+    ]
+      .filter(([, v]) => v)
+      .map(
+        ([h, v]) => `
+        <div class="card ${accent}-accent full">
+          <h3>${escapeHtml(h)}</h3>
+          <p>${escapeHtml(v)}</p>
+        </div>`
+      )
+      .join("");
+
+    const bills = state.recentLegislation || [];
+    const legCard =
+      bills.length || state.recentLegislationNote
+        ? `<div class="card ${accent}-accent full">
+          <h3>Recent / pending legislation</h3>
+          ${
+            bills.length
+              ? `<ul class="leg-list">${bills
+                  .map(
+                    (b) => `<li>
+                <span class="leg-date">${escapeHtml(formatDate(b.date))}</span>
+                <strong>${b.url ? `<a href="${escapeHtml(b.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(b.title)}</a>` : escapeHtml(b.title)}</strong>
+                ${b.status ? `<span class="badge leg-status">${escapeHtml(b.status)}</span>` : ""}
+                ${b.uncertain ? '<span class="badge uncertain">Unverified detail</span>' : ""}
+                <p>${escapeHtml(b.summary || "")}</p>
+              </li>`
+                  )
+                  .join("")}</ul>`
+              : ""
+          }
+          ${state.recentLegislationNote ? `<p class="callout">${escapeHtml(state.recentLegislationNote)}</p>` : ""}
+        </div>`
+        : "";
+
     els.viewState.innerHTML = `
       <div class="state-hero ${escapeHtml(state.id)}">
         <div>
@@ -603,8 +774,8 @@
           </div>
         </div>
         <div class="state-reviewed">
-          State reviewed<br />
-          <strong>${escapeHtml(formatDate(state.lastReviewed))}</strong>
+          State last checked<br />
+          <strong>${escapeHtml(formatDate(state.lastChecked || state.lastReviewed))}</strong>
         </div>
       </div>
 
@@ -623,6 +794,8 @@
               : ""
           }
         </div>
+
+        ${infoCards}
 
         <div class="card ${accent}-accent">
           <h3>Non-residents</h3>
@@ -649,7 +822,13 @@
             : ""
         }
 
+        ${lawCards}
+
         ${extraBlocks}
+
+        ${legCard}
+
+        ${renderCountyCard(state, accent)}
 
         <div class="card ${accent}-accent full">
           <h3>Sources</h3>
@@ -659,29 +838,109 @@
     `;
   }
 
+  function renderCountyCard(state, accent) {
+    const cs = countyStates().find((c) => c.stateId === state.id);
+    if (!cs) return "";
+    const rows = (cs.counties || [])
+      .map(
+        (c) => `
+        <details class="county-item">
+          <summary><strong>${escapeHtml(c.name)}</strong> <span class="county-agency">${escapeHtml(c.agency || "")}</span>${
+            c.verified === false ? ' <span class="badge uncertain">Not re-checked</span>' : ""
+          }</summary>
+          ${c.fees ? `<p><strong>Fees:</strong> ${escapeHtml(c.fees)}</p>` : ""}
+          ${c.processing ? `<p><strong>Processing:</strong> ${escapeHtml(c.processing)}</p>` : ""}
+          ${c.policies ? `<p><strong>Notable policies:</strong> ${escapeHtml(c.policies)}</p>` : ""}
+          ${c.uncertainNote ? `<p class="callout caution">${escapeHtml(c.uncertainNote)}</p>` : ""}
+          ${
+            c.sourceUrl
+              ? `<p class="county-src"><a href="${escapeHtml(c.sourceUrl)}" target="_blank" rel="noopener noreferrer">Official source</a>${(c.extraUrls || [])
+                  .map((u, i) => ` · <a href="${escapeHtml(u)}" target="_blank" rel="noopener noreferrer">More ${i + 1}</a>`)
+                  .join("")}</p>`
+              : ""
+          }
+        </details>`
+      )
+      .join("");
+    return `
+      <div class="card ${accent}-accent full" id="county-notes">
+        <h3>County / local notes <span class="section-checked">checked ${escapeHtml(formatDate(cs.lastChecked))}</span></h3>
+        <p>${escapeHtml(cs.summary)}</p>
+        ${rows ? `<div class="county-list">${rows}</div>` : ""}
+      </div>`;
+  }
+
+  function renderMatrix() {
+    const m = data.reciprocityMatrix;
+    if (!m || !m.honors) return "";
+    const ids = m.states || stateIds();
+    const head = ids
+      .map((id) => `<th scope="col" class="${escapeHtml(id)}-col">${escapeHtml(stateName(id))} permit</th>`)
+      .join("");
+    const body = ids
+      .map((row) => {
+        const cells = ids
+          .map((col) => {
+            if (row === col) return `<td class="mx-self" aria-label="Same state">—</td>`;
+            const v = (m.honors[row] && m.honors[row][col]) || "unknown";
+            const note = (m.cellNotes || {})[row + ":" + col] || "";
+            const label = v === "yes" ? "Yes" : v === "no" ? "No" : "?";
+            return `<td class="mx-${escapeHtml(v)}"${note ? ` title="${escapeHtml(note)}"` : ""}><span class="mx-pill">${label}</span></td>`;
+          })
+          .join("");
+        return `<tr><th scope="row" class="${escapeHtml(row)}-col">In ${escapeHtml(stateName(row))}</th>${cells}</tr>`;
+      })
+      .join("");
+    const notes = Object.keys(m.cellNotes || {})
+      .map((k) => {
+        const [r, c] = k.split(":");
+        return `<li><strong>In ${escapeHtml(stateName(r))}, ${escapeHtml(stateName(c))} permit:</strong> ${escapeHtml(m.cellNotes[k])}</li>`;
+      })
+      .join("");
+    const asOf = ids
+      .filter((id) => m.asOf && m.asOf[id])
+      .map((id) => `<li><strong>${escapeHtml(stateName(id))}:</strong> ${escapeHtml(m.asOf[id])}</li>`)
+      .join("");
+    return `
+      <section class="matrix-section" aria-labelledby="matrix-heading">
+        <h2 id="matrix-heading" class="section-heading">Reciprocity matrix <span class="section-checked">checked ${escapeHtml(formatDate(m.lastChecked))}</span></h2>
+        <p class="compare-intro">${escapeHtml(m.description || "")}</p>
+        <div class="compare-wrap">
+          <table class="compare-table matrix-table">
+            <thead><tr><th scope="col">Carrying in ↓ / Permit from →</th>${head}</tr></thead>
+            <tbody>${body}</tbody>
+          </table>
+        </div>
+        <details class="matrix-notes">
+          <summary>Notes &amp; list dates</summary>
+          <ul>${notes}${asOf}</ul>
+          ${renderSources(m.sources)}
+        </details>
+      </section>`;
+  }
+
   function renderCompare() {
+    const ids = stateIds();
     const rows = (data.compare || [])
       .map(
         (row) => `
       <tr>
         <th scope="row">${escapeHtml(row.topic)}</th>
-        <td>${escapeHtml(row.ca)}</td>
-        <td>${escapeHtml(row.or)}</td>
-        <td>${escapeHtml(row.nv)}</td>
+        ${ids.map((id) => `<td>${escapeHtml(row[id] != null ? row[id] : "—")}</td>`).join("")}
       </tr>`
       )
       .join("");
 
     els.viewCompare.innerHTML = `
-      <p class="compare-intro">Side-by-side high-level comparison. Not a substitute for statutes or counsel.</p>
+      ${renderMatrix()}
+      <h2 class="section-heading">Side-by-side</h2>
+      <p class="compare-intro">High-level comparison of ${escapeHtml(ids.map((id) => id.toUpperCase()).join(", "))}. Not a substitute for statutes or counsel.</p>
       <div class="compare-wrap">
-        <table class="compare-table">
+        <table class="compare-table compare-5">
           <thead>
             <tr>
               <th scope="col">Topic</th>
-              <th scope="col" class="ca-col">California</th>
-              <th scope="col" class="or-col">Oregon</th>
-              <th scope="col" class="nv-col">Nevada</th>
+              ${ids.map((id) => `<th scope="col" class="${escapeHtml(id)}-col">${escapeHtml(stateName(id))}</th>`).join("")}
             </tr>
           </thead>
           <tbody>
@@ -689,6 +948,51 @@
           </tbody>
         </table>
       </div>
+    `;
+  }
+
+  function outcomeLabel(o) {
+    const map = { pending: "Pending", granted: "Cert granted", decided: "Decided", stayed: "Stayed" };
+    return map[o] || o || "Status";
+  }
+
+  function renderLitigation() {
+    const lit = data.litigation || {};
+    const cases = lit.cases || [];
+    const cards = cases
+      .map(
+        (c) => `
+      <article class="case-card outcome-${escapeHtml(c.outcome || "unknown")}" id="case-${escapeHtml(c.id)}">
+        <div class="result-meta">
+          <span class="badge outcome-badge outcome-${escapeHtml(c.outcome || "unknown")}">${escapeHtml(outcomeLabel(c.outcome))}</span>
+          ${c.uncertain ? '<span class="badge uncertain">Partly uncertain</span>' : ""}
+          ${stateBadges(c.stateIds)}
+        </div>
+        <h3 class="case-name">${escapeHtml(c.name)}</h3>
+        <p class="case-court">${escapeHtml(c.court)}${c.docket ? " · " + escapeHtml(c.docket) : ""}</p>
+        <dl class="case-facts">
+          <dt>Challenges</dt><dd>${escapeHtml(c.challenges)}</dd>
+          <dt>Status <span class="case-date">(as of ${escapeHtml(formatDate(c.statusDate))})</span></dt><dd>${escapeHtml(c.status)}</dd>
+          <dt>What a ruling would change</dt><dd>${escapeHtml(c.impact)}</dd>
+        </dl>
+        ${c.uncertainNote ? `<p class="callout caution"><strong>Uncertain:</strong> ${escapeHtml(c.uncertainNote)}</p>` : ""}
+        <p class="case-src"><a href="${escapeHtml(c.sourceUrl)}" target="_blank" rel="noopener noreferrer">Docket / opinion</a>${(c.extraUrls || [])
+          .map((u, i) => ` · <a href="${escapeHtml(u)}" target="_blank" rel="noopener noreferrer">Related ${i + 1}</a>`)
+          .join("")}
+          <span class="section-checked">checked ${escapeHtml(formatDate(c.lastChecked))}</span></p>
+      </article>`
+      )
+      .join("");
+
+    els.viewLitigation.innerHTML = `
+      <h2 class="updates-heading">Litigation</h2>
+      <p class="watching-note" role="status">
+        <span class="watching-dot" aria-hidden="true"></span>
+        ${escapeHtml(lit.note || "")} Last checked ${escapeHtml(formatDate(lit.lastChecked))}.
+      </p>
+      <p class="callout caution"><strong>NOT LEGAL ADVICE.</strong> Court status summaries only. A pending case does not change the law until a court rules, and rulings can be stayed or appealed.</p>
+      <div class="case-list">${cards || "<p>No cases listed.</p>"}</div>
+      ${lit.noCasesNote ? `<p class="callout">${escapeHtml(lit.noCasesNote)}</p>` : ""}
     `;
   }
 
@@ -721,12 +1025,13 @@
     // Alias old changelog hash → updates
     if (view === "changelog") view = "updates";
     currentView = view;
-    const isState = view === "ca" || view === "or" || view === "nv";
+    const isState = stateIds().indexOf(view) !== -1;
 
     els.viewAsk.hidden = view !== "ask";
     els.viewState.hidden = !isState;
     els.viewCompare.hidden = view !== "compare";
     els.viewUpdates.hidden = view !== "updates";
+    els.viewLitigation.hidden = view !== "litigation";
 
     els.tabs.forEach((tab) => {
       const active = tab.dataset.view === view;
@@ -743,6 +1048,8 @@
       renderCompare();
     } else if (view === "updates") {
       renderUpdates();
+    } else if (view === "litigation") {
+      renderLitigation();
     }
 
     if (history.replaceState) {
@@ -803,25 +1110,24 @@
       return;
     }
 
-    els.disclaimer.textContent = data.disclaimer || "";
+    // The banner already shows a bold "NOT LEGAL ADVICE." label; avoid repeating it.
+    els.disclaimer.textContent = String(data.disclaimer || "").replace(/^\s*NOT LEGAL ADVICE\.\s*/i, "");
     els.reviewed.textContent = formatDate(data.lastReviewed);
     buildSearchIndex();
 
     const hash = (location.hash || "").replace(/^#/, "");
-    const initial =
-      hash === "ask" ||
-      hash === "ca" ||
-      hash === "or" ||
-      hash === "nv" ||
-      hash === "compare" ||
-      hash === "updates" ||
-      hash === "changelog"
-        ? hash === "changelog"
-          ? "updates"
-          : hash
-        : "ca";
+    const valid = NON_STATE_VIEWS.concat(stateIds());
+    const normalized = hash === "changelog" ? "updates" : hash;
+    const initial = valid.indexOf(normalized) !== -1 ? normalized : "ca";
 
     showView(initial);
+
+    // Support in-app deep links / manual hash edits (e.g. #wa, #litigation)
+    window.addEventListener("hashchange", () => {
+      const h = (location.hash || "").replace(/^#/, "");
+      const v = h === "changelog" ? "updates" : h;
+      if (valid.indexOf(v) !== -1 && v !== currentView) showView(v);
+    });
   }
 
   if (document.readyState === "loading") {

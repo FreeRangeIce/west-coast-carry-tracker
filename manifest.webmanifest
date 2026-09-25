@@ -1,7 +1,7 @@
 {
   "name": "West Coast Carry Tracker",
   "short_name": "Carry Tracker",
-  "description": "High-level CA / OR / NV firearm & conceal-carry law tracker. Not legal advice.",
+  "description": "High-level CA / OR / NV / WA / AZ firearm & concealed-carry law tracker. Not legal advice.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

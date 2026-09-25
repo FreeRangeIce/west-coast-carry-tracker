@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="High-level CA / OR / NV firearm & conceal-carry law tracker. Not legal advice." />
+  <meta name="description" content="High-level CA / OR / NV / WA / AZ firearm &amp; concealed-carry law tracker: permits, reciprocity matrix, court cases, county CCW notes. Not legal advice." />
   <meta name="theme-color" content="#0c0e12" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Carry Tracker" />
-  <title>West Coast Carry Tracker — CA · OR · NV</title>
+  <title>West Coast Carry Tracker — CA · OR · NV · WA · AZ</title>
   <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -22,7 +23,7 @@
         <span class="brand-mark" aria-hidden="true">◈</span>
         <div>
           <h1>West Coast Carry Tracker</h1>
-          <p class="tagline">California · Oregon · Nevada — high-level CCW / CHL / CFP reference</p>
+          <p class="tagline">CA · OR · NV · WA · AZ — high-level concealed-carry (CCW / CHL / CFP / CPL) reference</p>
         </div>
       </div>
       <div class="reviewed-stamp" id="reviewed-stamp" title="Global last reviewed date">
@@ -42,7 +43,10 @@
     <button role="tab" class="tab active" data-view="ca" aria-selected="true" id="tab-ca">California</button>
     <button role="tab" class="tab" data-view="or" aria-selected="false" id="tab-or">Oregon</button>
     <button role="tab" class="tab" data-view="nv" aria-selected="false" id="tab-nv">Nevada</button>
+    <button role="tab" class="tab" data-view="wa" aria-selected="false" id="tab-wa">Washington</button>
+    <button role="tab" class="tab" data-view="az" aria-selected="false" id="tab-az">Arizona</button>
     <button role="tab" class="tab" data-view="compare" aria-selected="false" id="tab-compare">Compare</button>
+    <button role="tab" class="tab" data-view="litigation" aria-selected="false" id="tab-litigation">Litigation</button>
     <button role="tab" class="tab" data-view="updates" aria-selected="false" id="tab-updates">Updates</button>
   </nav>
 
@@ -50,12 +54,13 @@
     <section id="view-ask" class="view" hidden></section>
     <section id="view-state" class="view" hidden></section>
     <section id="view-compare" class="view" hidden></section>
+    <section id="view-litigation" class="view" hidden></section>
     <section id="view-updates" class="view" hidden></section>
     <p id="load-error" class="load-error" hidden></p>
   </main>
 
   <footer class="site-footer">
-    <p>Self-contained static reference · Data in <code>data/laws.json</code> · Re-verify official sources before travel or carry.</p>
+    <p>Self-contained static reference for CA, OR, NV, WA and AZ · Data in <code>data/laws.json</code> · NOT LEGAL ADVICE — re-verify official sources before travel or carry.</p>
   </footer>
 
   <script src="app.js" defer></script>
