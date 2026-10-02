@@ -517,8 +517,14 @@
 
   function makeSnippet(text, queryTokens, maxLen) {
     const raw = String(text || "");
+    // The first query word is often a state name at the start, or a bill
+    // number after the lead sentence. A 220-character window from that hit
+    // was clipping the fact the question is about (it stays in laws.json).
+    // Passages up to this cap are shown whole so that fact stays on the card.
+    // Longer entries still use the keyword window. Ranking is unchanged.
+    const wholeLimit = 960;
+    if (!raw || raw.length <= wholeLimit) return raw;
     const limit = maxLen || 220;
-    if (!raw) return "";
     const lower = raw.toLowerCase();
     let start = 0;
     for (let i = 0; i < queryTokens.length; i++) {
