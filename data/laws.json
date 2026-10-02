@@ -70,7 +70,7 @@
           "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=26230"
         },
         {
-          "title": "OAG Information Bulletin 2026-DLE-14 (CCW renewal fingerprints / Rap Back; Sept 1, 2026)",
+          "title": "OAG Information Bulletin 2026-DLE-14 (CCW renewal fingerprints / Rap Back; dated Aug 31, 2026; effective Sept 1, 2026)",
           "url": "https://www.oag.ca.gov/system/files/media/2026-dle-14.pdf"
         },
         {
@@ -86,9 +86,9 @@
           "url": "https://www.oag.ca.gov/system/files/media/2026-dle-16.pdf"
         }
       ],
-      "renewalNote": "Effective Sept 1, 2026 (SB 2 / Pen. Code § 26185; OAG 2026-DLE-14): licensing authorities must submit fingerprint images and fees for each CCW renewal applicant and may not issue a renewal until DOJ confirms firearms eligibility. Renewal fees increased (e.g., Standard CCW $93). Licensing authorities must enroll in FBI Federal Rap Back by Dec 31, 2026. Verify with the issuing sheriff or police chief and current OAG bulletins.",
+      "renewalNote": "Effective Sept 1, 2026 (SB 2 / Pen. Code § 26185; OAG 2026-DLE-14): licensing authorities must submit fingerprint images and fees for each CCW renewal applicant and may not issue a renewal until DOJ confirms firearms eligibility. The DOJ renewal fee increased (Standard CCW $93, DLE-14); local fees are extra. Licensing authorities must enroll in FBI Federal Rap Back by Dec 31, 2026. Verify with the issuing sheriff or police chief and current OAG bulletins.",
       "eligibility": "21+; resident of the county or city, or principal place of business in the county (sheriff only), or the non-resident path under AB 1078; not a disqualified person (PC 26202); DOJ confirms you may possess firearms (PC 26185); completed approved training (PC 26165); and the DOJ-recorded owner of each gun to be listed (PC 26150(a)(5)).",
-      "fees": "Varies by licensing authority: DOJ processing fee (Standard CCW $93) plus local application and issuance fees, and often a psych evaluation and training costs. Examples: LASD $43 + $173; Orange $93 Live Scan + $300; Santa Clara $488 + $488. See County notes. San Jose PD posts a $1,591 initial CCW application fee (Res. 2026-183; challenged in United States v. San Jose, filed Sept 16, 2026 — see Litigation / County notes).",
+      "fees": "Varies by licensing authority: DOJ processing fee (Standard CCW $93) plus local application and issuance fees, and often a psych evaluation and training costs. Examples: LASD $43 + $173; Orange $93 Live Scan + $300; Santa Clara $488 + $488. See County notes. San Jose PD charges a $1,591 initial CCW application fee (Res. 2026-183; challenged in United States v. San Jose, filed Sept 16, 2026 — see Litigation / County notes).",
       "training": "16 hours for an initial license and 8 hours for renewal, including live-fire qualification, from a course approved by the licensing authority (PC 26165).",
       "processingTime": "Varies widely by county (weeks to many months). San Diego reported about 8 months from application to issuance in April 2025. See County notes.",
       "validity": "Standard license up to 2 years today. AB 1948 (Stats. 2026, ch. 44, signed June 30, 2026) raises the maximum standard term to 3 years for licenses issued on or after Jan 1, 2027 (PC 26220); not retroactive.",
@@ -114,15 +114,15 @@
           "date": "2026-09-01",
           "title": "SB 2 renewal fingerprints (PC 26185; OAG 2026-DLE-14)",
           "status": "In effect Sept 1, 2026",
-          "summary": "Every CCW renewal now needs new fingerprints and DOJ eligibility confirmation before issuance; renewal fees increased.",
+          "summary": "Every CCW renewal now needs new fingerprints and DOJ eligibility confirmation before issuance. The DOJ renewal fee increased (Standard CCW $93, DLE-14); local fees are extra.",
           "url": "https://www.oag.ca.gov/system/files/media/2026-dle-14.pdf"
         },
         {
           "date": "2026-01-01",
-          "title": "AB 1078 — non-resident CCW path",
+          "title": "AB 1078 (Stats. 2025, ch. 570) — non-resident CCW path",
           "status": "In effect Jan 1, 2026",
           "summary": "Creates a statutory route for non-residents to apply for a California CCW (not reciprocity).",
-          "url": "https://www.oag.ca.gov/system/files/media/2026-dle-13.pdf"
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=26150"
         }
       ],
       "lastChecked": "2026-09-25"
@@ -139,15 +139,15 @@
       "validity": "4 years (ORS 166.292(4)). If you apply to renew before your license expires, an expired license stays valid for up to 45 days after the date you applied to renew, as long as you carry proof of the renewal application and it hasn't been denied (ORS 166.295(1)(b)).",
       "openCarryNote": "Open carry without a CHL is generally lawful under state law but local restrictions (esp. loaded carry in some cities) can apply — check locality. Without an Oregon CHL, you may not carry a handgun concealed on your person or keep one concealed and readily accessible in a vehicle (anywhere in the passenger compartment; ORS 166.250(1)(b), (4)).",
       "reciprocityIn": "Oregon does not recognize concealed carry licenses from any other state. An Oregon CHL is required to carry concealed.",
-      "nonResidentNote": "Generally you must be a resident of the issuing county. A sheriff may waive residency for a resident of a contiguous state (CA, NV, WA, ID) with a compelling business interest or other legitimate need (ORS 166.291(8)); practice varies by county. Challenged in Ladd v. Hunter (D. Or. No. 6:26-cv-01883, filed Sept 11, 2026) — pending; current residency/non-recognition rules remain in effect unless enjoined.",
+      "nonResidentNote": "Generally you must be a resident of the issuing county. A sheriff may waive residency for a resident of a contiguous state (CA, NV, WA, ID) with a compelling business interest or other legitimate demonstrated need (ORS 166.291(8)); practice varies by county. Challenged in Ladd v. Hunter (D. Or. No. 6:26-cv-01883, filed Sept 11, 2026) — pending; current residency/non-recognition rules remain in effect unless enjoined.",
       "keyRestrictions": [
         "Public buildings (ORS 166.360, 166.370): CHL holders have an affirmative defense in most public buildings, but not in court facilities, the State Capitol, or the passenger terminal of an airport with over 1 million boardings a year (e.g., PDX), including non-secure areas (ORS 166.370(1)(b), 166.262). A firearm may be carried unloaded in a locked hard-sided case for checking as baggage (ORS 166.370(3)(k)).",
-        "School grounds of boards/universities/community colleges, and city/county/district official-meeting buildings, where the governing body adopts an ORS 166.377 policy and posts signs (CHL defense removed; ORS 166.377, amended 2025 c 594)",
+        "School grounds controlled by a school district board, public university, OHSU or community college, and city/county/district buildings used for official meetings, where the governing body adopts an ORS 166.377 policy and posts signs (CHL defense removed; ORS 166.377, amended 2025 c 594)",
         "Federal facilities and airport secure areas (federal law); see above for Oregon's ban in large-airport terminals",
         "Local loaded-carry restrictions for people without a CHL (e.g., some cities) — check locally"
       ],
       "travelerTip": "Out-of-state permits are not recognized in Oregon. Without an Oregon CHL, you may not carry a handgun concealed on your person or keep one concealed and readily accessible in a vehicle (anywhere in the passenger compartment; ORS 166.250(1)(b), (4)). Some cities also ban loaded carry in public for people without a CHL (ORS 166.173). Check the rules for storing a handgun in a vehicle before you drive in.",
-      "measure114Note": "Measure 114 (permit-to-purchase / related rules) remains in litigation and is not currently in effect. Oregon HB 4145 (2026 Laws, ch. 120; signed Apr 7, 2026) delayed the Measure 114 operative date to January 1, 2028, and stated legislative intent not to moot pending Oregon Supreme Court challenges. Track separately from CHL — do not conflate with CHL.",
+      "measure114Note": "Measure 114 (permit-to-purchase / related rules) remains in litigation and is not currently in effect. Oregon HB 4145 (2026 Laws, ch. 120; signed Apr 7, 2026) delayed the Measure 114 operative date to January 1, 2028, and stated legislative intent not to moot the pending Oregon Supreme Court case (Arnold v. Kotek). Track separately from CHL — do not conflate with CHL.",
       "possessionNotes": "High-level only: CHL framework is separate from Measure 114 permit-to-purchase litigation. Verify both tracks independently.",
       "lastReviewed": "2026-09-25",
       "sources": [
@@ -166,13 +166,17 @@
         {
           "title": "Oregon HB 4145 (2026) — Measure 114 operative-date delay",
           "url": "https://olis.oregonlegislature.gov/liz/2026R1/Downloads/MeasureDocument/HB4145/Enrolled"
+        },
+        {
+          "title": "Or Laws 2026 ch. 120 (HB 4145)",
+          "url": "https://www.oregonlegislature.gov/bills_laws/lawsstatutes/2026orLaw0120.pdf"
         }
       ],
-      "eligibility": "US citizen, or legal resident noncitizen with 6 months' county residency who has declared intent to become a citizen; 21+; resident of the county (the sheriff may waive residency for a resident of a contiguous state with a compelling business interest or other legitimate need); no outstanding warrants or pretrial release; demonstrates handgun competence; no disqualifying convictions or mental-health findings (ORS 166.291).",
+      "eligibility": "US citizen, or legal resident noncitizen with 6 months' county residency who has declared intent to become a citizen; 21+; resident of the county (the sheriff may waive residency for a resident of a contiguous state with a compelling business interest or other legitimate demonstrated need (ORS 166.291(8))); no outstanding warrants or pretrial release; demonstrates handgun competence; no disqualifying convictions or mental-health findings (ORS 166.291).",
       "fees": "Set by statute (ORS 166.291(5), 2025 edition): $100 to the sheriff for an initial license, $75 for renewal, $15 for a duplicate, plus $15 to Oregon State Police for the fingerprint check. Scheduling, wait times and processing vary by county.",
       "training": "Show handgun competence with any one of: an approved hunter-education course with handgun safety, an NRA course with handgun safety, a public course from law enforcement, a community college or an institution, or other listed options (ORS 166.291(1)(f)).",
       "processingTime": "The sheriff must issue the license (if approved) within 45 days of application (ORS 166.292). Appointment wait times before you can apply vary a lot by county.",
-      "magazineAwRules": "No state magazine limit or assault-weapon ban is in effect. Measure 114's ban on magazines over 10 rounds is not in effect while Arnold v. Kotek is pending at the Oregon Supreme Court. HB 4145 (2026) would make Measure 114 operative Jan 1, 2028 if it's upheld.",
+      "magazineAwRules": "No state magazine limit or assault-weapon ban is in effect. Measure 114's ban on magazines over 10 rounds is not in effect while Arnold v. Kotek is pending at the Oregon Supreme Court. HB 4145 (2026 Laws ch. 120) moved the start date for the permit-to-purchase and magazine provisions to January 1, 2028. They take effect then only if the courts don't strike or block them. M114 also requires a completed background check before any transfer.",
       "purchaseRules": "No permit to purchase is in effect today. Measure 114's permit to purchase would start no earlier than Jan 1, 2028 (HB 4145), if upheld. Dealer sales and most private transfers go through an Oregon State Police background check.",
       "recentLegislation": [
         {
@@ -180,7 +184,7 @@
           "title": "HB 4145 (2026 Laws, ch. 120) — Measure 114 timing",
           "status": "Signed Apr 7, 2026",
           "summary": "Delays the Measure 114 operative date to Jan 1, 2028, and states intent not to moot the pending Oregon Supreme Court challenge.",
-          "url": "https://olis.oregonlegislature.gov/liz/2026R1/Downloads/MeasureDocument/HB4145/Enrolled"
+          "url": "https://www.oregonlegislature.gov/bills_laws/lawsstatutes/2026orLaw0120.pdf"
         }
       ],
       "lastChecked": "2026-09-25",
@@ -195,7 +199,7 @@
       "constitutionalCarry": false,
       "issuer": "County sheriff",
       "minAge": "21+ (18–20 if active military or honorably discharged) — NRS 202.3657",
-      "reciprocityIn": "Nevada recognizes permits from states on the DPS RCCD recognition list (updated periodically, often July 1).",
+      "reciprocityIn": "Nevada recognizes permits from states on the DPS RCCD recognition list (prepared each year on or before July 1 under NRS 202.3689).",
       "recognizedStatesAsOf": "2026-07-01",
       "recognizedStates": [
         "Alaska",
@@ -248,6 +252,10 @@
           "url": "https://www.rccd.nv.gov/"
         },
         {
+          "title": "Out-of-State CCW Permit Recognition",
+          "url": "https://www.rccd.nv.gov/resources/carry-concealed-weapon-ccw-permit/"
+        },
+        {
           "title": "NRS Chapter 202 (firearms)",
           "url": "https://www.leg.state.nv.us/NRS/NRS-202.html"
         },
@@ -281,11 +289,11 @@
       "minAge": "21+ (RCW 9.41.070)",
       "eligibility": "21+, not prohibited from possessing firearms under state or federal law, and no disqualifying pending charges or orders (RCW 9.41.070). Residents apply to the police chief of their city or the sheriff of their county; nonresidents may apply to any city or county agency in Washington. Starting May 1, 2027 (HB 1163), applicants must also show a certified concealed-carry safety-training certificate.",
       "fees": "Set by statute statewide: $36 for an original CPL plus the FBI fingerprint-check charge; $32 renewal; $10 late-renewal penalty; $10 replacement. Local agencies may not add fees or requirements (RCW 9.41.070).",
-      "training": "No training required for a CPL today. Starting May 1, 2027, applicants must present a certificate from a certified firearms safety course taken within the last 5 years that includes live fire (at least 50 rounds) and concealed-carry law (RCW 9.41.070 as amended by 2025 c 370 / HB 1163). Separately, since Jan 1, 2024, anyone buying a firearm must show proof of recognized safety training within the last 5 years (RCW 9.41.090).",
+      "training": "No training required for a CPL today. Starting May 1, 2027, applicants must present a certificate, dated within the last 5 years, from a WSP-certified concealed-carry safety course with supervised live fire (at least 50 rounds) (RCW 9.41.070(1)(h), (5), as amended by 2025 c 370; RCW 43.43.575). Separately, since Jan 1, 2024, anyone buying a firearm must show proof of recognized safety training within the last 5 years (RCW 9.41.090).",
       "processingTime": "The agency must issue or deny within 30 days, or up to 60 days if the applicant lacks a WA driver license/ID or has lived in WA under 90 days (RCW 9.41.070). Appointments and actual turnaround vary by agency.",
       "validity": "5 years. Renewal allowed within 90 days before or after expiration; late renewal adds a $10 penalty (RCW 9.41.070).",
       "openCarryNote": "Open carry of a pistol without a license is generally lawful for adults who may legally possess it, but a CPL is required for a loaded pistol in a vehicle. Open carry is banned at the state capitol grounds and at local government meetings (RCW 9.41.305) and at or near permitted demonstrations (RCW 9.41.300). Displaying a weapon in a manner that warrants alarm is a crime (RCW 9.41.270).",
-      "reciprocityIn": "Washington honors a small set of states whose licenses meet RCW 9.41.073 (the state must honor WA's CPL, not license under-21s, and require fingerprint and mental-health checks). Per the WA Attorney General list (updated July 10, 2026): Idaho (Enhanced only), Kansas (Standard only), Louisiana, Michigan, Montana (Enhanced only), North Carolina, North Dakota (Class 1 only), Ohio, South Dakota (Enhanced/Gold only), Utah (not Provisional). Visitors must be nonresidents. Washington does NOT honor CA, OR, NV, or AZ permits.",
+      "reciprocityIn": "Washington honors a small set of states whose licenses meet RCW 9.41.073 (the state must honor WA's CPL, not license under-21s, and require fingerprint and mental-health checks). Per the WA Attorney General list (updated July 10, 2026): Idaho (Enhanced only), Kansas (Standard only), Louisiana, Michigan, Montana (Enhanced only), North Carolina, North Dakota (Class 1 only), Ohio, South Dakota (Unrestricted Enhanced / Gold only; not Regular or the 18–20 Restricted Enhanced), Utah (not Provisional). Visitors must be nonresidents. Washington does NOT honor CA, OR, NV, or AZ permits.",
       "recognizedStatesAsOf": "2026-07-10",
       "recognizedStatesSource": "Washington Attorney General CPL reciprocity list",
       "recognizedStates": [
@@ -297,7 +305,7 @@
         "North Carolina",
         "North Dakota (Class 1 only)",
         "Ohio",
-        "South Dakota (Enhanced / Gold only)",
+        "South Dakota (Unrestricted Enhanced / Gold only; not Regular or the 18–20 Restricted Enhanced)",
         "Utah (not Provisional)"
       ],
       "important": "CA and OR don't recognize other states' permits, so WA can't honor theirs; NV and AZ permits fail WA's test (no mandatory mental-health check and under-21 licensing). Arizona and Nevada are the only states in this tracker that could honor a WA CPL, and only Arizona does (AZ honors all valid permits; NV does not list WA).",
@@ -316,7 +324,7 @@
       ],
       "travelerTip": "A CA, OR, NV, or AZ permit is NOT valid for concealed carry in Washington, and you need a license to have a loaded pistol in a vehicle. Nonresidents can apply for a WA CPL. Check the AG reciprocity page before a trip.",
       "magazineAwRules": "Assault weapons: manufacture, import, distribution, sale and offer for sale banned since Apr 25, 2023 (RCW 9.41.390). This is a sales ban, not a possession ban, and there is an inheritance exception. Large-capacity magazines (more than 10 rounds): manufacture, import, distribution and sale banned since July 1, 2022 (RCW 9.41.370); possession is not banned. The WA Supreme Court upheld the magazine law in May 2025 (Gator's Custom Guns), and a US Supreme Court petition is pending. See the Litigation tab.",
-      "purchaseRules": "Today: 10-business-day waiting period on all firearm deliveries by dealers (RCW 9.41.092); proof of firearms-safety training within the last 5 years to buy (RCW 9.41.090); no pistols or semiautomatic assault rifles to under-21s (RCW 9.41.240). Starting May 1, 2027 (HB 1163, RCW 9.41.121): buyers need a Washington State Patrol permit to purchase (fingerprints plus a certified safety course with live fire within 5 years; decision within 30 days, or 60 in some cases; valid 5 years; the WSP sets the fee). A permit to purchase does not authorize concealed carry.",
+      "purchaseRules": "Today: 10-business-day waiting period on all firearm deliveries by dealers (RCW 9.41.092); proof of firearms-safety training within the last 5 years to buy (RCW 9.41.090); no pistols or semiautomatic assault rifles to under-21s (RCW 9.41.240). Starting May 1, 2027 (HB 1163, RCW 9.41.121): buyers need a Washington State Patrol permit to purchase (fingerprints plus a certified safety course with live fire within 5 years; decision within 30 days (60 for applicants without a WA license/ID or under 90 days' residency, or longer if records are needed); valid 5 years; WSP sets the application fee, plus a fingerprint-processing fee). A permit to purchase does not authorize concealed carry.",
       "possessionNotes": "WA's assault-weapon and magazine laws restrict sales, manufacture and import, not simple possession of items already owned. The permit-to-purchase law (May 1, 2027) is separate from the CPL.",
       "recentLegislation": [
         {
@@ -420,16 +428,16 @@
       "permitName": "Concealed Weapons Permit (CCW) — optional",
       "constitutionalCarry": true,
       "issuer": "Arizona Department of Public Safety (DPS) Concealed Weapons Permit Unit — statewide",
-      "minAge": "21+ for permitless concealed carry; permit at 21+, or 19+ with military service or honorable discharge (ARS 13-3112)",
-      "eligibility": "Permit: Arizona resident or US citizen; 21+ (or 19+ with active military service or honorable discharge); not a prohibited possessor; no disqualifying record; completed a qualifying firearms-safety course or equivalent (ARS 13-3112). Permitless carry: 21+ and not a prohibited possessor.",
+      "minAge": "21+ for permitless concealed carry; permit at 21+, or 19+ with current military service, or an honorable or general-under-honorable-conditions discharge (ARS 13-3112)",
+      "eligibility": "Permit: Arizona resident or US citizen; 21+ (or 19+ with current military service, or an honorable or general-under-honorable-conditions discharge); not a prohibited possessor; no disqualifying record; completed a qualifying firearms-safety course or equivalent (ARS 13-3112). Permitless carry: 21+ and not a prohibited possessor.",
       "fees": "DPS: $60 new permit, $43 renewal, $10 replacement or profile change (DPS CCW page).",
-      "training": "Permit applicants must show a firearms-safety course or equivalent — e.g., a DPS-approved course, an NRA or law-enforcement course, a hunter-education course, military/peace-officer training, or a current out-of-state permit that required training (ARS 13-3112(N)). No training needed for permitless carry.",
+      "training": "Permit applicants must show a firearms-safety course or equivalent — e.g., a DPS-approved course, an NRA or law-enforcement course, a hunter-education course, military/peace-officer training, or a current or expired out-of-state permit that required training or testing (ARS 13-3112(N)(6)). No training needed for permitless carry.",
       "processingTime": "DPS asks applicants to allow up to 75 days. By statute the background check must be done within 60 days and the permit issued within 15 working days after that (ARS 13-3112).",
       "validity": "5 years (ARS 13-3112).",
-      "openCarryNote": "Open carry is generally lawful for adults who may legally possess firearms; Arizona law restricts where weapons may be carried (ARS 13-3102) rather than requiring a license to carry. Under-21s may not carry concealed (ARS 13-3102(A)(2)), with limited exceptions such as a visible holster or in a vehicle.",
+      "openCarryNote": "Open carry is generally lawful for adults who may legally possess firearms; Arizona law restricts where weapons may be carried (ARS 13-3102) rather than requiring a license to carry. Under-21s may not carry concealed (ARS 13-3102(A)(2)), with limited exceptions: a holster, scabbard or case that is wholly or partly visible, luggage, or a case/holster/pack or glove box, trunk or other storage compartment in a vehicle (ARS 13-3102(B)(3)).",
       "reciprocityIn": "Arizona honors every other state's valid carry permit, as long as the holder is legally present, not a prohibited possessor, and 21+ for concealed carry (ARS 13-3112(Q), (S)). That includes CA, OR, NV, and WA permits. Adults 21+ can also carry concealed with no permit at all.",
       "reciprocityOutNote": "Per the AZ DPS reciprocity table (as of May 28, 2024), CA, OR, and WA (plus CT, HI, IL, MD, MA, MN, NJ, NY, RI, VT) do not recognize Arizona permits. Nevada recognizes AZ permits (also on NV's July 1, 2026 list). Most other states recognize AZ either by agreement (AK, AR, ID, OH, PA, SD, TX, WV) or unilaterally. Verify with the destination state.",
-      "nonResidentNote": "Nonresidents who are US citizens may apply for an AZ permit through DPS (online portal). Visitors 21+ may carry concealed in Arizona without any permit, or under their home-state permit.",
+      "nonResidentNote": "Nonresidents who are US citizens may apply for an AZ permit through DPS (online portal). Visitors 21+ who are not prohibited possessors may carry concealed in Arizona without any permit, or under a valid home-state permit (ARS 13-3102, 13-3112(Q)). By statute DPS prioritizes in-state applicants (ARS 13-3112(A)).",
       "keyRestrictions": [
         "Government buildings and vehicles ('public establishments') and government-run or government-permitted public events, once the operator or sponsor reasonably asks you to check your weapon into the secure storage it must provide (ARS 13-3102(A)(10), 13-3102.01)",
         "Polling places on election day (ARS 13-3102)",
@@ -438,7 +446,7 @@
         "Bars and restaurants serving alcohol: only AZ permit holders may carry concealed where the venue isn't posted with the ARS 4-229 no-weapons sign, and no one carrying may drink. Permitless carriers may not carry there (ARS 4-229, 4-244)",
         "Secured areas of airports and federal facilities (federal law) — verify"
       ],
-      "travelerTip": "Arizona is the easy one: 21+ visitors who can legally possess a gun may carry concealed without a permit, and all valid out-of-state permits are honored. Two traps: answer truthfully if an officer asks whether you're carrying concealed (ARS 13-3102(A)(1)(b)), and you need an AZ permit to carry in unposted bars/restaurants — an out-of-state permit or permitless carry isn't enough there.",
+      "travelerTip": "Arizona is the easy one: 21+ visitors who can legally possess a gun may carry concealed without a permit, and all valid out-of-state permits are honored. Two traps: answer truthfully if an officer asks whether you're carrying concealed (ARS 13-3102(A)(1)(b)), and you need an AZ permit to carry in unposted bars/restaurants — the 4-244 exception names only Arizona-issued permits (\"issued pursuant to section 13-3112\"); don't rely on an out-of-state permit or permitless carry there.",
       "magazineAwRules": "Arizona statutes impose no magazine-capacity limit and no assault-weapon ban (none found in ARS Title 13). Federal law still applies.",
       "purchaseRules": "No state permit to purchase, no state waiting period, and no state universal background-check law were found in the Arizona Revised Statutes. Federal background checks apply to dealer sales; an AZ CCW permit may be used in place of the NICS check at dealers under ATF rules (verify with the dealer/ATF).",
       "possessionNotes": "Permitless carry doesn't remove the permit's benefits: reciprocity in other states, carry in unposted alcohol-serving venues, and a faster dealer purchase. Prohibited possessors can't carry at all.",
@@ -503,7 +511,7 @@
   ],
   "reciprocityMatrix": {
     "lastChecked": "2026-09-25",
-    "description": "Row = the state you are carrying IN. Column = the state that issued your permit. 'yes' means the row state honors that permit for concealed carry. Arizona also allows permitless concealed carry for anyone 21+ who may legally possess a firearm.",
+    "description": "Row = the state you are carrying IN. Column = the state that issued your permit. \"Yes\" means the row state honors a valid permit from that state for concealed carry (conditions apply; Arizona requires the holder to be 21+, legally present and not a prohibited possessor). Arizona also allows permitless concealed carry for anyone 21+ who may legally possess a firearm.",
     "states": [
       "ca",
       "or",
@@ -554,10 +562,10 @@
     },
     "asOf": {
       "ca": "CA DOJ public FAQ: California honors no out-of-state licenses.",
-      "or": "Oregon (ORS 166.291–.292): only an Oregon CHL authorizes concealed carry.",
-      "nv": "Nevada DPS recognition list effective 2026-07-01.",
-      "wa": "WA Attorney General reciprocity list updated 2026-07-10.",
-      "az": "ARS 13-3112(Q),(S); AZ DPS reciprocity table as of 2024-05-28."
+      "or": "Oregon (ORS 166.250, 166.260(1)(i)): no out-of-state license is recognized; among licenses, only an Oregon CHL authorizes concealed carry.",
+      "nv": "Nevada DPS recognition list effective Jul 1, 2026.",
+      "wa": "WA Attorney General reciprocity list updated Jul 10, 2026.",
+      "az": "ARS 13-3112(Q),(S); AZ DPS reciprocity table as of May 28, 2024."
     },
     "sources": [
       {
@@ -588,7 +596,7 @@
   },
   "litigation": {
     "lastChecked": "2026-09-25",
-    "note": "Status as verified from court dockets and official court pages on the date shown. Cases move fast — always check the linked docket. 'Uncertain' flags mean part of the status could not be confirmed from an official source.",
+    "note": "Status summarized from court dockets, official court pages, and party or agency filings. Cases move fast — always check the linked source. 'Partly uncertain' means part of the status could not be confirmed from an official source.",
     "cases": [
       {
         "id": "wolford-v-lopez",
@@ -622,7 +630,8 @@
         ],
         "sourceUrl": "https://cdn.ca9.uscourts.gov/datastore/opinions/2024/09/06/23-16164.pdf",
         "extraUrls": [
-          "https://michellawyers.com/may-et-al-v-bonta/"
+          "https://michellawyers.com/may-et-al-v-bonta/",
+          "https://www.courtlistener.com/docket/67788828/in-re-senate-bill-2-litigation/"
         ],
         "uncertain": false,
         "lastChecked": "2026-09-25"
@@ -743,6 +752,9 @@
           "ca"
         ],
         "sourceUrl": "https://www.ca9.uscourts.gov/cases/en-banc/",
+        "extraUrls": [
+          "https://cdn.ca9.uscourts.gov/datastore/opinions/2025/12/01/24-542.pdf"
+        ],
         "uncertain": false,
         "lastChecked": "2026-09-25"
       },
@@ -772,13 +784,14 @@
         "status": "The Oregon Court of Appeals held Measure 114 facially constitutional Mar 12, 2025 (338 Or App 556). The Oregon Supreme Court heard argument Nov 6, 2025. No opinion found on the court's opinions page through the Sept 3, 2026 release. Pending as last verified.",
         "statusDate": "2025-11-06",
         "outcome": "pending",
-        "impact": "If upheld, Measure 114 becomes operative Jan 1, 2028 under HB 4145 (permit to purchase plus 10-round magazine limit). If struck, those provisions never take effect. A separate federal challenge to M114 was also brought, but its status wasn't checked for this update.",
+        "impact": "If upheld, Measure 114 becomes operative Jan 1, 2028 under HB 4145 (permit to purchase plus 10-round magazine limit). If struck, those provisions never take effect. A separate federal challenge (Oregon Firearms Federation v. Kotek) ended in a 2023 district-court judgment upholding M114. The 9th Circuit appeal has been stayed since Dec 2023 pending the magazine and assault-weapon cases.",
         "stateIds": [
           "or"
         ],
         "sourceUrl": "https://www.courts.oregon.gov/publications/sc/Pages/default.aspx",
         "extraUrls": [
-          "https://law.justia.com/cases/oregon/court-of-appeals/2025/a183242.html"
+          "https://law.justia.com/cases/oregon/court-of-appeals/2025/a183242.html",
+          "https://trportal.courts.oregon.gov/portal/court/f28c1f7b-0af7-4462-b253-bd5371f86443/case/62e7f406-79b9-44a6-8545-95dda93112ec"
         ],
         "uncertain": true,
         "uncertainNote": "Opinions released after Sept 3, 2026 were not confirmed. Check the Oregon Supreme Court opinions page.",
@@ -834,14 +847,14 @@
     "states": [
       {
         "stateId": "ca",
-        "summary": "California CCWs are issued by the county sheriff or, for city residents, often the city police chief. Local fees, psych evaluations, gun limits and wait times vary widely. Statewide: since Sept 1, 2026, every renewal requires new fingerprints and DOJ eligibility confirmation (PC 26185; OAG 2026-DLE-14). AB 1948 extends new standard licenses to 3 years starting Jan 1, 2027 San Jose PD's ~$1,591 CCW fee is challenged in United States v. San Jose (filed Sept 16, 2026).",
+        "summary": "California CCWs are issued by the county sheriff or, for city residents, often the city police chief. Local fees, psych evaluations, gun limits and wait times vary widely. Statewide: since Sept 1, 2026, every renewal requires new fingerprints and DOJ eligibility confirmation (PC 26185; OAG 2026-DLE-14). AB 1948 raises the maximum standard license term to 3 years for licenses issued on or after Jan 1, 2027. San Jose PD's $1,591 CCW fee is challenged in United States v. San Jose (filed Sept 16, 2026).",
         "lastChecked": "2026-09-25",
         "counties": [
           {
             "name": "Los Angeles",
             "agency": "LA County Sheriff (LASD)",
             "fees": "Standard: $43 at submission + $173 at issuance (effective Sept 1, 2026). Non-resident: $136 ($93 DOJ + $43) + $173. Renewal: $17 at submission + $17 at issuance (LASD fees), plus the DOJ Live Scan fingerprint fee now required for renewals ($93 standard since Sept 1, 2026). Modification: $10.",
-            "processing": "LASD publishes monthly stats (e.g., July 2026: 855 applications received, 627 licenses issued).",
+            "processing": "LASD publishes monthly stats (e.g., July 2026: 855 applications received, 627 licenses issued (counts include renewals and, since Apr 2026, modifications)).",
             "policies": "LASD serves unincorporated areas and contract cities; residents of cities with their own police (e.g., LAPD) apply there. 16-hour initial / 8-hour renewal training from an LASD-approved provider, taken only after LASD tells you to. Up to 3 guns; AR-style pistols not allowed. From Oct 1, 2026, Live Scan or training done before applying won't be accepted. Non-resident applications accepted.",
             "sourceUrl": "https://lasd.org/ccw/",
             "verified": true
@@ -874,7 +887,7 @@
             "agency": "Sacramento County Sheriff",
             "fees": "Effective July 1, 2026: $291 at application + $290 at issuance; renewal $267; modification $134; duplicate $45. DOJ fingerprinting ($93–$137) is extra.",
             "processing": "The CCW Committee's decision can take up to about 2 months after your interview.",
-            "policies": "Max 3 guns on a Sacramento license (state law allows carrying only 2 at once, PC 26200(d)). Calibers such as 5.56/.223, 7.62/.308, 7.62x39, 5.7x28 and .30 Carbine, plus AR/AK pistols, are not allowed. Renewals accepted only within 45 days of expiration.",
+            "policies": "Max 3 guns on a Sacramento license (state law allows carrying only 2 at once, PC 26200(d)). Calibers such as 5.56/.223, 7.62/.308, 7.62x39, 5.7x28 and .30 Carbine, plus AR/AK pistols, are not allowed. Renewals open 45 days before expiration. You have 90 days after expiration to submit, or you must reapply as new. No carry on an expired permit.",
             "sourceUrl": "https://www.sacsheriff.com/pages/ccw_gun_permit.php",
             "extraUrls": [
               "https://sacramentoca.permitium.com/ccw/start"
@@ -884,7 +897,7 @@
           {
             "name": "Riverside",
             "agency": "Riverside County Sheriff",
-            "fees": "Standard: $113 initial ($93 Live Scan + $20 sheriff) + $80 at issuance; renewal $113; modification $10.",
+            "fees": "Standard: $113 initial ($93 Live Scan + $20 sheriff) + $80 at issuance; renewal $113; modification $10; plus a $5.25 service fee per application (since May 1, 2025).",
             "processing": "Not published on the portal.",
             "policies": "Renew up to 180 days before expiration. Non-residents must complete a 16-hour course (since Apr 22, 2025).",
             "sourceUrl": "https://riversideca.permitium.com/ccw/start",
@@ -925,16 +938,17 @@
             "policies": "SJPD is the licensing authority for City of San Jose residents under PC 26155. DOJ alleges the fee and applicant-paid psych testing are unconstitutional 'exorbitant fees.' No injunction found as of this check — treat the posted fee as still in effect. San Jose residents may also apply to the Santa Clara County Sheriff, which accepts residents of the county or any city in it (PC 26150; SCSO Policy 207). Confirm with SCSO.",
             "sourceUrl": "https://www.justice.gov/opa/pr/justice-department-sues-san-jose-unconstitutional-1600-firearm-permit-fee",
             "extraUrls": [
-              "https://www.justice.gov/crt/media/1461516/dl"
+              "https://www.justice.gov/crt/media/1461516/dl",
+              "https://sanjoseca.govnita.com/api/workspace/Resolutions/files/2287617059259/view"
             ],
             "verified": true,
-            "uncertainNote": "Dollar split ($318 / $1,273) is from the DOJ complaint citing Res. 2026-183; confirm on SJPD Permit Fees before relying."
+            "uncertainNote": "Fee and split confirmed in Res. 2026-183 §11; the SJPD fee page could not be fetched."
           }
         ]
       },
       {
         "stateId": "or",
-        "summary": "Oregon CHLs are issued by the sheriff of your county of residence (ORS 166.291). The fees are set in statute and are the same everywhere ($100 initial / $75 renewal to the sheriff + $15 OSP fingerprint fee). What varies by county is appointment availability, wait times and whether the sheriff will waive residency for a contiguous-state applicant (ORS 166.291(8)). By law the license must be issued within 45 days of application if approved.",
+        "summary": "Oregon CHLs are issued by the sheriff of your county of residence (ORS 166.291). The fees are set in statute and are the same everywhere ($100 initial + $15 OSP fingerprint fee, i.e. $115 for a new license; $75 renewal; $15 duplicate). What varies by county is appointment availability, wait times and whether the sheriff will waive residency for a contiguous-state applicant (ORS 166.291(8)). By law the license must be issued within 45 days of application if approved.",
         "lastChecked": "2026-09-25",
         "counties": []
       },
@@ -1025,7 +1039,7 @@
     },
     {
       "topic": "Permit term",
-      "ca": "2 yrs (3 yrs for new standard licenses from Jan 1, 2027)",
+      "ca": "2 yrs (up to 3 yrs for licenses issued, new or renewed, on or after Jan 1, 2027)",
       "or": "4 yrs",
       "nv": "5 yrs",
       "wa": "5 yrs",
@@ -1041,7 +1055,7 @@
     },
     {
       "topic": "Assault-weapon ban",
-      "ca": "Yes (registration-era ban)",
+      "ca": "Yes — banned unless registered during past registration periods (PC 30600 et seq.)",
       "or": "None",
       "nv": "None",
       "wa": "Sales/manufacture ban since Apr 2023",
@@ -1197,12 +1211,22 @@
         "Rhode",
         "Baird",
         "Arnold",
-        "Hartford"
+        "Hartford",
+        "San Jose",
+        "Ladd",
+        "Viramontes",
+        "Grant",
+        "Gator's",
+        "May",
+        "Carralero",
+        "CCW fee",
+        "lawsuit"
       ],
       "stateIds": [
         "ca",
         "or",
-        "wa"
+        "wa",
+        "az"
       ]
     },
     {
@@ -1259,8 +1283,7 @@
         "out-of-state"
       ],
       "sourceUrls": [
-        "https://oag.ca.gov/firearms/pubfaqs",
-        "https://oag.ca.gov/firearms/ccwlicfaqs"
+        "https://oag.ca.gov/firearms/pubfaqs"
       ]
     },
     {
@@ -1303,7 +1326,7 @@
     {
       "id": "qa-nv-recognition-list",
       "question": "Which states' permits does Nevada recognize?",
-      "answer": "Nevada recognizes permits from states on the DPS RCCD recognition list (updated periodically, often July 1). The July 1, 2026 list in this tracker includes Alaska, Arizona, Arkansas, Florida, Idaho (Enhanced), Illinois, Kansas, Kentucky, Louisiana, Massachusetts, Minnesota, Mississippi (Enhanced), Montana, Nebraska, New Mexico, North Carolina, North Dakota (Class 1 only), Ohio, Oklahoma, South Carolina, South Dakota (Enhanced), Tennessee, Texas, Utah, Virginia, West Virginia, Wisconsin, and Wyoming. Always verify the live PDF — the list can change.",
+      "answer": "Nevada recognizes permits from states on the DPS RCCD recognition list (prepared each year on or before July 1 under NRS 202.3689). The July 1, 2026 list in this tracker includes Alaska, Arizona, Arkansas, Florida, Idaho (Enhanced), Illinois, Kansas, Kentucky, Louisiana, Massachusetts, Minnesota, Mississippi (Enhanced), Montana, Nebraska, New Mexico, North Carolina, North Dakota (Class 1 only), Ohio, Oklahoma, South Carolina, South Dakota (Enhanced), Tennessee, Texas, Utah, Virginia, West Virginia, Wisconsin, and Wyoming. Always verify the live PDF — the list can change.",
       "stateIds": [
         "nv"
       ],
@@ -1395,7 +1418,7 @@
     {
       "id": "qa-ca-issuer",
       "question": "Who issues a California CCW?",
-      "answer": "Licensing authorities are county sheriffs or city police chiefs — not the California DOJ. Framework is shall-issue after Bruen / SB 2. Typical minimum age is 21+; verify with the issuing authority.",
+      "answer": "Licensing authorities are county sheriffs or city police chiefs — not the California DOJ. Framework is shall-issue after Bruen / SB 2. Minimum age is 21 (PC 26150/26155); verify with the issuing authority.",
       "stateIds": [
         "ca"
       ],
@@ -1413,7 +1436,7 @@
     {
       "id": "qa-or-issuer",
       "question": "Who issues an Oregon Concealed Handgun License (CHL)?",
-      "answer": "County sheriffs issue CHLs under ORS 166.291 (shall-issue; not constitutional carry). Generally 21+. Typically valid 4 years statewide. Verify with your county sheriff.",
+      "answer": "County sheriffs issue CHLs under ORS 166.291 (shall-issue; not constitutional carry). 21+ (ORS 166.291). Valid statewide for 4 years (ORS 166.292(4)). Verify with your county sheriff.",
       "stateIds": [
         "or"
       ],
@@ -1431,7 +1454,7 @@
     {
       "id": "qa-nv-issuer",
       "question": "Who issues a Nevada Concealed Firearm Permit?",
-      "answer": "County sheriffs issue Nevada CFPs (shall-issue). Nevada is NOT permitless/constitutional carry for concealed carry. Typical minimum age is 21+; verify with the issuing sheriff.",
+      "answer": "County sheriffs issue Nevada CFPs (shall-issue). Nevada is NOT permitless/constitutional carry for concealed carry. Minimum age is 21, or 18–20 for current service members (incl. reserves/National Guard) or those honorably discharged (NRS 202.3657).",
       "stateIds": [
         "nv"
       ],
@@ -1503,7 +1526,7 @@
     {
       "id": "qa-nv-sensitive-places",
       "question": "What are key off-limits places for carry in Nevada?",
-      "answer": "High-level only: schools (including parking areas often), public airport interiors, and other statutory and posted locations. Verify NRS and local rules — not a complete list.",
+      "answer": "High-level only: property of public/private schools, child-care facilities and NSHE (unless you have written permission, NRS 202.265); public buildings on public-airport property; public buildings with a metal detector or a no-firearms sign at each public entrance (NRS 202.3673); plus federal and other posted locations. Not a complete list.",
       "stateIds": [
         "nv"
       ],
@@ -1520,7 +1543,7 @@
     {
       "id": "qa-or-measure-114",
       "question": "What is Oregon Measure 114, and does it replace the CHL?",
-      "answer": "Measure 114 would create a permit to purchase and ban magazines over 10 rounds. It is not in effect. The Oregon Supreme Court heard Arnold v. Kotek on Nov 6, 2025, and no decision had been found as of this check. HB 4145 (2026) sets the operative date at January 1, 2028 if the measure is upheld. It does not replace or change the Concealed Handgun License, so track it separately.",
+      "answer": "Measure 114 would create a permit to purchase and ban magazines over 10 rounds. It is not in effect. The Oregon Supreme Court heard Arnold v. Kotek on Nov 6, 2025, and no decision had been found as of this check. HB 4145 (2026 Laws ch. 120) moved the start date for the permit-to-purchase and magazine provisions to January 1, 2028. They take effect then only if the courts don't strike or block them. M114 also requires a completed background check before any transfer. It does not replace or change the Concealed Handgun License, so track it separately.",
       "stateIds": [
         "or"
       ],
@@ -1532,6 +1555,7 @@
       ],
       "sourceUrls": [
         "https://olis.oregonlegislature.gov/liz/2026R1/Downloads/MeasureDocument/HB4145/Enrolled",
+        "https://www.oregonlegislature.gov/bills_laws/lawsstatutes/2026orLaw0120.pdf",
         "https://www.oregonlegislature.gov/bills_laws/ors/ors166.html"
       ]
     },
@@ -1606,6 +1630,7 @@
         "compare"
       ],
       "sourceUrls": [
+        "https://oag.ca.gov/firearms/pubfaqs",
         "https://oag.ca.gov/firearms/ccwlicfaqs",
         "https://www.oregonlegislature.gov/bills_laws/ors/ors166.html",
         "https://www.leg.state.nv.us/NRS/NRS-202.html",
@@ -1616,7 +1641,7 @@
     {
       "id": "qa-min-age",
       "question": "What is the minimum age for a carry permit in CA / OR / NV / WA / AZ?",
-      "answer": "California: 21+. Oregon: 21+ (ORS 166.291). Nevada: 21+, or 18–20 if active military or honorably discharged (NRS 202.3657). Washington: 21+ (RCW 9.41.070). Arizona: 21+ for permitless concealed carry; the optional permit is 21+, or 19+ with military service or honorable discharge (ARS 13-3112). Confirm with the issuer.",
+      "answer": "California: 21+. Oregon: 21+ (ORS 166.291). Nevada: 21+, or 18–20 if active military or honorably discharged (NRS 202.3657). Washington: 21+ (RCW 9.41.070). Arizona: 21+ for permitless concealed carry; the optional permit is 21+, or 19+ with current military service, or an honorable or general-under-honorable-conditions discharge (ARS 13-3112). Confirm with the issuer.",
       "stateIds": [
         "ca",
         "or",
@@ -1631,11 +1656,13 @@
         "eligibility"
       ],
       "sourceUrls": [
+        "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=26150",
         "https://oag.ca.gov/firearms/ccwlicfaqs",
         "https://www.oregonlegislature.gov/bills_laws/ors/ors166.html",
         "https://www.leg.state.nv.us/NRS/NRS-202.html",
         "https://app.leg.wa.gov/RCW/default.aspx?cite=9.41.070",
-        "https://www.azleg.gov/ars/13/03112.htm"
+        "https://www.azleg.gov/ars/13/03112.htm",
+        "https://www.azleg.gov/ars/13/03102.htm"
       ]
     },
     {
@@ -1659,13 +1686,15 @@
       "sourceUrls": [
         "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=32310",
         "https://app.leg.wa.gov/RCW/default.aspx?cite=9.41.370",
-        "https://app.leg.wa.gov/RCW/default.aspx?cite=9.41.390"
+        "https://app.leg.wa.gov/RCW/default.aspx?cite=9.41.390",
+        "https://www.oregonlegislature.gov/bills_laws/lawsstatutes/2026orLaw0120.pdf",
+        "https://www.leg.state.nv.us/NRS/NRS-202.html"
       ]
     },
     {
       "id": "qa-ca-renewal-sept2026",
       "question": "Did California CCW renewal rules change in September 2026?",
-      "answer": "Yes. Effective Sept 1, 2026, licensing authorities must submit fingerprint images and fees for each CCW renewal applicant and may not issue a renewal until the California DOJ confirms firearms eligibility (Pen. Code § 26185; OAG Information Bulletin 2026-DLE-14). Renewal fees increased (e.g., Standard CCW $93). Authorities must enroll in FBI Federal Rap Back by Dec 31, 2026. Verify with your issuing authority and the current OAG bulletin — this tracker is not legal advice.",
+      "answer": "Yes. Effective Sept 1, 2026, licensing authorities must submit fingerprint images and fees for each CCW renewal applicant and may not issue a renewal until the California DOJ confirms firearms eligibility (Pen. Code § 26185; OAG Information Bulletin 2026-DLE-14). The DOJ renewal fee increased (Standard CCW $93, DLE-14); local fees are extra. Authorities must enroll in FBI Federal Rap Back by Dec 31, 2026. Verify with your issuing authority and the current OAG bulletin — this tracker is not legal advice.",
       "stateIds": [
         "ca"
       ],
@@ -1703,7 +1732,7 @@
     {
       "id": "qa-wa-reciprocity",
       "question": "Does Washington honor California, Oregon, Nevada, or Arizona permits?",
-      "answer": "No. Washington only honors licenses from states that meet RCW 9.41.073: they must honor WA's CPL, not license under-21s, and require fingerprint and mental-health checks. The WA Attorney General list (updated July 10, 2026) covers Idaho (Enhanced), Kansas (Standard), Louisiana, Michigan, Montana (Enhanced), North Carolina, North Dakota (Class 1), Ohio, South Dakota (Enhanced/Gold) and Utah (not Provisional). CA, OR, NV and AZ are not honored. Nonresidents can apply for a WA CPL.",
+      "answer": "No. Washington only honors licenses from states that meet RCW 9.41.073: they must honor WA's CPL, not license under-21s, and require fingerprint and mental-health checks. The WA Attorney General list (updated July 10, 2026) covers Idaho (Enhanced), Kansas (Standard), Louisiana, Michigan, Montana (Enhanced), North Carolina, North Dakota (Class 1), Ohio, South Dakota (Unrestricted Enhanced / Gold only; not Regular or the 18–20 Restricted Enhanced) and Utah (not Provisional). CA, OR, NV and AZ are not honored. Nonresidents can apply for a WA CPL.",
       "stateIds": [
         "wa",
         "ca",
@@ -1725,7 +1754,7 @@
     {
       "id": "qa-wa-permit-to-purchase",
       "question": "What is Washington's new permit-to-purchase law (HB 1163)?",
-      "answer": "HB 1163 (2025 c 370, signed May 20, 2025) takes effect May 1, 2027. Buyers will need a Washington State Patrol permit to purchase (RCW 9.41.121): fingerprints plus a certified safety course with live fire within the last 5 years. The WSP decides within 30 days (60 in some cases), the permit lasts 5 years, and the WSP sets the fee. The same law requires new CPL applicants to show certified live-fire training starting May 1, 2027. A permit to purchase does not allow concealed carry. Today, buyers already face a 10-business-day wait (RCW 9.41.092) and must show training within 5 years (RCW 9.41.090).",
+      "answer": "HB 1163 (2025 c 370, signed May 20, 2025) takes effect May 1, 2027. Buyers will need a Washington State Patrol permit to purchase (RCW 9.41.121): fingerprints plus a certified safety course with live fire within the last 5 years. The WSP decides within 30 days (60 for applicants without a WA license/ID or under 90 days' residency, or longer if records are needed), the permit lasts 5 years, and the WSP sets the application fee, plus a fingerprint-processing fee. The same law requires new CPL applicants to show certified live-fire training starting May 1, 2027. A permit to purchase does not allow concealed carry. Today, buyers already face a 10-business-day wait (RCW 9.41.092) and must show training within 5 years (RCW 9.41.090).",
       "stateIds": [
         "wa"
       ],
@@ -1779,7 +1808,9 @@
       "sourceUrls": [
         "https://app.leg.wa.gov/RCW/default.aspx?cite=9.41.300",
         "https://app.leg.wa.gov/RCW/default.aspx?cite=9.41.280",
-        "https://app.leg.wa.gov/RCW/default.aspx?cite=9.41.284"
+        "https://app.leg.wa.gov/RCW/default.aspx?cite=9.41.284",
+        "https://app.leg.wa.gov/RCW/default.aspx?cite=9.41.282",
+        "https://app.leg.wa.gov/RCW/default.aspx?cite=9.41.305"
       ]
     },
     {
@@ -1803,7 +1834,7 @@
     {
       "id": "qa-az-permit",
       "question": "How do I get an Arizona Concealed Weapons Permit, and what does it cost?",
-      "answer": "Apply to the AZ DPS Concealed Weapons Permit Unit (online portal available). You must be an Arizona resident or US citizen, 21+ (19+ with military service or honorable discharge), not prohibited, and have completed a qualifying firearms-safety course or equivalent (ARS 13-3112). Fees: $60 new, $43 renewal, $10 replacement. The permit is valid 5 years; DPS says allow up to 75 days. Nonresidents may apply.",
+      "answer": "Apply to the AZ DPS Concealed Weapons Permit Unit (online portal available). You must be an Arizona resident or US citizen, 21+ (or 19+ with current military service, or an honorable or general-under-honorable-conditions discharge), not prohibited, and have completed a qualifying firearms-safety course or equivalent (ARS 13-3112). Fees: $60 new, $43 renewal, $10 replacement. The permit is valid 5 years; DPS says allow up to 75 days. Nonresidents may apply.",
       "stateIds": [
         "az"
       ],
@@ -1848,7 +1879,7 @@
     {
       "id": "qa-az-bars",
       "question": "Can I carry in an Arizona bar or restaurant that serves alcohol?",
-      "answer": "Only with an Arizona permit (ARS 13-3112), and only if the venue isn't posted with the no-weapons sign under ARS 4-229. You also can't drink while carrying. Permitless carriers and people relying on out-of-state permits may not carry there (ARS 4-244). A 2026 bill (SB1012) that would have let AZ permit holders carry in liquor-licensed restaurants even where posted was vetoed June 19, 2026, so the sign rule still applies everywhere.",
+      "answer": "Only with an Arizona permit (ARS 13-3112), and only if the venue isn't posted with the no-weapons sign under ARS 4-229. You also can't drink while carrying. The 4-244 exception names only Arizona-issued permits (\"issued pursuant to section 13-3112\"); don't rely on an out-of-state permit or permitless carry there. A 2026 bill (SB1012) that would have let AZ permit holders carry in liquor-licensed restaurants even where posted was vetoed June 19, 2026, so the sign rule still applies everywhere.",
       "stateIds": [
         "az"
       ],
@@ -1886,7 +1917,7 @@
     {
       "id": "qa-five-state-matrix",
       "question": "Which of CA, OR, NV, WA and AZ honor each other's carry permits?",
-      "answer": "Only two cross-honors exist. Arizona honors CA, OR, NV and WA permits (and allows permitless carry at 21+). Nevada honors Arizona permits. Every other pairing is no: California and Oregon honor no out-of-state permits, Washington honors none of these four, and Nevada honors none of CA/OR/WA. The full matrix is on the Compare tab (NV list July 1, 2026; WA AG list July 10, 2026).",
+      "answer": "Only five of the 20 pairings are \"Yes\": Arizona honors CA, OR, NV and WA permits (holder 21+), and Nevada honors Arizona permits. Nevada–Arizona is the only two-way pair. Every other pairing is no: California and Oregon honor no out-of-state permits, Washington honors none of these four, and Nevada honors none of CA/OR/WA. The full matrix is on the Compare tab (NV list July 1, 2026; WA AG list July 10, 2026).",
       "stateIds": [
         "ca",
         "or",
@@ -1913,7 +1944,7 @@
     {
       "id": "qa-litigation-overview",
       "question": "What major court cases could change carry or gun laws in these states?",
-      "answer": "Key tracked cases (Sept 25, 2026). Decided: Wolford v. Lopez (June 25, 2026), which struck Hawaii's private-property default rule and confirms CA's version is unenforceable. Pending at the Supreme Court: Duncan v. Bonta (CA magazine ban) and Gator's Custom Guns v. Washington (WA magazine sales ban). Granted and set for argument Dec 2, 2026: Viramontes/Grant (assault-weapon bans). Pending before the 9th Circuit en banc: Rhode v. Bonta (CA ammo checks) and Baird v. Bonta (CA open carry). Also pending: May/Carralero (CA SB 2 places; district court), Arnold v. Kotek (OR Measure 114; Oregon Supreme Court) and Hartford v. Brown (WA assault weapons; stayed). See the Litigation tab. Newly filed (no rulings yet): United States v. City of San Jose (N.D. Cal., filed Sept 16, 2026; DOJ challenge to SJPD's $1,591 CCW fee) and Ladd v. Hunter (D. Or., filed Sept 11, 2026; challenges Oregon's refusal to license or recognize most non-residents, and Salem's loaded-carry ban).",
+      "answer": "Key tracked cases (Sept 25, 2026). Decided: Wolford v. Lopez (June 25, 2026), which struck Hawaii's private-property default rule. CA's rule is already blocked by a court order in May/Carralero, and Wolford makes it very likely to be struck. Pending at the Supreme Court: Duncan v. Bonta (CA magazine ban) and Gator's Custom Guns v. Washington (WA magazine sales ban). Granted and set for argument Dec 2, 2026: Viramontes/Grant (assault-weapon bans). Pending before the 9th Circuit en banc: Rhode v. Bonta (CA ammo checks) and Baird v. Bonta (CA open carry). Also pending: May/Carralero (CA SB 2 places; district court), Arnold v. Kotek (OR Measure 114; Oregon Supreme Court) and Hartford v. Brown (WA assault weapons; stayed). See the Litigation tab. Newly filed (no rulings yet): United States v. City of San Jose (N.D. Cal., filed Sept 16, 2026; DOJ challenge to SJPD's $1,591 CCW fee) and Ladd v. Hunter (D. Or., filed Sept 11, 2026; challenges Oregon's refusal to license or recognize most non-residents, and Salem's loaded-carry ban).",
       "stateIds": [
         "ca",
         "or",
@@ -1936,7 +1967,7 @@
     {
       "id": "qa-litigation-wolford",
       "question": "What did Wolford v. Lopez decide, and does it affect California?",
-      "answer": "On June 25, 2026, the Supreme Court (6–3) held that Hawaii can't ban carry on private property open to the public just because the owner hasn't expressly consented. California's SB 2 has a similar default rule (PC 26230(a)(26)), which the 9th Circuit had already blocked in May/Carralero v. Bonta. Wolford confirms it can't be enforced. Posted 'no guns' signs by owners are a separate issue.",
+      "answer": "On June 25, 2026, the Supreme Court (6–3) held that Hawaii can't ban carry on private property open to the public just because the owner hasn't expressly consented. California's SB 2 has a similar default rule (PC 26230(a)(26)), which the 9th Circuit had already blocked in May/Carralero v. Bonta. CA's rule is already blocked by a court order in May/Carralero, and Wolford makes it very likely to be struck. Posted 'no guns' signs by owners are a separate issue.",
       "stateIds": [
         "ca"
       ],
@@ -1994,7 +2025,7 @@
     {
       "id": "qa-county-ca",
       "question": "Do California CCW fees and wait times differ by county?",
-      "answer": "Yes, a lot. Examples from official sheriff pages and portals (Sept 2026): LA (LASD) $43 + $173; Orange $93 Live Scan + $300; Sacramento $291 + $290 (max 3 guns, some calibers barred); Riverside $113 + $80; San Bernardino $188 + $95; Santa Clara $488 + $488; Alameda $384 + $400 psych + $384. San Diego reported about 8 months from application to issuance (April 2025). Live Scan, training and psych costs are often extra. See County notes on the California tab.",
+      "answer": "Yes, a lot. Examples from official sheriff pages and portals (Sept 2026): LA (LASD) $43 + $173; Orange $93 Live Scan + $300; Sacramento $291 + $290 (max 3 guns, some calibers barred); Riverside $113 + $80; San Bernardino $188 + $95; Santa Clara $488 + $488; Alameda $384 + $400 psych + $384; San Jose PD $1,591 (under federal challenge; city residents can also apply to the Sheriff). San Diego reported about 8 months from application to issuance (April 2025). Live Scan, training and psych costs are often extra. See County notes on the California tab.",
       "stateIds": [
         "ca"
       ],
@@ -2011,7 +2042,12 @@
       ],
       "sourceUrls": [
         "https://lasd.org/ccw/",
-        "https://www.sacsheriff.com/pages/ccw_gun_permit.php"
+        "https://www.sacsheriff.com/pages/ccw_gun_permit.php",
+        "https://www.ocsheriff.gov/commands-divisions/professional-services-command/professional-standards/ccw-licensing/fee-schedule",
+        "https://riversideca.permitium.com/ccw/start",
+        "https://sbcsd.permitium.com/ccw/start",
+        "https://scso.permitium.com/ccw/start",
+        "https://alamedaca.permitium.com/ccw/start"
       ]
     },
     {
@@ -2035,7 +2071,7 @@
     {
       "id": "qa-ca-term-ab1948",
       "question": "Are California CCWs going to last longer?",
-      "answer": "Yes, for new licenses. AB 1948 (signed June 30, 2026) raises the maximum standard CCW term from 2 to 3 years for licenses issued on or after Jan 1, 2027. Existing licenses aren't extended.",
+      "answer": "Yes, for licenses issued on or after Jan 1, 2027 (new or renewal). AB 1948 (signed June 30, 2026) raises the maximum standard CCW term from 2 to 3 years for licenses issued on or after Jan 1, 2027. Existing licenses aren't extended.",
       "stateIds": [
         "ca"
       ],
@@ -2059,11 +2095,7 @@
     },
     {
       "date": "2026-09-25",
-      "text": "Expanded to five states. Added Washington (CPL, reciprocity per the WA AG list of July 10, 2026, HB 1163 permit to purchase effective May 1, 2027, assault-weapon and magazine sales bans) and Arizona (permitless carry at 21+, optional DPS permit, honors all states' permits, bar rules, June 2026 vetoes). New: a five-state reciprocity matrix (only AZ→CA/OR/NV/WA and NV→AZ are honored), a Litigation tab tracking 10 cases with verified status (Wolford decided June 25, 2026; Viramontes/Grant set for argument Dec 2, 2026; Duncan, Gator's, Rhode, Baird, May/Carralero, Arnold v. Kotek, Hartford pending), county CCW notes for 8 large California counties, and fees, training, magazine/assault-weapon and purchase rules for every state. California: AB 1948 (signed June 30, 2026) extends new standard CCWs to 3 years from Jan 1, 2027."
-    },
-    {
-      "date": "2026-06-30",
-      "text": "California AB 1948 signed: maximum standard CCW term extended from 2 to 3 years for licenses issued on or after Jan 1, 2027."
+      "text": "Expanded to five states. Added Washington (CPL, reciprocity per the WA AG list of July 10, 2026, HB 1163 permit to purchase effective May 1, 2027, assault-weapon and magazine sales bans) and Arizona (permitless carry at 21+, optional DPS permit, honors all states' valid permits for holders 21+, bar rules, June 2026 vetoes). New: a five-state reciprocity matrix (only AZ→CA/OR/NV/WA and NV→AZ are honored), a Litigation tab tracking 10 cases with verified status (Wolford decided June 25, 2026; Viramontes/Grant set for argument Dec 2, 2026; Duncan, Gator's, Rhode, Baird, May/Carralero, Arnold v. Kotek, Hartford pending), county CCW notes for 8 large California counties, and fees, training, magazine/assault-weapon and purchase rules for every state. California: AB 1948 (signed June 30, 2026) extends new standard CCWs to 3 years from Jan 1, 2027."
     },
     {
       "date": "2026-09-23",
@@ -2080,6 +2112,10 @@
     {
       "date": "2026-07-01",
       "text": "Nevada DPS updated CCW recognition list (effective date)."
+    },
+    {
+      "date": "2026-06-30",
+      "text": "California AB 1948 signed: maximum standard CCW term extended from 2 to 3 years for licenses issued on or after Jan 1, 2027."
     },
     {
       "date": "2026-01-01",
@@ -2093,11 +2129,7 @@
     },
     {
       "date": "2026-09-25",
-      "text": "Expanded to five states. Added Washington (CPL, reciprocity per the WA AG list of July 10, 2026, HB 1163 permit to purchase effective May 1, 2027, assault-weapon and magazine sales bans) and Arizona (permitless carry at 21+, optional DPS permit, honors all states' permits, bar rules, June 2026 vetoes). New: a five-state reciprocity matrix (only AZ→CA/OR/NV/WA and NV→AZ are honored), a Litigation tab tracking 10 cases with verified status (Wolford decided June 25, 2026; Viramontes/Grant set for argument Dec 2, 2026; Duncan, Gator's, Rhode, Baird, May/Carralero, Arnold v. Kotek, Hartford pending), county CCW notes for 8 large California counties, and fees, training, magazine/assault-weapon and purchase rules for every state. California: AB 1948 (signed June 30, 2026) extends new standard CCWs to 3 years from Jan 1, 2027."
-    },
-    {
-      "date": "2026-06-30",
-      "text": "California AB 1948 signed: maximum standard CCW term extended from 2 to 3 years for licenses issued on or after Jan 1, 2027."
+      "text": "Expanded to five states. Added Washington (CPL, reciprocity per the WA AG list of July 10, 2026, HB 1163 permit to purchase effective May 1, 2027, assault-weapon and magazine sales bans) and Arizona (permitless carry at 21+, optional DPS permit, honors all states' valid permits for holders 21+, bar rules, June 2026 vetoes). New: a five-state reciprocity matrix (only AZ→CA/OR/NV/WA and NV→AZ are honored), a Litigation tab tracking 10 cases with verified status (Wolford decided June 25, 2026; Viramontes/Grant set for argument Dec 2, 2026; Duncan, Gator's, Rhode, Baird, May/Carralero, Arnold v. Kotek, Hartford pending), county CCW notes for 8 large California counties, and fees, training, magazine/assault-weapon and purchase rules for every state. California: AB 1948 (signed June 30, 2026) extends new standard CCWs to 3 years from Jan 1, 2027."
     },
     {
       "date": "2026-09-23",
@@ -2114,6 +2146,10 @@
     {
       "date": "2026-07-01",
       "text": "Nevada DPS updated CCW recognition list (effective date)."
+    },
+    {
+      "date": "2026-06-30",
+      "text": "California AB 1948 signed: maximum standard CCW term extended from 2 to 3 years for licenses issued on or after Jan 1, 2027."
     },
     {
       "date": "2026-01-01",
