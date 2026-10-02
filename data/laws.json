@@ -916,7 +916,7 @@
             "name": "Santa Clara",
             "agency": "Santa Clara County Sheriff",
             "fees": "Standard: $488 at application + $488 at issuance; renewal $395; modification/duplicate $15. Live Scan, psych evaluation and training are extra.",
-            "processing": "Interviews held on Thursdays.",
+            "processing": "Initial interviews: Thursdays (the portal also lists Tue/Thu). Psych exam required for all applicants (SCSO Policy 207), at applicant's cost.",
             "policies": "Training only at sheriff-approved facilities. Issues non-resident licenses. The portal notes the office may use AI tools to help review applications. San Jose city residents generally apply to SJPD (see San Jose city note); SJPD's $1,591 fee is under federal challenge. San Jose residents may also apply to the Santa Clara County Sheriff, which accepts residents of the county or any city in it (PC 26150; SCSO Policy 207). Confirm with SCSO.",
             "sourceUrl": "https://scso.permitium.com/ccw/start",
             "verified": true
@@ -1688,7 +1688,8 @@
         "https://app.leg.wa.gov/RCW/default.aspx?cite=9.41.370",
         "https://app.leg.wa.gov/RCW/default.aspx?cite=9.41.390",
         "https://www.oregonlegislature.gov/bills_laws/lawsstatutes/2026orLaw0120.pdf",
-        "https://www.leg.state.nv.us/NRS/NRS-202.html"
+        "https://www.leg.state.nv.us/NRS/NRS-202.html",
+        "https://www.azleg.gov/ars/13/03102.htm"
       ]
     },
     {
