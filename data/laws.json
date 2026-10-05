@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-09-25",
+  "lastReviewed": "2026-10-05",
   "schemaVersion": 2,
   "disclaimer": "NOT LEGAL ADVICE. This tracker summarizes publicly available high-level information about firearm and concealed-carry rules in California, Oregon, Nevada, Washington, and Arizona for personal reference only. Laws change, court orders enjoin or restore rules, and local rules apply. Always verify with official statutes, attorney general / DPS / licensing-agency guidance, and a licensed attorney before carrying or traveling.",
   "monitoringNote": "Curated data for CA, OR, NV, WA and AZ, the reciprocity matrix, tracked court cases and county notes is updated by hand when changes are verified against official sources. Updates are not automatic or daily. Check the Last reviewed date and verify before relying on anything here. This is not live web search.",
@@ -16,14 +16,14 @@
     }
   },
   "lastCheckedBySection": {
-    "states": "2026-09-25",
-    "reciprocityMatrix": "2026-09-25",
-    "litigation": "2026-09-25",
+    "states": "2026-10-05",
+    "reciprocityMatrix": "2026-10-05",
+    "litigation": "2026-10-05",
     "countyNotes": "2026-09-25",
-    "compare": "2026-09-25",
-    "topics": "2026-09-25",
-    "qa": "2026-09-25",
-    "updates": "2026-09-25"
+    "compare": "2026-10-05",
+    "topics": "2026-10-05",
+    "qa": "2026-10-05",
+    "updates": "2026-10-05"
   },
   "states": [
     {
@@ -47,7 +47,7 @@
       ],
       "travelerTip": "Out-of-state permits are not valid for concealed carry in CA. Unloaded, secured interstate transport may have federal safe-passage protections — verify FOPA and CA rules. Bringing in or possessing magazines over 10 rounds is illegal in California (PC 32310), including for visitors.",
       "possessionNotes": "California has extensive magazine, assault-weapon, roster and ammunition rules beyond CCW. OAG Information Bulletin 2026-DLE-16 (Sept 18, 2026) reminds dealers and LE that silencers, short-barreled rifles/shotguns, and firearms not immediately recognizable as firearms remain illegal under California Penal Code even after a limited ND Texas ruling on the federal NFA (Silencer Shop Foundation v. ATF). This tracker summarizes possession rules at a high level only; check the linked statutes and the Litigation tab for current court status.",
-      "lastReviewed": "2026-09-25",
+      "lastReviewed": "2026-10-05",
       "sources": [
         {
           "title": "CA DOJ CCW License FAQs",
@@ -125,7 +125,7 @@
           "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=26150"
         }
       ],
-      "lastChecked": "2026-09-25"
+      "lastChecked": "2026-10-05"
     },
     {
       "id": "or",
@@ -149,7 +149,7 @@
       "travelerTip": "Out-of-state permits are not recognized in Oregon. Without an Oregon CHL, you may not carry a handgun concealed on your person or keep one concealed and readily accessible in a vehicle (anywhere in the passenger compartment; ORS 166.250(1)(b), (4)). Some cities also ban loaded carry in public for people without a CHL (ORS 166.173). Check the rules for storing a handgun in a vehicle before you drive in.",
       "measure114Note": "Measure 114 (permit-to-purchase / related rules) remains in litigation and is not currently in effect. Oregon HB 4145 (2026 Laws, ch. 120; signed Apr 7, 2026) delayed the Measure 114 operative date to January 1, 2028, and stated legislative intent not to moot the pending Oregon Supreme Court case (Arnold v. Kotek). Track separately from CHL — do not conflate with CHL.",
       "possessionNotes": "High-level only: CHL framework is separate from Measure 114 permit-to-purchase litigation. Verify both tracks independently.",
-      "lastReviewed": "2026-09-25",
+      "lastReviewed": "2026-10-05",
       "sources": [
         {
           "title": "ORS Chapter 166 (official, 2025 edition) — 166.291, 166.292, 166.370, 166.377",
@@ -187,7 +187,7 @@
           "url": "https://www.oregonlegislature.gov/bills_laws/lawsstatutes/2026orLaw0120.pdf"
         }
       ],
-      "lastChecked": "2026-09-25",
+      "lastChecked": "2026-10-05",
       "reciprocityOutNote": "Among the five states here, only Arizona honors an Oregon CHL (21+). CA, NV and WA do not."
     },
     {
@@ -241,7 +241,7 @@
       ],
       "travelerTip": "If your home-state permit is on the NV DPS recognition list, concealed carry may be allowed under that recognition — verify the current PDF list. California, Oregon and Washington permits are not recognized; Arizona permits are.",
       "possessionNotes": "High-level only: Concealed carry without a Nevada or recognized permit is a serious crime. Open carry rules differ — do not conflate.",
-      "lastReviewed": "2026-09-25",
+      "lastReviewed": "2026-10-05",
       "sources": [
         {
           "title": "NV DPS 2026 CCW Recognition List (effective July 1, 2026)",
@@ -273,7 +273,7 @@
       "purchaseRules": "No permit to purchase or waiting period found in NRS Chapter 202. Nevada requires background checks on most private-party transfers (NRS 202.2547) in addition to federal dealer checks — verify current text.",
       "recentLegislation": [],
       "recentLegislationNote": "No 2025–2026 Nevada carry-law changes were verified for this update. The 2026 DPS recognition list took effect July 1, 2026. Nevada's legislature meets in odd years; watch the 2027 session.",
-      "lastChecked": "2026-09-25",
+      "lastChecked": "2026-10-05",
       "recognizedStatesSource": "Nevada DPS RCCD recognition list",
       "reciprocityOutNote": "Among the five states here, only Arizona honors a Nevada CFP (AZ honors all valid permits). CA, OR and WA do not.",
       "nonResidentNote": "Nonresidents may apply to the sheriff of any Nevada county (NRS 202.3657)."
@@ -343,8 +343,8 @@
           "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=9.41.390"
         }
       ],
-      "lastReviewed": "2026-09-25",
-      "lastChecked": "2026-09-25",
+      "lastReviewed": "2026-10-05",
+      "lastChecked": "2026-10-05",
       "sources": [
         {
           "title": "RCW 9.41.070 Concealed pistol license",
@@ -467,8 +467,8 @@
           "uncertain": false
         }
       ],
-      "lastReviewed": "2026-09-25",
-      "lastChecked": "2026-09-25",
+      "lastReviewed": "2026-10-05",
+      "lastChecked": "2026-10-05",
       "sources": [
         {
           "title": "ARS 13-3112 Concealed weapons permit; reciprocity",
@@ -510,7 +510,7 @@
     }
   ],
   "reciprocityMatrix": {
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-05",
     "description": "Row = the state you are carrying IN. Column = the state that issued your permit. \"Yes\" means the row state honors a valid permit from that state for concealed carry (conditions apply; Arizona requires the holder to be 21+, legally present and not a prohibited possessor). Arizona also allows permitless concealed carry for anyone 21+ who may legally possess a firearm.",
     "states": [
       "ca",
@@ -595,7 +595,7 @@
     ]
   },
   "litigation": {
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-05",
     "note": "Status summarized from court dockets, official court pages, and party or agency filings. Cases move fast — always check the linked source. 'Partly uncertain' means part of the status could not be confirmed from an official source.",
     "cases": [
       {
@@ -613,7 +613,7 @@
         ],
         "sourceUrl": "https://www.supremecourt.gov/opinions/25pdf/24-1046_nmio.pdf",
         "uncertain": false,
-        "lastChecked": "2026-09-25"
+        "lastChecked": "2026-10-05"
       },
       {
         "id": "may-carralero-v-bonta",
@@ -634,7 +634,7 @@
           "https://www.courtlistener.com/docket/67788828/in-re-senate-bill-2-litigation/"
         ],
         "uncertain": false,
-        "lastChecked": "2026-09-25"
+        "lastChecked": "2026-10-05"
       },
       {
         "id": "us-v-san-jose",
@@ -677,7 +677,7 @@
           "https://www.pacermonitor.com/public/case/66747861/Ladd_et_al_v_Hunter_et_al"
         ],
         "uncertain": false,
-        "lastChecked": "2026-09-25"
+        "lastChecked": "2026-10-05"
       },
       {
         "id": "duncan-v-bonta",
@@ -697,7 +697,7 @@
         "sourceUrl": "https://www.supremecourt.gov/docket/docketfiles/html/public/25-198.html",
         "uncertain": true,
         "uncertainNote": "Whether the Court is formally holding the petition for Viramontes/Grant is inferred from the docket, not stated in an order.",
-        "lastChecked": "2026-09-25"
+        "lastChecked": "2026-10-05"
       },
       {
         "id": "viramontes-grant",
@@ -719,7 +719,7 @@
           "https://www.supremecourt.gov/docket/docketfiles/html/public/25-566.html"
         ],
         "uncertain": false,
-        "lastChecked": "2026-09-25"
+        "lastChecked": "2026-10-05"
       },
       {
         "id": "gators-v-washington",
@@ -737,7 +737,7 @@
         "sourceUrl": "https://www.supremecourt.gov/docket/docketfiles/html/public/25-153.html",
         "uncertain": true,
         "uncertainNote": "Whether the petition is formally being held is not stated in an order.",
-        "lastChecked": "2026-09-25"
+        "lastChecked": "2026-10-05"
       },
       {
         "id": "rhode-v-bonta",
@@ -757,7 +757,7 @@
           "https://cdn.ca9.uscourts.gov/datastore/opinions/2025/12/01/24-542.pdf"
         ],
         "uncertain": false,
-        "lastChecked": "2026-09-25"
+        "lastChecked": "2026-10-05"
       },
       {
         "id": "baird-v-bonta",
@@ -774,7 +774,7 @@
         ],
         "sourceUrl": "https://www.courtlistener.com/docket/68961920/baird-v-bonta/",
         "uncertain": false,
-        "lastChecked": "2026-09-25"
+        "lastChecked": "2026-10-05"
       },
       {
         "id": "arnold-v-kotek",
@@ -796,7 +796,7 @@
         ],
         "uncertain": true,
         "uncertainNote": "Opinions released after Sept 3, 2026 were not confirmed. Check the Oregon Supreme Court opinions page.",
-        "lastChecked": "2026-09-25"
+        "lastChecked": "2026-10-05"
       },
       {
         "id": "hartford-v-brown",
@@ -813,7 +813,7 @@
         ],
         "sourceUrl": "https://www.courtlistener.com/docket/67264060/hartford-v-brown/",
         "uncertain": false,
-        "lastChecked": "2026-09-25"
+        "lastChecked": "2026-10-05"
       },
       {
         "id": "bruen-rahimi",
@@ -837,7 +837,7 @@
           "https://www.supremecourt.gov/opinions/23pdf/22-915_8o6b.pdf"
         ],
         "uncertain": false,
-        "lastChecked": "2026-09-25"
+        "lastChecked": "2026-10-05"
       }
     ],
     "noCasesNote": "No major pending cases challenging Nevada or Arizona carry laws were identified in this check (Ladd v. Hunter involves an Arizona traveler but challenges Oregon law). Both states are affected by Supreme Court rulings such as Bruen and Wolford."
@@ -950,25 +950,25 @@
       {
         "stateId": "or",
         "summary": "Oregon CHLs are issued by the sheriff of your county of residence (ORS 166.291). The fees are set in statute and are the same everywhere ($100 initial + $15 OSP fingerprint fee, i.e. $115 for a new license; $75 renewal; $15 duplicate). What varies by county is appointment availability, wait times and whether the sheriff will waive residency for a contiguous-state applicant (ORS 166.291(8)). By law the license must be issued within 45 days of application if approved.",
-        "lastChecked": "2026-09-25",
+        "lastChecked": "2026-10-05",
         "counties": []
       },
       {
         "stateId": "nv",
         "summary": "Nevada CFPs are issued by county sheriffs (in Clark County, the Las Vegas Metropolitan Police Department). Each sheriff sets its own fee, up to $60 plus the background-check fee (NRS 202.3657), and must decide within 120 days (NRS 202.366). Nonresidents may apply to any Nevada sheriff. County-specific fees and wait times were not verified for this update.",
-        "lastChecked": "2026-09-25",
+        "lastChecked": "2026-10-05",
         "counties": []
       },
       {
         "stateId": "wa",
         "summary": "Washington CPLs are issued by your city police department or county sheriff. Fees are fixed by statute statewide ($36 + FBI fingerprint fee; $32 renewal), and local agencies may not add fees or requirements (RCW 9.41.070). Appointment scheduling and turnaround vary by agency within the 30/60-day statutory limit. Nonresidents may apply to any agency.",
-        "lastChecked": "2026-09-25",
+        "lastChecked": "2026-10-05",
         "counties": []
       },
       {
         "stateId": "az",
         "summary": "No county role: Arizona permits are issued statewide by the DPS Concealed Weapons Permit Unit, with the same fees and process everywhere. Permitless carry applies statewide for 21+.",
-        "lastChecked": "2026-09-25",
+        "lastChecked": "2026-10-05",
         "counties": []
       }
     ]
