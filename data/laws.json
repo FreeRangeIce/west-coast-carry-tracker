@@ -638,12 +638,12 @@
       },
       {
         "id": "us-v-san-jose",
-        "name": "United States v. City of San Jose, California et al.",
+        "name": "United States v. City of San Jose, California",
         "court": "U.S. District Court, N.D. Cal.",
         "docket": "No. 5:26-cv-10508",
         "challenges": "San Jose's CCW application fee of $1,591 (Res. No. 2026-183; 20% / $318 up front, balance at issuance) and applicant-paid psychological testing as allegedly 'exorbitant fees' that deny ordinary citizens the right to public carry (Bruen n.9), brought under 34 U.S.C. § 12601.",
-        "status": "Complaint filed Sept 16, 2026 by the U.S. Department of Justice Civil Rights Division (Second Amendment Section). Seeks declaratory and permanent injunctive relief. No merits ruling yet. Initial case management conference set Dec 15, 2026 (Magistrate Judge van Keulen). Fee remains in effect unless enjoined.",
-        "statusDate": "2026-09-16",
+        "status": "Complaint filed Sept 16, 2026 by the U.S. Department of Justice Civil Rights Division (Second Amendment Section). An amended complaint filed Sept 29, 2026 names the City of San Jose as the only defendant. Seeks declaratory and permanent injunctive relief. No merits ruling yet. On Sept 29 the case was reassigned to District Judge P. Casey Pitts, and the initial case management conference is now set for Dec 17, 2026. Fee remains in effect unless enjoined.",
+        "statusDate": "2026-09-29",
         "outcome": "pending",
         "impact": "If successful, could force San Jose (and potentially other high-fee CA licensing authorities) to lower CCW fees. For now it is a newly filed challenge only — SJPD's fee stays in effect unless a court orders otherwise. (San Jose residents may also be able to apply to the Santa Clara County Sheriff. See County notes.)",
         "stateIds": [
@@ -652,10 +652,11 @@
         "sourceUrl": "https://www.justice.gov/opa/pr/justice-department-sues-san-jose-unconstitutional-1600-firearm-permit-fee",
         "extraUrls": [
           "https://www.justice.gov/crt/media/1461516/dl",
-          "https://clearinghouse.net/case/48461/"
+          "https://clearinghouse.net/case/48461/",
+          "https://www.courtlistener.com/docket/74798613/united-states-v-san-jose/"
         ],
         "uncertain": false,
-        "lastChecked": "2026-09-25"
+        "lastChecked": "2026-10-05"
       },
       {
         "id": "ladd-v-hunter",
