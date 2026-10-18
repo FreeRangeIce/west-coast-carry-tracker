@@ -599,6 +599,21 @@
     "note": "Status summarized from court dockets, official court pages, and party or agency filings. Cases move fast — always check the linked source. 'Partly uncertain' means part of the status could not be confirmed from an official source.",
     "cases": [
       {
+        "id": "yukutake-v-lopez",
+        "name": "Yukutake v. Lopez",
+        "court": "9th Circuit (en banc)",
+        "docket": "No. 21-16756",
+        "challenges": "Hawaii's shall-issue firearm licensing regime.",
+        "status": "The en banc court (opinion by Judge Owens; dissents by Judges R. Nelson, Forrest and VanDyke) reversed the district court's injunction against Hawaii's shall-issue firearm licensing regime on Second Amendment grounds and remanded for further proceedings.",
+        "statusDate": "2026-09-22",
+        "outcome": "decided",
+        "impact": "",
+        "stateIds": [],
+        "sourceUrl": "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/09/22/21-16756.pdf",
+        "uncertain": false,
+        "lastChecked": "2026-09-22"
+      },
+      {
         "id": "wolford-v-lopez",
         "name": "Wolford v. Lopez",
         "court": "U.S. Supreme Court",
