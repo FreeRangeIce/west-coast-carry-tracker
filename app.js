@@ -1091,7 +1091,7 @@
         <dl class="case-facts">
           <dt>Challenges</dt><dd>${escapeHtml(c.challenges)}</dd>
           <dt>Status <span class="case-date">(latest court event: ${escapeHtml(formatDate(c.statusDate))})</span></dt><dd>${escapeHtml(c.status)}</dd>
-          <dt>What a ruling would change</dt><dd>${escapeHtml(c.impact)}</dd>
+          ${String(c.impact == null ? "" : c.impact).trim() ? `<dt>What a ruling would change</dt><dd>${escapeHtml(c.impact)}</dd>` : ""}
         </dl>
         ${c.uncertainNote ? `<p class="callout caution"><strong>Uncertain:</strong> ${escapeHtml(c.uncertainNote)}</p>` : ""}
         <p class="case-src"><a href="${escapeHtml(c.sourceUrl)}" target="_blank" rel="noopener noreferrer">Primary source</a>${(c.extraUrls || [])
