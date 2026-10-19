@@ -1098,7 +1098,7 @@
           .map((u, i) => ` · <a href="${escapeHtml(u)}" target="_blank" rel="noopener noreferrer">Related ${i + 1}</a>`)
           .join("")}
           <span class="section-checked">checked ${escapeHtml(formatDate(c.lastChecked))}</span></p>
-        ${c.checkNote ? `<p class="check-note">${escapeHtml(c.checkNote)}</p>` : ""}
+        ${c.checkNote ? `<p class="check-note">${escapeHtml(c.checkNote).replace(/\b([A-Z][a-z]{2,4}\.?) (\d{1,2}), (\d{4})/g, "$1\u00a0$2,\u00a0$3")}</p>` : ""}
       </article>`
       )
       .join("");
