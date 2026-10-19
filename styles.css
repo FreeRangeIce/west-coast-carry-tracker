@@ -1072,6 +1072,6 @@ body {
 /* Plain status line when a case could not be fully re-checked (no badge, no alarm) */
 .check-note {
   margin-top: var(--space-2);
-  font-size: var(--fs-md);
+  font-size: 1rem;
   color: var(--text-muted);
 }
