@@ -18,12 +18,12 @@
   "lastCheckedBySection": {
     "states": "2026-10-19",
     "reciprocityMatrix": "2026-10-19",
-    "litigation": "2026-10-18",
+    "litigation": "2026-10-19",
     "countyNotes": "2026-10-19",
     "compare": "2026-10-19",
     "topics": "2026-10-19",
     "qa": "2026-10-19",
-    "updates": "2026-10-05"
+    "updates": "2026-10-19"
   },
   "states": [
     {
@@ -602,7 +602,7 @@
     ]
   },
   "litigation": {
-    "lastChecked": "2026-10-18",
+    "lastChecked": "2026-10-19",
     "note": "Status summarized from court dockets, official court pages, and party or agency filings. Cases move fast — always check the linked source. 'Partly uncertain' means part of the status could not be confirmed from an official source.",
     "cases": [
       {
@@ -656,8 +656,7 @@
           "https://www.courtlistener.com/docket/67788828/in-re-senate-bill-2-litigation/"
         ],
         "uncertain": false,
-        "lastChecked": "2026-10-18",
-        "checkNote": "Last confirmed Oct 18, 2026. On Oct 19 we could read only a copy of the court docket current through Sept 21, 2026, so later filings may not be reflected."
+        "lastChecked": "2026-10-19"
       },
       {
         "id": "us-v-san-jose",
