@@ -16,8 +16,8 @@
     }
   },
   "lastCheckedBySection": {
-    "states": "2026-10-05",
-    "reciprocityMatrix": "2026-10-05",
+    "states": "2026-10-19",
+    "reciprocityMatrix": "2026-10-19",
     "litigation": "2026-10-05",
     "countyNotes": "2026-09-25",
     "compare": "2026-10-05",
@@ -132,7 +132,7 @@
           "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=26150"
         }
       ],
-      "lastChecked": "2026-10-18"
+      "lastChecked": "2026-10-19"
     },
     {
       "id": "or",
@@ -194,7 +194,7 @@
           "url": "https://www.oregonlegislature.gov/bills_laws/lawsstatutes/2026orLaw0120.pdf"
         }
       ],
-      "lastChecked": "2026-10-18",
+      "lastChecked": "2026-10-19",
       "reciprocityOutNote": "Among the five states here, only Arizona honors an Oregon CHL (21+). CA, NV and WA do not."
     },
     {
@@ -280,7 +280,7 @@
       "purchaseRules": "No permit to purchase or waiting period found in NRS Chapter 202. Nevada requires background checks on most private-party transfers (NRS 202.2547) in addition to federal dealer checks — verify current text.",
       "recentLegislation": [],
       "recentLegislationNote": "No 2025–2026 Nevada carry-law changes were verified for this update. The 2026 DPS recognition list took effect July 1, 2026. Nevada's legislature meets in odd years; watch the 2027 session.",
-      "lastChecked": "2026-10-18",
+      "lastChecked": "2026-10-19",
       "recognizedStatesSource": "Nevada DPS RCCD recognition list",
       "reciprocityOutNote": "Among the five states here, only Arizona honors a Nevada CFP (AZ honors all valid permits). CA, OR and WA do not.",
       "nonResidentNote": "Nonresidents may apply to the sheriff of any Nevada county (NRS 202.3657)."
@@ -351,7 +351,7 @@
         }
       ],
       "lastReviewed": "2026-10-18",
-      "lastChecked": "2026-10-18",
+      "lastChecked": "2026-10-19",
       "sources": [
         {
           "title": "RCW 9.41.070 Concealed pistol license",
@@ -475,7 +475,7 @@
         }
       ],
       "lastReviewed": "2026-10-18",
-      "lastChecked": "2026-10-18",
+      "lastChecked": "2026-10-19",
       "sources": [
         {
           "title": "ARS 13-3112 Concealed weapons permit; reciprocity",
@@ -618,7 +618,7 @@
         "stateIds": [],
         "sourceUrl": "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/09/22/21-16756.pdf",
         "uncertain": false,
-        "lastChecked": "2026-10-18"
+        "lastChecked": "2026-10-19"
       },
       {
         "id": "wolford-v-lopez",
@@ -678,7 +678,7 @@
           "https://www.courtlistener.com/docket/74798613/united-states-v-san-jose/"
         ],
         "uncertain": false,
-        "lastChecked": "2026-10-18"
+        "lastChecked": "2026-10-19"
       },
       {
         "id": "ladd-v-hunter",
@@ -699,7 +699,7 @@
           "https://www.pacermonitor.com/public/case/66747861/Ladd_et_al_v_Hunter_et_al"
         ],
         "uncertain": false,
-        "lastChecked": "2026-10-18"
+        "lastChecked": "2026-10-19"
       },
       {
         "id": "duncan-v-bonta",
@@ -719,7 +719,7 @@
         "sourceUrl": "https://www.supremecourt.gov/docket/docketfiles/html/public/25-198.html",
         "uncertain": true,
         "uncertainNote": "Whether the Court is formally holding the petition for Viramontes/Grant is inferred from the docket, not stated in an order.",
-        "lastChecked": "2026-10-18"
+        "lastChecked": "2026-10-19"
       },
       {
         "id": "viramontes-grant",
@@ -741,7 +741,7 @@
           "https://www.supremecourt.gov/docket/docketfiles/html/public/25-566.html"
         ],
         "uncertain": false,
-        "lastChecked": "2026-10-18"
+        "lastChecked": "2026-10-19"
       },
       {
         "id": "gators-v-washington",
@@ -759,7 +759,7 @@
         "sourceUrl": "https://www.supremecourt.gov/docket/docketfiles/html/public/25-153.html",
         "uncertain": true,
         "uncertainNote": "Whether the petition is formally being held is not stated in an order.",
-        "lastChecked": "2026-10-18"
+        "lastChecked": "2026-10-19"
       },
       {
         "id": "rhode-v-bonta",
@@ -767,7 +767,7 @@
         "court": "9th Circuit (en banc)",
         "docket": "No. 24-542",
         "challenges": "California's point-of-sale background checks for ammunition purchases (Prop 63 / SB 1235).",
-        "status": "A panel struck down the checks July 24, 2025. Rehearing en banc was granted Dec 1, 2025, vacating that ruling. Argued en banc Mar 25, 2026. No decision posted on the 9th Circuit's en banc page as of Oct 5, 2026. Ammo checks remain in effect.",
+        "status": "A panel struck down the checks July 24, 2025. Rehearing en banc was granted Dec 1, 2025, vacating that ruling. Argued en banc Mar 25, 2026. No decision posted on the 9th Circuit's en banc page as of Oct 19, 2026. Ammo checks remain in effect.",
         "statusDate": "2026-03-25",
         "outcome": "pending",
         "impact": "A ruling for the challengers would end California's ammunition background-check requirement. A ruling for the state keeps it.",
@@ -779,7 +779,7 @@
           "https://cdn.ca9.uscourts.gov/datastore/opinions/2025/12/01/24-542.pdf"
         ],
         "uncertain": false,
-        "lastChecked": "2026-10-18"
+        "lastChecked": "2026-10-19"
       },
       {
         "id": "baird-v-bonta",
@@ -796,7 +796,7 @@
         ],
         "sourceUrl": "https://www.courtlistener.com/docket/68961920/baird-v-bonta/",
         "uncertain": false,
-        "lastChecked": "2026-10-18"
+        "lastChecked": "2026-10-19"
       },
       {
         "id": "arnold-v-kotek",
@@ -818,7 +818,7 @@
         ],
         "uncertain": true,
         "uncertainNote": "Opinions released after Sept 3, 2026 were not confirmed. Check the Oregon Supreme Court opinions page.",
-        "lastChecked": "2026-10-18"
+        "lastChecked": "2026-10-19"
       },
       {
         "id": "hartford-v-brown",
@@ -835,7 +835,7 @@
         ],
         "sourceUrl": "https://www.courtlistener.com/docket/67264060/hartford-v-brown/",
         "uncertain": false,
-        "lastChecked": "2026-10-18"
+        "lastChecked": "2026-10-19"
       },
       {
         "id": "bruen-rahimi",
