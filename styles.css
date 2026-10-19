@@ -245,21 +245,22 @@ body {
     overflow-x: auto;
     flex-wrap: nowrap;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
+    scrollbar-width: none; /* the right-edge fade is the scroll hint; no visible bar */
     /* keep a scrolled-to tab clear of the right-edge fade */
-    scroll-padding-inline: var(--space-4) 3.5rem;
+    scroll-padding-inline: var(--space-4) 2rem;
   }
+  .tabs::-webkit-scrollbar { display: none; }
   /* Scroll hint: a fade pinned to the right edge of the strip. Also acts as
      trailing space so the last tab can scroll fully clear of the fade.
      (An overlay rather than mask-image, so the pinned bar stays opaque.) */
   .tabs::after {
     content: "";
-    flex: 0 0 3.5rem;
+    flex: 0 0 2rem; /* ~32px fade; also trailing space so the last tab clears it */
     position: sticky;
-    right: 0;
+    right: calc(-1 * var(--space-4)); /* sticky insets sit inside the strip padding; pull the fade to the true edge */
     margin-left: calc(-1 * var(--space-2));
     margin-bottom: 1px; /* leave the bar's hairline visible under the fade */
-    background: linear-gradient(to right, rgba(12, 14, 18, 0), var(--bg) 85%);
+    background: linear-gradient(to right, rgba(12, 14, 18, 0), var(--bg-bar) 100%);
     pointer-events: none;
   }
 }
