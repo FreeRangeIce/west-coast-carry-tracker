@@ -382,6 +382,12 @@
     searchIndex = docs;
   }
 
+  // Keep "Mon D, YYYY" dates (incl. "Sept") on one line at render; data text unchanged.
+  const DATE_RE = /\b(Jan|Feb|Mar|Apr|May|June?|July?|Aug|Sept?|Oct|Nov|Dec|January|February|March|April|August|September|October|November|December)(\.?) (\d{1,2}), (\d{4})\b/g;
+  function nbspDates(s) {
+    return String(s).replace(DATE_RE, "$1$2\u00a0$3,\u00a0$4");
+  }
+
   function litigationCases() {
     return (data && data.litigation && data.litigation.cases) || [];
   }
@@ -1090,15 +1096,15 @@
         <p class="case-court">${escapeHtml(c.court)}${c.docket ? " · " + escapeHtml(c.docket) : ""}</p>
         <dl class="case-facts">
           <dt>Challenges</dt><dd>${escapeHtml(c.challenges)}</dd>
-          <dt>Status <span class="case-date">(latest court event: ${escapeHtml(formatDate(c.statusDate))})</span></dt><dd>${escapeHtml(c.status)}</dd>
+          <dt>Status <span class="case-date">(latest court event: ${nbspDates(escapeHtml(formatDate(c.statusDate)))})</span></dt><dd>${nbspDates(escapeHtml(c.status))}</dd>
           ${String(c.impact == null ? "" : c.impact).trim() ? `<dt>What a ruling would change</dt><dd>${escapeHtml(c.impact)}</dd>` : ""}
         </dl>
-        ${c.uncertainNote ? `<p class="callout caution"><strong>Uncertain:</strong> ${escapeHtml(c.uncertainNote)}</p>` : ""}
+        ${c.uncertainNote ? `<p class="callout caution"><strong>Uncertain:</strong> ${nbspDates(escapeHtml(c.uncertainNote))}</p>` : ""}
         <p class="case-src"><a href="${escapeHtml(c.sourceUrl)}" target="_blank" rel="noopener noreferrer">Primary source</a>${(c.extraUrls || [])
           .map((u, i) => ` · <a href="${escapeHtml(u)}" target="_blank" rel="noopener noreferrer">Related ${i + 1}</a>`)
           .join("")}
           <span class="section-checked">checked ${escapeHtml(formatDate(c.lastChecked))}</span></p>
-        ${c.checkNote ? `<p class="check-note">${escapeHtml(c.checkNote).replace(/\b([A-Z][a-z]{2,4}\.?) (\d{1,2}), (\d{4})/g, "$1\u00a0$2,\u00a0$3")}</p>` : ""}
+        ${c.checkNote ? `<p class="check-note">${nbspDates(escapeHtml(c.checkNote))}</p>` : ""}
       </article>`
       )
       .join("");
