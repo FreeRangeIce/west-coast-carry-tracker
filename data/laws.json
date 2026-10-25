@@ -16,13 +16,13 @@
     }
   },
   "lastCheckedBySection": {
-    "states": "2026-10-19",
-    "reciprocityMatrix": "2026-10-19",
+    "states": "2026-10-25",
+    "reciprocityMatrix": "2026-10-25",
     "litigation": "2026-10-19",
     "countyNotes": "2026-10-19",
-    "compare": "2026-10-19",
-    "topics": "2026-10-19",
-    "qa": "2026-10-19",
+    "compare": "2026-10-25",
+    "topics": "2026-10-25",
+    "qa": "2026-10-25",
     "updates": "2026-10-19"
   },
   "states": [
@@ -132,7 +132,7 @@
           "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=26150"
         }
       ],
-      "lastChecked": "2026-10-19"
+      "lastChecked": "2026-10-25"
     },
     {
       "id": "or",
@@ -194,7 +194,7 @@
           "url": "https://www.oregonlegislature.gov/bills_laws/lawsstatutes/2026orLaw0120.pdf"
         }
       ],
-      "lastChecked": "2026-10-19",
+      "lastChecked": "2026-10-25",
       "reciprocityOutNote": "Among the five states here, only Arizona honors an Oregon CHL (21+). CA, NV and WA do not."
     },
     {
@@ -280,7 +280,7 @@
       "purchaseRules": "No permit to purchase or waiting period found in NRS Chapter 202. Nevada requires background checks on most private-party transfers (NRS 202.2547) in addition to federal dealer checks — verify current text.",
       "recentLegislation": [],
       "recentLegislationNote": "No 2025–2026 Nevada carry-law changes were verified for this update. The 2026 DPS recognition list took effect July 1, 2026. Nevada's legislature meets in odd years; watch the 2027 session.",
-      "lastChecked": "2026-10-19",
+      "lastChecked": "2026-10-25",
       "recognizedStatesSource": "Nevada DPS RCCD recognition list",
       "reciprocityOutNote": "Among the five states here, only Arizona honors a Nevada CFP (AZ honors all valid permits). CA, OR and WA do not.",
       "nonResidentNote": "Nonresidents may apply to the sheriff of any Nevada county (NRS 202.3657)."
@@ -351,7 +351,7 @@
         }
       ],
       "lastReviewed": "2026-10-18",
-      "lastChecked": "2026-10-19",
+      "lastChecked": "2026-10-25",
       "sources": [
         {
           "title": "RCW 9.41.070 Concealed pistol license",
@@ -475,7 +475,7 @@
         }
       ],
       "lastReviewed": "2026-10-18",
-      "lastChecked": "2026-10-19",
+      "lastChecked": "2026-10-25",
       "sources": [
         {
           "title": "ARS 13-3112 Concealed weapons permit; reciprocity",
@@ -517,7 +517,7 @@
     }
   ],
   "reciprocityMatrix": {
-    "lastChecked": "2026-10-19",
+    "lastChecked": "2026-10-25",
     "description": "Row = the state you are carrying IN. Column = the state that issued your permit. \"Yes\" means the row state honors a valid permit from that state for concealed carry (conditions apply; Arizona requires the holder to be 21+, legally present and not a prohibited possessor). Arizona also allows permitless concealed carry for anyone 21+ who may legally possess a firearm.",
     "states": [
       "ca",
@@ -618,7 +618,7 @@
         "stateIds": [],
         "sourceUrl": "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/09/22/21-16756.pdf",
         "uncertain": false,
-        "lastChecked": "2026-10-19"
+        "lastChecked": "2026-10-25"
       },
       {
         "id": "wolford-v-lopez",
@@ -635,7 +635,7 @@
         ],
         "sourceUrl": "https://www.supremecourt.gov/opinions/25pdf/24-1046_nmio.pdf",
         "uncertain": false,
-        "lastChecked": "2026-10-19"
+        "lastChecked": "2026-10-25"
       },
       {
         "id": "may-carralero-v-bonta",
@@ -656,7 +656,7 @@
           "https://www.courtlistener.com/docket/67788828/in-re-senate-bill-2-litigation/"
         ],
         "uncertain": false,
-        "lastChecked": "2026-10-19"
+        "lastChecked": "2026-10-25"
       },
       {
         "id": "us-v-san-jose",
@@ -678,7 +678,7 @@
           "https://www.courtlistener.com/docket/74798613/united-states-v-san-jose/"
         ],
         "uncertain": false,
-        "lastChecked": "2026-10-19"
+        "lastChecked": "2026-10-25"
       },
       {
         "id": "ladd-v-hunter",
@@ -699,7 +699,7 @@
           "https://www.pacermonitor.com/public/case/66747861/Ladd_et_al_v_Hunter_et_al"
         ],
         "uncertain": false,
-        "lastChecked": "2026-10-19"
+        "lastChecked": "2026-10-25"
       },
       {
         "id": "duncan-v-bonta",
@@ -719,7 +719,7 @@
         "sourceUrl": "https://www.supremecourt.gov/docket/docketfiles/html/public/25-198.html",
         "uncertain": true,
         "uncertainNote": "Whether the Court is formally holding the petition for Viramontes/Grant is inferred from the docket, not stated in an order.",
-        "lastChecked": "2026-10-19"
+        "lastChecked": "2026-10-25"
       },
       {
         "id": "viramontes-grant",
@@ -727,8 +727,8 @@
         "court": "U.S. Supreme Court",
         "docket": "Nos. 25-238 and 25-566",
         "challenges": "Bans on AR-15-style 'assault weapons' (Cook County, IL, and Connecticut).",
-        "status": "Cert granted June 30, 2026. Argument set for Dec 2, 2026. The Solicitor General has moved to take part in the argument. Respondents' briefs are due Oct 21, 2026.",
-        "statusDate": "2026-09-09",
+        "status": "Cert granted June 30, 2026. Argument set for Dec 2, 2026. The Solicitor General has moved to take part in the argument. Respondents' briefs (Cook County; Connecticut) were submitted Oct 21, 2026.",
+        "statusDate": "2026-10-21",
         "outcome": "granted",
         "impact": "The first Supreme Court merits ruling on assault-weapon bans. It would directly affect California's ban (PC 30600 et seq.), Washington's sales ban (RCW 9.41.390) and related challenges such as Miller v. Bonta and Hartford v. Brown. A decision is likely by mid-2027.",
         "stateIds": [
@@ -741,7 +741,7 @@
           "https://www.supremecourt.gov/docket/docketfiles/html/public/25-566.html"
         ],
         "uncertain": false,
-        "lastChecked": "2026-10-19"
+        "lastChecked": "2026-10-25"
       },
       {
         "id": "gators-v-washington",
@@ -759,7 +759,7 @@
         "sourceUrl": "https://www.supremecourt.gov/docket/docketfiles/html/public/25-153.html",
         "uncertain": true,
         "uncertainNote": "Whether the petition is formally being held is not stated in an order.",
-        "lastChecked": "2026-10-19"
+        "lastChecked": "2026-10-25"
       },
       {
         "id": "rhode-v-bonta",
@@ -767,7 +767,7 @@
         "court": "9th Circuit (en banc)",
         "docket": "No. 24-542",
         "challenges": "California's point-of-sale background checks for ammunition purchases (Prop 63 / SB 1235).",
-        "status": "A panel struck down the checks July 24, 2025. Rehearing en banc was granted Dec 1, 2025, vacating that ruling. Argued en banc Mar 25, 2026. No decision posted on the 9th Circuit's en banc page as of Oct 19, 2026. Ammo checks remain in effect.",
+        "status": "A panel struck down the checks July 24, 2025. Rehearing en banc was granted Dec 1, 2025, vacating that ruling. Argued en banc Mar 25, 2026. No decision posted on the 9th Circuit's en banc page as of Oct 25, 2026. Ammo checks remain in effect.",
         "statusDate": "2026-03-25",
         "outcome": "pending",
         "impact": "A ruling for the challengers would end California's ammunition background-check requirement. A ruling for the state keeps it.",
@@ -779,7 +779,7 @@
           "https://cdn.ca9.uscourts.gov/datastore/opinions/2025/12/01/24-542.pdf"
         ],
         "uncertain": false,
-        "lastChecked": "2026-10-19"
+        "lastChecked": "2026-10-25"
       },
       {
         "id": "baird-v-bonta",
@@ -796,7 +796,7 @@
         ],
         "sourceUrl": "https://www.courtlistener.com/docket/68961920/baird-v-bonta/",
         "uncertain": false,
-        "lastChecked": "2026-10-19"
+        "lastChecked": "2026-10-25"
       },
       {
         "id": "arnold-v-kotek",
@@ -835,7 +835,7 @@
         ],
         "sourceUrl": "https://www.courtlistener.com/docket/67264060/hartford-v-brown/",
         "uncertain": false,
-        "lastChecked": "2026-10-19"
+        "lastChecked": "2026-10-25"
       },
       {
         "id": "bruen-rahimi",
@@ -859,7 +859,7 @@
           "https://www.supremecourt.gov/opinions/23pdf/22-915_8o6b.pdf"
         ],
         "uncertain": false,
-        "lastChecked": "2026-10-19"
+        "lastChecked": "2026-10-25"
       }
     ],
     "noCasesNote": "No major pending cases challenging Nevada or Arizona carry laws were identified in this check (Ladd v. Hunter involves an Arizona traveler but challenges Oregon law). Both states are affected by Supreme Court rulings such as Bruen and Wolford."
@@ -972,25 +972,25 @@
       {
         "stateId": "or",
         "summary": "Oregon CHLs are issued by the sheriff of your county of residence (ORS 166.291). The fees are set in statute and are the same everywhere ($100 initial + $15 OSP fingerprint fee, i.e. $115 for a new license; $75 renewal; $15 duplicate). What varies by county is appointment availability, wait times and whether the sheriff will waive residency for a contiguous-state applicant (ORS 166.291(8)). By law the license must be issued within 45 days of application if approved.",
-        "lastChecked": "2026-10-19",
+        "lastChecked": "2026-10-25",
         "counties": []
       },
       {
         "stateId": "nv",
         "summary": "Nevada CFPs are issued by county sheriffs (in Clark County, the Las Vegas Metropolitan Police Department). Each sheriff sets its own fee, up to $60 plus the background-check fee (NRS 202.3657), and must decide within 120 days (NRS 202.366). Nonresidents may apply to any Nevada sheriff. County-specific fees and wait times were not verified for this update.",
-        "lastChecked": "2026-10-19",
+        "lastChecked": "2026-10-25",
         "counties": []
       },
       {
         "stateId": "wa",
         "summary": "Washington CPLs are issued by your city police department or county sheriff. Fees are fixed by statute statewide ($36 + FBI fingerprint fee; $32 renewal), and local agencies may not add fees or requirements (RCW 9.41.070). Appointment scheduling and turnaround vary by agency within the 30/60-day statutory limit. Nonresidents may apply to any agency.",
-        "lastChecked": "2026-10-19",
+        "lastChecked": "2026-10-25",
         "counties": []
       },
       {
         "stateId": "az",
         "summary": "No county role: Arizona permits are issued statewide by the DPS Concealed Weapons Permit Unit, with the same fees and process everywhere. Permitless carry applies statewide for 21+.",
-        "lastChecked": "2026-10-19",
+        "lastChecked": "2026-10-25",
         "counties": []
       }
     ]
