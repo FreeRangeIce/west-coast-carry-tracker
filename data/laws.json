@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-10-18",
+  "lastReviewed": "2026-10-25",
   "schemaVersion": 2,
   "disclaimer": "NOT LEGAL ADVICE. This tracker summarizes publicly available high-level information about firearm and concealed-carry rules in California, Oregon, Nevada, Washington, and Arizona for personal reference only. Laws change, court orders enjoin or restore rules, and local rules apply. Always verify with official statutes, attorney general / DPS / licensing-agency guidance, and a licensed attorney before carrying or traveling.",
   "monitoringNote": "Curated data for CA, OR, NV, WA and AZ, the reciprocity matrix, tracked court cases and county notes is updated by hand when changes are verified against official sources. Updates are not automatic or daily. Check the Last reviewed date and verify before relying on anything here. This is not live web search.",
@@ -47,7 +47,7 @@
       ],
       "travelerTip": "Out-of-state permits are not valid for concealed carry in CA. Unloaded, secured interstate transport may have federal safe-passage protections — verify FOPA and CA rules. Bringing in or possessing magazines over 10 rounds is illegal in California (PC 32310), including for visitors.",
       "possessionNotes": "California has extensive magazine, assault-weapon, roster and ammunition rules beyond CCW. OAG Information Bulletin 2026-DLE-16 (Sept 18, 2026) reminds dealers and LE that silencers, short-barreled rifles/shotguns, and firearms not immediately recognizable as firearms remain illegal under California Penal Code even after a limited ND Texas ruling on the federal NFA (Silencer Shop Foundation v. ATF). This tracker summarizes possession rules at a high level only; check the linked statutes and the Litigation tab for current court status.",
-      "lastReviewed": "2026-10-18",
+      "lastReviewed": "2026-10-25",
       "sources": [
         {
           "title": "CA DOJ CCW License FAQs",
@@ -156,7 +156,7 @@
       "travelerTip": "Out-of-state permits are not recognized in Oregon. Without an Oregon CHL, you may not carry a handgun concealed on your person or keep one concealed and readily accessible in a vehicle (anywhere in the passenger compartment; ORS 166.250(1)(b), (4)). Some cities also ban loaded carry in public for people without a CHL (ORS 166.173). Check the rules for storing a handgun in a vehicle before you drive in.",
       "measure114Note": "Measure 114 (permit-to-purchase / related rules) remains in litigation and is not currently in effect. Oregon HB 4145 (2026 Laws, ch. 120; signed Apr 7, 2026) delayed the Measure 114 operative date to January 1, 2028, and stated legislative intent not to moot the pending Oregon Supreme Court case (Arnold v. Kotek). Track separately from CHL — do not conflate with CHL.",
       "possessionNotes": "High-level only: CHL framework is separate from Measure 114 permit-to-purchase litigation. Verify both tracks independently.",
-      "lastReviewed": "2026-10-18",
+      "lastReviewed": "2026-10-25",
       "sources": [
         {
           "title": "ORS Chapter 166 (official, 2025 edition) — 166.291, 166.292, 166.370, 166.377",
@@ -248,7 +248,7 @@
       ],
       "travelerTip": "If your home-state permit is on the NV DPS recognition list, concealed carry may be allowed under that recognition — verify the current PDF list. California, Oregon and Washington permits are not recognized; Arizona permits are.",
       "possessionNotes": "High-level only: Concealed carry without a Nevada or recognized permit is a serious crime. Open carry rules differ — do not conflate.",
-      "lastReviewed": "2026-10-18",
+      "lastReviewed": "2026-10-25",
       "sources": [
         {
           "title": "NV DPS 2026 CCW Recognition List (effective July 1, 2026)",
@@ -350,7 +350,7 @@
           "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=9.41.390"
         }
       ],
-      "lastReviewed": "2026-10-18",
+      "lastReviewed": "2026-10-25",
       "lastChecked": "2026-10-25",
       "sources": [
         {
@@ -474,7 +474,7 @@
           "uncertain": false
         }
       ],
-      "lastReviewed": "2026-10-18",
+      "lastReviewed": "2026-10-25",
       "lastChecked": "2026-10-25",
       "sources": [
         {
