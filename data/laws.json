@@ -19,7 +19,7 @@
     "states": "2026-10-25",
     "reciprocityMatrix": "2026-10-25",
     "litigation": "2026-10-25",
-    "countyNotes": "2026-10-19",
+    "countyNotes": "2026-10-25",
     "compare": "2026-10-25",
     "topics": "2026-10-25",
     "qa": "2026-10-25",
@@ -865,19 +865,19 @@
     "noCasesNote": "No major pending cases challenging Nevada or Arizona carry laws were identified in this check (Ladd v. Hunter involves an Arizona traveler but challenges Oregon law). Both states are affected by Supreme Court rulings such as Bruen and Wolford."
   },
   "countyNotes": {
-    "lastChecked": "2026-10-19",
+    "lastChecked": "2026-10-25",
     "note": "County-level notes from official sheriff pages or the sheriff's official online application portal. Fees and timelines change often, so check the linked page before applying.",
     "states": [
       {
         "stateId": "ca",
         "summary": "California CCWs are issued by the county sheriff or, for city residents, often the city police chief. Local fees, psych evaluations, gun limits and wait times vary widely. Statewide: since Sept 1, 2026, every renewal requires new fingerprints and DOJ eligibility confirmation (PC 26185; OAG 2026-DLE-14). AB 1948 raises the maximum standard license term to 3 years for licenses issued on or after Jan 1, 2027. San Jose PD's $1,591 CCW fee is challenged in United States v. San Jose (filed Sept 16, 2026).",
-        "lastChecked": "2026-10-19",
+        "lastChecked": "2026-10-25",
         "counties": [
           {
             "name": "Los Angeles",
             "agency": "LA County Sheriff (LASD)",
             "fees": "Standard: $43 at submission + $173 at issuance (effective Sept 1, 2026). Non-resident: $136 ($93 DOJ + $43) + $173. Renewal: $17 at submission + $17 at issuance (LASD fees), plus the DOJ Live Scan fingerprint fee now required for renewals ($93 standard since Sept 1, 2026). Modification: $10.",
-            "processing": "LASD publishes a monthly CCW dashboard (data as of Oct 18, 2026): e.g., 841 applications received in July 2026, 882 in Aug 2026 and 732 in Sept 2026.",
+            "processing": "LASD publishes a CCW dashboard (newest record as of Oct 23, 2026) with application counts by month and initial/renewal processing timelines.",
             "policies": "LASD serves unincorporated areas and contract cities; residents of cities with their own police (e.g., LAPD) apply there. 16-hour initial / 8-hour renewal training from an LASD-approved provider, taken only after LASD tells you to. Up to 3 guns; AR-style pistols not allowed. From Oct 1, 2026, Live Scan or training done before applying won't be accepted. Non-resident applications accepted.",
             "sourceUrl": "https://lasd.org/ccw/",
             "verified": true
