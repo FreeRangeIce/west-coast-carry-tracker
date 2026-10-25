@@ -18,12 +18,12 @@
   "lastCheckedBySection": {
     "states": "2026-10-25",
     "reciprocityMatrix": "2026-10-25",
-    "litigation": "2026-10-19",
+    "litigation": "2026-10-25",
     "countyNotes": "2026-10-19",
     "compare": "2026-10-25",
     "topics": "2026-10-25",
     "qa": "2026-10-25",
-    "updates": "2026-10-19"
+    "updates": "2026-10-25"
   },
   "states": [
     {
@@ -602,7 +602,7 @@
     ]
   },
   "litigation": {
-    "lastChecked": "2026-10-19",
+    "lastChecked": "2026-10-25",
     "note": "Status summarized from court dockets, official court pages, and party or agency filings. Cases move fast — always check the linked source. 'Partly uncertain' means part of the status could not be confirmed from an official source.",
     "cases": [
       {
@@ -804,7 +804,7 @@
         "court": "Oregon Supreme Court",
         "docket": "S071885",
         "challenges": "Measure 114's permit-to-purchase system and ban on magazines over 10 rounds, under the Oregon Constitution.",
-        "status": "The Oregon Court of Appeals held Measure 114 facially constitutional Mar 12, 2025 (338 Or App 556). The Oregon Supreme Court heard argument Nov 6, 2025. No opinion found on the court's opinions page through the Sept 3, 2026 release. Pending as last verified.",
+        "status": "The Oregon Court of Appeals held Measure 114 facially constitutional Mar 12, 2025 (338 Or App 556). The Oregon Supreme Court heard argument Nov 6, 2025. No opinion found on the court's opinions page through the Oct 8, 2026 release. Pending as last verified.",
         "statusDate": "2025-11-06",
         "outcome": "pending",
         "impact": "If upheld, Measure 114 becomes operative Jan 1, 2028 under HB 4145 (permit to purchase plus 10-round magazine limit). If struck, those provisions never take effect. A separate federal challenge (Oregon Firearms Federation v. Kotek) ended in a 2023 district-court judgment upholding M114. The 9th Circuit appeal has been stayed since Dec 2023 pending the magazine and assault-weapon cases.",
@@ -817,8 +817,8 @@
           "https://trportal.courts.oregon.gov/portal/court/f28c1f7b-0af7-4462-b253-bd5371f86443/case/62e7f406-79b9-44a6-8545-95dda93112ec"
         ],
         "uncertain": true,
-        "uncertainNote": "Opinions released after Sept 3, 2026 were not confirmed. Check the Oregon Supreme Court opinions page.",
-        "lastChecked": "2026-10-19"
+        "uncertainNote": "Opinions released after Oct 8, 2026 were not confirmed. Check the Oregon Supreme Court opinions page.",
+        "lastChecked": "2026-10-25"
       },
       {
         "id": "hartford-v-brown",
