@@ -77,6 +77,13 @@
   }
 }
 
+/* Duo fix: stop iOS text autosizing from inflating long blocks (the long OAG bulletin
+   source titles grew in landscape while short titles stayed put). */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -98,12 +105,7 @@ body {
   scroll-margin-top: var(--sticky-offset);
 }
 
-/* 641-929px: the nine tabs wrap to two rows (~115px), so offset further */
-@media (min-width: 641px) and (max-width: 929px) {
-  :root {
-    --sticky-offset: 8rem;
-  }
-}
+/* (641-929px two-row tab offset removed: the tabs never wrap now.) */
 
 .skip-link {
   position: absolute;
@@ -227,7 +229,12 @@ body {
   padding: var(--space-3) var(--space-5) 0;
   display: flex;
   gap: var(--space-2);
-  flex-wrap: wrap;
+  /* One row at every width (Duo fix): scrolls sideways when the nine tabs don't fit */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  scroll-padding-inline: var(--space-5) 2rem;
   position: sticky;
   top: 0;
   z-index: 40;
@@ -237,6 +244,21 @@ body {
      layout width or horizontal scroll (same idea as the box-shadow + clip-path
      band, but it can carry the hairline too). */
   border-image: linear-gradient(to top, var(--border) 1px, var(--bg-bar) 1px) fill 0 / 0 / 0 100vmax;
+}
+
+/* The v16 32px right-edge fade, now at every width. It is bar-coloured over the bar, so
+   when every tab fits it sits over empty bar and shows nothing; it only reads as a fade
+   once a tab scrolls under it. */
+.tabs::-webkit-scrollbar { display: none; }
+.tabs::after {
+  content: "";
+  flex: 0 0 2rem;
+  position: sticky;
+  right: calc(-1 * var(--space-5));
+  margin-left: calc(-1 * var(--space-2));
+  margin-bottom: 1px;
+  background: linear-gradient(to right, rgba(12, 14, 18, 0), var(--bg-bar) 100%);
+  pointer-events: none;
 }
 
 @media (max-width: 640px) {
@@ -249,7 +271,6 @@ body {
     /* keep a scrolled-to tab clear of the right-edge fade */
     scroll-padding-inline: var(--space-4) 2rem;
   }
-  .tabs::-webkit-scrollbar { display: none; }
   /* Scroll hint: a fade pinned to the right edge of the strip. Also acts as
      trailing space so the last tab can scroll fully clear of the fade.
      (An overlay rather than mask-image, so the pinned bar stays opaque.) */
@@ -397,7 +418,12 @@ body {
 .badge.no { color: var(--text-muted); border-color: var(--border-strong); background: var(--bg-elevated); }
 .badge.warn { color: var(--warn); border-color: rgba(251, 191, 36, 0.35); background: var(--warn-bg); }
 
+.state-reviewed br {
+  display: none; /* label and date read as one line at every width */
+}
+
 .state-reviewed {
+  white-space: nowrap; /* wraps only as one unit (the whole block moves), never mid-stamp */
   font-family: var(--mono);
   font-size: var(--fs-sm);
   color: var(--text-dim);
@@ -500,8 +526,20 @@ body {
   margin-top: var(--space-1);
 }
 
+.sources {
+  font-size: inherit;
+}
+
 .sources a {
   word-break: break-word;
+}
+
+/* Duo fix: long source titles (the OAG 2026-DLE bulletins) wrap. As inline-blocks their
+   bullet sat on the last line's baseline; inline keeps the bullet on the first line and
+   every item at the list's font size (padding-block still pads the tap area). */
+ul.sources li > a {
+  display: inline;
+  font-size: inherit;
 }
 
 /* Source / county / docket links: ~32px tap height */
@@ -955,6 +993,13 @@ body {
   font-family: var(--mono);
   margin-left: var(--space-2);
   white-space: nowrap;
+  display: inline-block; /* keep the stamp a unit */
+}
+
+/* Litigation 'checked' stamp after "Related N": the word space separates it, so when it
+   wraps to its own line it starts flush (no dangling indent). */
+.case-src .section-checked {
+  margin-left: 0;
 }
 
 .compare-table.compare-5 { min-width: 860px; }
