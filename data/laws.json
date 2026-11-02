@@ -727,8 +727,8 @@
         "court": "U.S. Supreme Court",
         "docket": "Nos. 25-238 and 25-566",
         "challenges": "Bans on AR-15-style 'assault weapons' (Cook County, IL, and Connecticut).",
-        "status": "Cert granted June 30, 2026. Argument set for Dec 2, 2026. The Solicitor General has moved to take part in the argument. Respondents' briefs (Cook County; Connecticut) were submitted Oct 21, 2026.",
-        "statusDate": "2026-10-21",
+        "status": "Cert granted June 30, 2026. Argument set for Dec 2, 2026. The Solicitor General has moved to take part in the argument. Respondents' briefs (Cook County; Connecticut) were filed Oct 21, 2026. On Oct 29, 2026, a motion was submitted to dismiss petitioner Cutberto Viramontes under Supreme Court Rule 46.2.",
+        "statusDate": "2026-10-29",
         "outcome": "granted",
         "impact": "The first Supreme Court merits ruling on assault-weapon bans. It would directly affect California's ban (PC 30600 et seq.), Washington's sales ban (RCW 9.41.390) and related challenges such as Miller v. Bonta and Hartford v. Brown. A decision is likely by mid-2027.",
         "stateIds": [
@@ -741,7 +741,7 @@
           "https://www.supremecourt.gov/docket/docketfiles/html/public/25-566.html"
         ],
         "uncertain": false,
-        "lastChecked": "2026-10-25"
+        "lastChecked": "2026-11-01"
       },
       {
         "id": "gators-v-washington",
@@ -767,7 +767,7 @@
         "court": "9th Circuit (en banc)",
         "docket": "No. 24-542",
         "challenges": "California's point-of-sale background checks for ammunition purchases (Prop 63 / SB 1235).",
-        "status": "A panel struck down the checks July 24, 2025. Rehearing en banc was granted Dec 1, 2025, vacating that ruling. Argued en banc Mar 25, 2026. No decision posted on the 9th Circuit's en banc page as of Oct 25, 2026. Ammo checks remain in effect.",
+        "status": "A panel struck down the checks July 24, 2025. Rehearing en banc was granted Dec 1, 2025, vacating that ruling. Argued en banc Mar 25, 2026. No decision posted on the 9th Circuit's en banc page as of Nov 1, 2026. Ammo checks remain in effect.",
         "statusDate": "2026-03-25",
         "outcome": "pending",
         "impact": "A ruling for the challengers would end California's ammunition background-check requirement. A ruling for the state keeps it.",
@@ -779,7 +779,7 @@
           "https://cdn.ca9.uscourts.gov/datastore/opinions/2025/12/01/24-542.pdf"
         ],
         "uncertain": false,
-        "lastChecked": "2026-10-25"
+        "lastChecked": "2026-11-01"
       },
       {
         "id": "baird-v-bonta",
@@ -804,7 +804,7 @@
         "court": "Oregon Supreme Court",
         "docket": "S071885",
         "challenges": "Measure 114's permit-to-purchase system and ban on magazines over 10 rounds, under the Oregon Constitution.",
-        "status": "The Oregon Court of Appeals held Measure 114 facially constitutional Mar 12, 2025 (338 Or App 556). The Oregon Supreme Court heard argument Nov 6, 2025. No opinion found on the court's opinions page through the Oct 8, 2026 release. Pending as last verified.",
+        "status": "The Oregon Court of Appeals held Measure 114 facially constitutional Mar 12, 2025 (338 Or App 556). The Oregon Supreme Court heard argument Nov 6, 2025. No opinion found on the court's opinions page through the Oct 29, 2026 release. Pending as last verified.",
         "statusDate": "2025-11-06",
         "outcome": "pending",
         "impact": "If upheld, Measure 114 becomes operative Jan 1, 2028 under HB 4145 (permit to purchase plus 10-round magazine limit). If struck, those provisions never take effect. A separate federal challenge (Oregon Firearms Federation v. Kotek) ended in a 2023 district-court judgment upholding M114. The 9th Circuit appeal has been stayed since Dec 2023 pending the magazine and assault-weapon cases.",
@@ -818,7 +818,7 @@
         ],
         "uncertain": true,
         "uncertainNote": "Opinions released after Oct 8, 2026 were not confirmed. Check the Oregon Supreme Court opinions page.",
-        "lastChecked": "2026-10-25"
+        "lastChecked": "2026-11-01"
       },
       {
         "id": "hartford-v-brown",
