@@ -16,14 +16,14 @@
     }
   },
   "lastCheckedBySection": {
-    "states": "2026-10-25",
-    "reciprocityMatrix": "2026-10-25",
-    "litigation": "2026-10-25",
+    "states": "2026-11-01",
+    "reciprocityMatrix": "2026-11-01",
+    "litigation": "2026-11-01",
     "countyNotes": "2026-10-25",
-    "compare": "2026-10-25",
-    "topics": "2026-10-25",
-    "qa": "2026-10-25",
-    "updates": "2026-10-25"
+    "compare": "2026-11-01",
+    "topics": "2026-11-01",
+    "qa": "2026-11-01",
+    "updates": "2026-11-01"
   },
   "states": [
     {
@@ -132,7 +132,7 @@
           "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=26150"
         }
       ],
-      "lastChecked": "2026-10-25"
+      "lastChecked": "2026-11-01"
     },
     {
       "id": "or",
@@ -194,7 +194,7 @@
           "url": "https://www.oregonlegislature.gov/bills_laws/lawsstatutes/2026orLaw0120.pdf"
         }
       ],
-      "lastChecked": "2026-10-25",
+      "lastChecked": "2026-11-01",
       "reciprocityOutNote": "Among the five states here, only Arizona honors an Oregon CHL (21+). CA, NV and WA do not."
     },
     {
@@ -280,7 +280,7 @@
       "purchaseRules": "No permit to purchase or waiting period found in NRS Chapter 202. Nevada requires background checks on most private-party transfers (NRS 202.2547) in addition to federal dealer checks — verify current text.",
       "recentLegislation": [],
       "recentLegislationNote": "No 2025–2026 Nevada carry-law changes were verified for this update. The 2026 DPS recognition list took effect July 1, 2026. Nevada's legislature meets in odd years; watch the 2027 session.",
-      "lastChecked": "2026-10-25",
+      "lastChecked": "2026-11-01",
       "recognizedStatesSource": "Nevada DPS RCCD recognition list",
       "reciprocityOutNote": "Among the five states here, only Arizona honors a Nevada CFP (AZ honors all valid permits). CA, OR and WA do not.",
       "nonResidentNote": "Nonresidents may apply to the sheriff of any Nevada county (NRS 202.3657)."
@@ -351,7 +351,7 @@
         }
       ],
       "lastReviewed": "2026-11-01",
-      "lastChecked": "2026-10-25",
+      "lastChecked": "2026-11-01",
       "sources": [
         {
           "title": "RCW 9.41.070 Concealed pistol license",
@@ -475,7 +475,7 @@
         }
       ],
       "lastReviewed": "2026-11-01",
-      "lastChecked": "2026-10-25",
+      "lastChecked": "2026-11-01",
       "sources": [
         {
           "title": "ARS 13-3112 Concealed weapons permit; reciprocity",
@@ -517,7 +517,7 @@
     }
   ],
   "reciprocityMatrix": {
-    "lastChecked": "2026-10-25",
+    "lastChecked": "2026-11-01",
     "description": "Row = the state you are carrying IN. Column = the state that issued your permit. \"Yes\" means the row state honors a valid permit from that state for concealed carry (conditions apply; Arizona requires the holder to be 21+, legally present and not a prohibited possessor). Arizona also allows permitless concealed carry for anyone 21+ who may legally possess a firearm.",
     "states": [
       "ca",
@@ -602,7 +602,7 @@
     ]
   },
   "litigation": {
-    "lastChecked": "2026-10-25",
+    "lastChecked": "2026-11-01",
     "note": "Status summarized from court dockets, official court pages, and party or agency filings. Cases move fast — always check the linked source. 'Partly uncertain' means part of the status could not be confirmed from an official source.",
     "cases": [
       {
