@@ -1163,6 +1163,7 @@
       const active = tab.dataset.view === view;
       tab.classList.toggle("active", active);
       tab.setAttribute("aria-selected", active ? "true" : "false");
+      tab.tabIndex = active ? 0 : -1;
       if (active) activeTab = tab;
     });
 
@@ -1181,22 +1182,38 @@
 
     // After rendering (a layout while the new view is still empty would clamp the
     // page scroll): if the tab bar is pinned, bring the new view's heading up under
-    // it; then keep the active tab visible in the phone strip.
-    if (fromUser) jumpToViewTop();
-    revealTab(activeTab);
+    // it. Skip revealTab and any page jump on the initial load so the title and
+    // LAST REVIEWED stamp stay on screen.
+    if (fromUser) {
+      jumpToViewTop();
+      revealTab(activeTab);
+    }
 
     if (history.replaceState) {
       history.replaceState(null, "", "#" + view);
     } else {
       location.hash = view;
     }
+
+    // First load, with or without a hash: leave the page at the top. replaceState
+    // to #ca (or a hash already in the URL) plus html { scroll-behavior: smooth }
+    // must not animate the page down to the tab bar.
+    if (!fromUser) pinPageToTop();
+  }
+
+  function pinPageToTop() {
+    const root = document.documentElement;
+    const previous = root.style.scrollBehavior;
+    root.style.scrollBehavior = "auto";
+    window.scrollTo(0, 0);
+    root.style.scrollBehavior = previous;
   }
 
   // When the page is scrolled past the tab bar's natural position (bar pinned),
   // jump instantly so the new view starts just under the bar. The target is the
-  // bar's natural top, measured live (bar height varies: 52 / 60 / ~115px when the
-  // tabs wrap), so the bar stays pinned and the header/disclaimer are not
-  // re-shown. If the bar is not pinned yet, the page does not move.
+  // bar's natural top, measured live (the 3x3 chip grid is ~176px tall), so the
+  // bar stays pinned and the header/disclaimer are not re-shown. If the bar is
+  // not pinned yet, the page does not move.
   function jumpToViewTop() {
     if (!els.main || !els.tabBar) return;
     const barHeight = els.tabBar.getBoundingClientRect().height;
@@ -1209,15 +1226,19 @@
     root.style.scrollBehavior = previous;
   }
 
-  // Keep the active tab on-screen in the horizontally scrolling phone strip.
-  // block/inline "nearest" only nudges the strip sideways; the tab bar is sticky
-  // (always in the viewport), so the page itself does not move vertically.
+  // Keep the active tab visible if the tab bar itself ever scrolls horizontally.
+  // Adjust only the bar's scrollLeft — tab.scrollIntoView inside a sticky bar
+  // was scrolling the whole page down about one header height on phone.
   function revealTab(tab) {
-    if (!tab || typeof tab.scrollIntoView !== "function") return;
-    const smooth =
-      typeof window.matchMedia === "function" &&
-      window.matchMedia("(prefers-reduced-motion: no-preference)").matches;
-    tab.scrollIntoView({ block: "nearest", inline: "nearest", behavior: smooth ? "smooth" : "auto" });
+    if (!tab || !els.tabBar) return;
+    const bar = els.tabBar;
+    if (bar.scrollWidth <= bar.clientWidth + 1) return;
+    const tabLeft = tab.offsetLeft;
+    const tabRight = tabLeft + tab.offsetWidth;
+    const viewLeft = bar.scrollLeft;
+    const viewRight = viewLeft + bar.clientWidth;
+    if (tabLeft < viewLeft) bar.scrollLeft = tabLeft;
+    else if (tabRight > viewRight) bar.scrollLeft = tabRight - bar.clientWidth;
   }
 
   function bindTabs() {
@@ -1228,17 +1249,19 @@
     document.querySelector(".tabs").addEventListener("keydown", (e) => {
       const order = els.tabs;
       const idx = order.findIndex((t) => t.dataset.view === currentView);
-      if (e.key === "ArrowRight") {
-        e.preventDefault();
-        const next = order[(idx + 1) % order.length];
-        next.focus();
-        showView(next.dataset.view, { fromUser: true });
-      } else if (e.key === "ArrowLeft") {
-        e.preventDefault();
-        const prev = order[(idx - 1 + order.length) % order.length];
-        prev.focus();
-        showView(prev.dataset.view, { fromUser: true });
-      }
+      const cols = 3;
+      let nextIdx = -1;
+      if (e.key === "ArrowRight") nextIdx = (idx + 1) % order.length;
+      else if (e.key === "ArrowLeft") nextIdx = (idx - 1 + order.length) % order.length;
+      else if (e.key === "ArrowDown") nextIdx = (idx + cols) % order.length;
+      else if (e.key === "ArrowUp") nextIdx = (idx - cols + order.length) % order.length;
+      else if (e.key === "Home") nextIdx = 0;
+      else if (e.key === "End") nextIdx = order.length - 1;
+      if (nextIdx === -1) return;
+      e.preventDefault();
+      const next = order[nextIdx];
+      next.focus();
+      showView(next.dataset.view, { fromUser: true });
     });
   }
 
@@ -1288,7 +1311,15 @@
     const normalized = hash === "changelog" ? "updates" : hash;
     const initial = valid.indexOf(normalized) !== -1 ? normalized : "ca";
 
+    if (typeof history.scrollRestoration === "string") {
+      history.scrollRestoration = "manual";
+    }
     showView(initial);
+    // Catch a late native hash scroll (e.g. after #ca is applied) once layout is done.
+    requestAnimationFrame(() => {
+      pinPageToTop();
+      requestAnimationFrame(pinPageToTop);
+    });
 
     // Support in-app deep links / manual hash edits (e.g. #wa, #litigation)
     window.addEventListener("hashchange", () => {

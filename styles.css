@@ -45,8 +45,8 @@
   --space-6: 1.5rem;
   --space-8: 2rem;
 
-  /* Anchor offset below the sticky tab bar (one row of tabs + breathing room) */
-  --sticky-offset: 4.5rem;
+  /* Anchor offset below the sticky tab bar (3x3 chip grid: ~176px + a little room) */
+  --sticky-offset: 12rem;
 
   --ca: #e8c547;
   --ca-dim: rgba(232, 197, 71, 0.15);
@@ -105,7 +105,7 @@ body {
   scroll-margin-top: var(--sticky-offset);
 }
 
-/* (641-929px two-row tab offset removed: the tabs never wrap now.) */
+/* Sticky offset is sized for the 3-row chip grid at every width. */
 
 .skip-link {
   position: absolute;
@@ -222,88 +222,56 @@ body {
   margin-right: var(--space-1);
 }
 
-/* Tabs — the only pinned chrome, at every width */
+/* Tabs — wrapping 3×3 chip grid, the only pinned chrome, at every width */
 .tabs {
   max-width: 1100px;
   margin: 0 auto;
-  padding: var(--space-3) var(--space-5) 0;
-  display: flex;
-  gap: var(--space-2);
-  /* One row at every width (Duo fix): scrolls sideways when the nine tabs don't fit */
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  scroll-padding-inline: var(--space-5) 2rem;
+  padding: 12px var(--space-5) 16px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  overflow: visible;
   position: sticky;
   top: 0;
   z-index: 40;
   background: var(--bg-bar);
   /* Full-bleed band: the bar colour and its bottom hairline extend to the
      viewport edges. border-image outset paints outside the box without adding
-     layout width or horizontal scroll (same idea as the box-shadow + clip-path
-     band, but it can carry the hairline too). */
+     layout width or horizontal scroll. */
   border-image: linear-gradient(to top, var(--border) 1px, var(--bg-bar) 1px) fill 0 / 0 / 0 100vmax;
-}
-
-/* The v16 32px right-edge fade, now at every width. It is bar-coloured over the bar, so
-   when every tab fits it sits over empty bar and shows nothing; it only reads as a fade
-   once a tab scrolls under it. */
-.tabs::-webkit-scrollbar { display: none; }
-.tabs::after {
-  content: "";
-  flex: 0 0 2rem;
-  position: sticky;
-  right: calc(-1 * var(--space-5));
-  margin-left: calc(-1 * var(--space-2));
-  margin-bottom: 1px;
-  background: linear-gradient(to right, rgba(12, 14, 18, 0), var(--bg-bar) 100%);
-  pointer-events: none;
 }
 
 @media (max-width: 640px) {
   .tabs {
-    padding: var(--space-1) var(--space-4) 0;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* the right-edge fade is the scroll hint; no visible bar */
-    /* keep a scrolled-to tab clear of the right-edge fade */
-    scroll-padding-inline: var(--space-4) 2rem;
-  }
-  /* Scroll hint: a fade pinned to the right edge of the strip. Also acts as
-     trailing space so the last tab can scroll fully clear of the fade.
-     (An overlay rather than mask-image, so the pinned bar stays opaque.) */
-  .tabs::after {
-    content: "";
-    flex: 0 0 2rem; /* ~32px fade; also trailing space so the last tab clears it */
-    position: sticky;
-    right: calc(-1 * var(--space-4)); /* sticky insets sit inside the strip padding; pull the fade to the true edge */
-    margin-left: calc(-1 * var(--space-2));
-    margin-bottom: 1px; /* leave the bar's hairline visible under the fade */
-    background: linear-gradient(to right, rgba(12, 14, 18, 0), var(--bg-bar) 100%);
-    pointer-events: none;
+    padding: 12px var(--space-4) 16px;
   }
 }
 
 .tab {
   appearance: none;
-  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  width: 100%;
+  padding: 0 6px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
   background: transparent;
-  color: var(--text-muted);
+  color: var(--text);
   font: inherit;
-  font-size: var(--fs-md);
+  font-size: 12.5px;
   font-weight: 600;
-  padding: var(--space-3) var(--space-4);
-  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
-  cursor: pointer;
+  letter-spacing: 0.01em;
   white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
   transition: color 0.15s, background 0.15s, border-color 0.15s;
 }
 
 .tab:hover {
-  color: var(--text);
   background: var(--bg-card);
+  color: var(--text);
 }
 
 .tab:focus-visible {
@@ -311,19 +279,14 @@ body {
   outline-offset: 2px;
 }
 
-/* One active signal: the 3px underline in the view's hue (plus its text colour) */
-.tab.active {
-  color: var(--text);
-  background: transparent;
-  border-color: transparent;
+/* One active signal: filled gold chip, dark text */
+.tab.active,
+.tab.active:hover {
+  background: #e8c547;
+  border-color: #e8c547;
+  color: #111;
+  box-shadow: none;
 }
-
-.tab[data-view="ca"].active { box-shadow: inset 0 -3px 0 var(--ca); color: var(--ca); }
-.tab[data-view="or"].active { box-shadow: inset 0 -3px 0 var(--or); color: var(--or); }
-.tab[data-view="nv"].active { box-shadow: inset 0 -3px 0 var(--nv); color: var(--nv); }
-.tab[data-view="wa"].active { box-shadow: inset 0 -3px 0 var(--wa); color: var(--wa); }
-.tab[data-view="az"].active { box-shadow: inset 0 -3px 0 var(--az); color: var(--az); }
-/* compare/updates/ask tab accent moved below */
 
 /* Main */
 .main {
@@ -725,6 +688,9 @@ ul.sources li > a {
     line-height: 1.45;
     padding: var(--space-2) var(--space-4);
   }
+  .main {
+    padding: var(--space-5) var(--space-4) var(--space-8);
+  }
   .state-hero h2 {
     font-size: var(--fs-xl);
   }
@@ -961,15 +927,6 @@ ul.sources li > a {
   background: rgba(96, 165, 250, 0.08);
   color: var(--text-muted);
   font-size: var(--fs-md);
-}
-
-.tab[data-view="ask"].active,
-.tab[data-view="compare"].active,
-.tab[data-view="updates"].active,
-.tab[data-view="litigation"].active,
-.tab[data-view="changelog"].active {
-  box-shadow: inset 0 -3px 0 var(--info);
-  color: var(--info);
 }
 
 .state-badge.state-wa {
