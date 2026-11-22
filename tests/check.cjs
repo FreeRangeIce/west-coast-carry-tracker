@@ -34,8 +34,8 @@ function sourceChecks() {
   const sw = fs.readFileSync(path.join(root, "sw.js"), "utf8");
   const html = fs.readFileSync(path.join(root, "index.html"), "utf8");
 
-  ok(sw.includes('const CACHE = "carry-tracker-v20"'), "sw.js cache is carry-tracker-v20");
-  ok(!sw.includes("carry-tracker-v19"), "sw.js no longer references v19");
+  ok(sw.includes('const CACHE = "carry-tracker-v21"'), "sw.js cache is carry-tracker-v21");
+  ok(!sw.includes("carry-tracker-v20"), "sw.js no longer references v20");
 
   ok(
     /if \(fromUser\) \{\s*jumpToViewTop\(\);\s*revealTab\(activeTab\);\s*\}/.test(app),
