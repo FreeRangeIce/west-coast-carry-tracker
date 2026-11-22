@@ -681,6 +681,25 @@
         "lastChecked": "2026-11-21"
       },
       {
+        "id": "us-v-glendale",
+        "name": "United States v. City of Glendale, California",
+        "court": "U.S. District Court, C.D. Cal.",
+        "docket": "No. 2:26-cv-13098",
+        "challenges": "Glendale PD's CCW permit fees (initial application total $1,971–$2,106; renewal $1,271–$1,406, up from $100 / $25 the prior fiscal year) and its reference interviews, psychological exams, applicant interviews and review of public statements including social media, alleged to lack the \"narrow, objective, and definite standards\" Bruen requires.",
+        "status": "Complaint filed Nov 9, 2026 by the U.S. Department of Justice Civil Rights Division. Assigned Nov 18, 2026 to District Judge Stephen V. Wilson. No merits ruling. Fees remain in effect unless enjoined.",
+        "statusDate": "2026-11-18",
+        "outcome": "pending",
+        "stateIds": [
+          "ca"
+        ],
+        "sourceUrl": "https://www.justice.gov/opa/pr/justice-department-sues-city-glendale-california-violating-citizens-second-amendment-rights",
+        "extraUrls": [
+          "https://www.courtlistener.com/docket/75091830/united-states-v-city-of-glendale-california/"
+        ],
+        "uncertain": false,
+        "lastChecked": "2026-11-21"
+      },
+      {
         "id": "ladd-v-hunter",
         "name": "Ladd v. Hunter (Gun Owners of America / Gun Owners Foundation)",
         "court": "U.S. District Court, D. Or. (Eugene)",
